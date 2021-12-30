@@ -1,3 +1,12 @@
+const noteCLow = document.getElementById('noteCLow')
+const noteDLow = document.getElementById('noteDLow')
+const noteELow = document.getElementById('noteELow')
+const noteFLow = document.getElementById('noteFLow')
+const noteGLow = document.getElementById('noteGLow')
+const noteALow = document.getElementById('noteALow')
+const noteBLow = document.getElementById('noteBLow')
+
+
 const noteC = document.getElementById('noteC')
 const noteD = document.getElementById('noteD')
 const noteE = document.getElementById('noteE')
@@ -7,8 +16,42 @@ const noteA = document.getElementById('noteA')
 const noteB = document.getElementById('noteB')
 const noteCHigh = document.getElementById('noteCHigh')
 
-noteC.addEventListener('click', (e) => {
+
+noteCLow.addEventListener('click', (e) => {
     new Audio('./sounds/cLow.mp3').play()
+})
+
+noteDLow.addEventListener('click', (e) => {
+    new Audio('./sounds/dLow.mp3').play()
+})
+
+noteELow.addEventListener('click', (e) => {
+    new Audio('./sounds/eLow.mp3').play()
+})
+
+noteFLow.addEventListener('click', (e) => {
+    new Audio('./sounds/fLow.mp3').play()
+})
+
+noteGLow.addEventListener('click', (e) => {
+    new Audio('./sounds/gLow.mp3').play()
+})
+
+noteALow.addEventListener('click', (e) => {
+    new Audio('./sounds/aLow.mp3').play()
+})
+
+noteBLow.addEventListener('click', (e) => {
+    new Audio('./sounds/bLow.mp3').play()
+})
+
+
+
+
+
+
+noteC.addEventListener('click', (e) => {
+    new Audio('./sounds/c.mp3').play()
 })
 
 noteD.addEventListener('click', (e) => {
@@ -54,3 +97,4 @@ playSequence.addEventListener('click', (e) => {
         timeVar +=  1000
     }
 })
+
