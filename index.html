@@ -4,35 +4,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="app.js" defer></script>
-        
+        <script src="piano.js" defer></script>
+        <script src="sheet.js" defer></script
         <title>Template Doc</title>
         <link rel="stylesheet" href="style.css">
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     </head>
     <body>
-        <div id="app">
-            <button id="noteCLow">c</button>
-            <button id="noteDLow">d</button>
-            <button id="noteELow">e</button>
-            <button id="noteFLow">f</button>
-            <button id="noteGLow">g</button>
-            <button id="noteALow">a</button>
-            <button id="noteBLow">b</button>
+        <div id="piano">
+            <ul>
+                <li class="white" id="noteCLow">c</li>
+                <li class="white" id="noteDLow">d</li>
+                <li class="white" id="noteELow">e</li>
+                <li class="white" id="noteFLow">f</li>
+                <li class="white" id="noteGLow">g</li>
+                <li class="white" id="noteALow">a</li>
+                <li class="white" id="noteBLow">b</li>
+                
+                <li class="white" id="noteC">c</li>
+                <li class="sharp" id="noteCSharp">c#</li>     
+                <li class="white" id="noteD">d</li>
+                <li class="sharp" id="noteDSharp">d#</li>     
+                <li class="white" id="noteE">e</li>
+                <li class="white" id="noteF">f</li>
+                <li class="sharp" id="noteFSharp">f#</button>     
+                <li class="white" id="noteG">g</button>
+                <li class="sharp" id="noteGSharp">g#</li>     
+                <li class="white" id="noteA">a</li>
+                <li class="sharp" id="noteASharp">a#</li> 
+                <li class="white" id="noteB">b</li>
+                <li class="white sharp" id="noteCHigh">c</li>
+                <li  id="playSequence">Play</li>
+            </ul>
 
-
-
-            <button id="noteC">c</button>
-            <button id="noteD">d</button>
-            <button id="noteE">e</button>
-            <button id="noteF">f</button>
-            <button id="noteG">g</button>
-            <button id="noteA">a</button>
-            <button id="noteB">b</button>
-            <button id="noteCHigh">c</button>
-            <button id="playSequence">Play</button>
-
-          </div>
+        </div>
+        <div id='sheetSection'>
+            <div id="sheet">
+                <div id="column1">
+                    <button id="b1">x</button>
+                    <button id="a1">x</button>
+                    <button id="g1">x</button>
+                    <button id="f1">x</button>
+                    <button id="e1">x</button>
+                    <button id="d1">x</button>
+                    <button id="c1">x</button>   
+                </div>      
+            </div>
+        </div>
     </body>
 
 </html>
