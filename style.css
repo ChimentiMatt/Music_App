@@ -48,16 +48,27 @@ ul .white{
 }
 
 #sheet{
-  height: 5rem;
+  height: 10rem;
   width: 20rem;
+  display: flex;
   background-color: blanchedalmond;
+
 }
 
 #column1{
   display: flex;
   flex-direction: column;
 }
+#column1 button{
+  width: 2rem;
+  opacity: .2;
+} 
 
-#sheetUl li{
-  /* height: .5rem; */
+#column2{
+  display: flex;
+  flex-direction: column;
+}
+#column2 button{
+  width: 2rem;
+  opacity: .2;
 } 
