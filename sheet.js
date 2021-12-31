@@ -38,18 +38,6 @@ const g5 = document.getElementById('g5')
 const a5 = document.getElementById('a5')
 const b5 = document.getElementById('b5')
 
-const playList = [null]
-
-const playSequence = document.getElementById('playSequence')
-playSequence.addEventListener('click', (e) => {
-
-    let timeVar = 0
-    for (let i = 0; i < playList.length; i ++){
-        setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
-        timeVar +=  1000
-    }
-})
-
 // Column 1
 c.addEventListener('click', (e) => {
     playList[0] = 'c'
@@ -282,3 +270,15 @@ function clearNotes(column, cn) {
     }
     document.getElementById(cn).style.opacity = 1
 }
+
+const playList = [null]
+
+const playSequence = document.getElementById('playSequence')
+playSequence.addEventListener('click', (e) => {
+
+    let timeVar = 0
+    for (let i = 0; i < playList.length; i ++){
+        setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
+        timeVar +=  600
+    }
+})

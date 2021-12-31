@@ -33,11 +33,11 @@ ul .white{
   z-index: 2;
   height: 3rem;
   top: -0rem;
-
   width: 1.5rem;
   border: 1px solid black;
 }
 
+/* Sheet.js */
 
 
 #sheetSection{
@@ -51,36 +51,64 @@ ul .white{
   height: 10rem;
   width: 20rem;
   display: flex;
-  background-color: blanchedalmond;
+  background-color: rgba(255, 235, 205, 0.289);
+}
 
+#sheetBackground{
+  position: absolute;
+  z-index: -1;
+  height: 10rem;
+  width: 20rem;
+}
+
+#steetLine1, #steetLine2, #steetLine3, #steetLine4, #steetLine5{
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 1.5rem;
 }
 
 #column1,#column2, #column3, #column4, #column5 {
   display: flex;
   flex-direction: column;
+  margin-top: 3.19rem;
 }
 
 #column1 button{
   width: 2rem;
   opacity: .2;
+  height: .75rem;
+  border: none;
+  background: none;
 } 
 
 #column2 button{
   width: 2rem;
   opacity: .2;
+  height: .75rem;
+  border: none;
+  background: none;
 } 
 
 #column3 button{
   width: 2rem;
   opacity: .2;
+  height: .75rem;
+  border: none;
+  background: none;
 } 
 
 #column4 button{
   width: 2rem;
   opacity: .2;
+  height: .75rem;
+  border: none;
+  background: none;
 } 
 
 #column5 button{
   width: 2rem;
   opacity: .2;
+  height: .75rem;
+  border: none;
+  background: none;
 } 
