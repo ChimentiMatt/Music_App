@@ -55,20 +55,32 @@ ul .white{
 
 }
 
-#column1{
+#column1,#column2, #column3, #column4, #column5 {
   display: flex;
   flex-direction: column;
 }
+
 #column1 button{
   width: 2rem;
   opacity: .2;
 } 
 
-#column2{
-  display: flex;
-  flex-direction: column;
-}
 #column2 button{
+  width: 2rem;
+  opacity: .2;
+} 
+
+#column3 button{
+  width: 2rem;
+  opacity: .2;
+} 
+
+#column4 button{
+  width: 2rem;
+  opacity: .2;
+} 
+
+#column5 button{
   width: 2rem;
   opacity: .2;
 } 
