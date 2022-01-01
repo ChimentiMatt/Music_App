@@ -260,6 +260,7 @@ b5.addEventListener('click', (e) => {
 })
 
 const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
 function clearNotes(column, cn) {
     console.log(column)
     for (let i = 0; i < notes.length; i++){
@@ -272,13 +273,14 @@ function clearNotes(column, cn) {
 }
 
 const playList = [null]
+const duration = [6000, 100, 900, 2000, 1000]
 
 const playSequence = document.getElementById('playSequence')
 playSequence.addEventListener('click', (e) => {
 
     let timeVar = 0
     for (let i = 0; i < playList.length; i ++){
+        timeVar += duration[i]
         setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
-        timeVar +=  600
     }
 })
