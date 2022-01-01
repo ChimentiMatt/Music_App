@@ -39,10 +39,12 @@ const a5 = document.getElementById('a5')
 const b5 = document.getElementById('b5')
 
 // Column 1
+let cClick = 1
 c.addEventListener('click', (e) => {
+    cClick += 1
     playList[0] = 'c'
-    c.style.opacity = 1
     clearNotes(1, 'c1')
+    changeNoteType(1, cClick, c)
 })
 
 d.addEventListener('click', (e) => {
@@ -82,92 +84,132 @@ b.addEventListener('click', (e) => {
 })
 
 // Column 2
+let c2click = 1
 c2.addEventListener('click', (e) => {
+    c2click += 1
     playList[1] = 'c'
     c2.style.opacity = 1
     clearNotes(2, 'c2')
+    changeNoteType(2, c2click, c2)
 })
 
+let d2click = 1
 d2.addEventListener('click', (e) => {
+    d2click += 1
     playList[1] = 'd'
     d2.style.opacity = 1
     clearNotes(2, 'd2')
+    changeNoteType(2, d2click, d2)
 })
 
+let e2click = 1
 e2.addEventListener('click', (e) => {
+    e2click += 1
     playList[1] = 'e'
     e2.style.opacity = 1
     clearNotes(2, 'e2')
+    changeNoteType(2, e2click, e2)
 })
 
+let f2click = 1
 f2.addEventListener('click', (e) => {
+    f2click += 1
     playList[1] = 'f'
     f2.style.opacity = 1
     clearNotes(2, 'f2')
+    changeNoteType(2, f2click, f2)
 })
 
+let g2click = 1
 g2.addEventListener('click', (e) => {
+    g2click += 1
     playList[1] = 'g'
     g2.style.opacity = 1
     clearNotes(2, 'g2')
+    changeNoteType(2, g2click, g2)
 })
 
+let a2click = 1
 a2.addEventListener('click', (e) => {
+    a2click += 1
     playList[1] = 'a'
     a2.style.opacity = 1
     clearNotes(2, 'a2')
+    changeNoteType(2, a2click, a2)
 })
 
-
+let b2click = 1
 b2.addEventListener('click', (e) => {
+    b2click += 1
     playList[1] = 'b'
     b2.style.opacity = 1
     clearNotes(2, 'b2')
+    changeNoteType(2, b2click, b2)
 })
 
 
 // Column 3
+let c3click = 1
 c3.addEventListener('click', (e) => {
+    c3click += 1
     playList[2] = 'c'
     c3.style.opacity = 1
     clearNotes(3, 'c3')
+    changeNoteType(3, c3click, c3)
 })
 
+let d3click = 1
 d3.addEventListener('click', (e) => {
+    d3click += 1
     playList[2] = 'd'
     d3.style.opacity = 1
     clearNotes(3, 'd3')
+    changeNoteType(3, d3click, d3)
 })
 
+let e3click = 1
 e3.addEventListener('click', (e) => {
+    e3click += 1
     playList[2] = 'e'
     e3.style.opacity = 1
     clearNotes(3, 'e3')
+    changeNoteType(3, e3click, e3)
 })
 
+let f3click = 1
 f3.addEventListener('click', (e) => {
+    f3click += 1
     playList[2] = 'f'
     f3.style.opacity = 1
     clearNotes(3, 'f3')
+    changeNoteType(3, f3click, f3)
 })
 
+let g3click = 1
 g3.addEventListener('click', (e) => {
+    g3click += 1
     playList[2] = 'g'
     g3.style.opacity = 1
     clearNotes(3, 'g3')
+    changeNoteType(3, g3click, g3)
 })
 
+let a3click = 1
 a3.addEventListener('click', (e) => {
+    a3click += 1
     playList[2] = 'a'
     a3.style.opacity = 1
     clearNotes(3, 'a3')
+    changeNoteType(3, a3click, a3)
 })
 
-
+let b3click = 1
 b3.addEventListener('click', (e) => {
+    b3click += 1
     playList[2] = 'b'
     b3.style.opacity = 1
     clearNotes(3, 'b3')
+    changeNoteType(3, b3click, b3)
 })
 
 
@@ -259,21 +301,30 @@ b5.addEventListener('click', (e) => {
     clearNotes(5, 'b5')
 })
 
+function changeNoteType(column, counter, note) {
+    if (counter % 2 != 0){
+        console.log(counter, 'counter')
+        duration[column] = 500
+        note.style.color = 'red'
+    }
+}
+
+
 const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 function clearNotes(column, cn) {
-    console.log(column)
+    // console.log(column)
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
-        let x = document.getElementById(idStr)
-        x.style.opacity = .2
-        console.log(notes[1], column)
+        let columnBtns = document.getElementById(idStr)
+        columnBtns.style.opacity = .2
+        // console.log(notes[1], column)
     }
-    document.getElementById(cn).style.opacity = 1
+    document.getElementById(cn).style.opacity = .9
 }
 
 const playList = [null]
-const duration = [6000, 100, 900, 2000, 1000]
+const duration = [1000, 1000, 1000, 1000, 1000]
 
 const playSequence = document.getElementById('playSequence')
 playSequence.addEventListener('click', (e) => {
