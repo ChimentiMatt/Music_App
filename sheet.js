@@ -431,31 +431,33 @@ b5.addEventListener('click', (e) => {
     }
 })
 
+
+
 function changeNoteType(column, counter, note) {
     if (counter == 1){
         note.style.color = 'black'
         note.innerHTML = 'o'
+        duration[column +1] = 1000
     }
     else if (counter == 2){
-        duration[column] = 500
+        duration[column +1] = 500
         note.style.color = 'red'
         note.innerHTML = 'o'
     }
     else if (counter == 3){
-        duration[column] = 1000
+        duration[column +1] = 1000
         playList[column] = 'mute'
         note.style.color = 'black'
         note.innerHTML = 'R'
         console.log(playList)
     }
     else if (counter == 4){
-        duration[column] = 500
+        duration[column +1] = 500
         playList[column] = 'mute'
         note.style.color = 'black'
         note.innerHTML = 'r'
     }
 }
-
 
 const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
@@ -471,7 +473,7 @@ function clearNotes(column, cn) {
 }
 
 const playList = ['mute']
-const duration = [0, 1000, 1000, 1000, 1000, 1000]
+const duration = [0, 0, 0, 0, 0, 0]
 
 const playSequence = document.getElementById('playSequence')
 playSequence.addEventListener('click', (e) => {
