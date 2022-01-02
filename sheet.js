@@ -50,40 +50,70 @@ c.addEventListener('click', (e) => {
     }
 })
 
+let dClick = 0
 d.addEventListener('click', (e) => {
+    dClick += 1
     playList[1] = 'd'
-    d.style.opacity = 1
     clearNotes(1, 'd1')
+    changeNoteType(1, dClick, d)
+    if (dClick == 4){
+        dClick = 0
+    }
 })
 
+let eClick = 0
 e_.addEventListener('click', (e) => {
+    eClick += 1
     playList[1] = 'e'
-    e_.style.opacity = 1
     clearNotes(1, 'e1')
+    changeNoteType(1, eClick, e_)
+    if (eClick == 4){
+        eClick = 0
+    }
 })
 
+let fClick = 0
 f.addEventListener('click', (e) => {
+    fClick += 1
     playList[1] = 'f'
-    f.style.opacity = 1
     clearNotes(1, 'f1')
+    changeNoteType(1, fClick, f)
+    if (fClick == 4){
+        fClick = 0
+    }
 })
 
+let gClick = 0
 g.addEventListener('click', (e) => {
+    gClick += 1
     playList[1] = 'g'
-    g.style.opacity = 1
     clearNotes(1, 'g1')
+    changeNoteType(1, gClick, g)
+    if (gClick == 4){
+        gClick = 0
+    }
 })
 
+let aClick = 0
 a.addEventListener('click', (e) => {
+    aClick += 1
     playList[1] = 'a'
-    a.style.opacity = 1
     clearNotes(1, 'a1')
+    changeNoteType(1, aClick, a)
+    if (aClick == 4){
+        aClick = 0
+    }
 })
 
+let bClick = 0
 b.addEventListener('click', (e) => {
+    bClick += 1
     playList[1] = 'b'
-    b.style.opacity = 1
     clearNotes(1, 'b1')
+    changeNoteType(1, bClick, b)
+    if (bClick == 4){
+        bClick = 0
+    }
 })
 
 // Column 2
@@ -91,7 +121,6 @@ let c2click = 0
 c2.addEventListener('click', (e) => {
     c2click += 1
     playList[2] = 'c'
-    c2.style.opacity = 1
     clearNotes(2, 'c2')
     changeNoteType(2, c2click, c2)
     if (c2Click == 4){
@@ -103,54 +132,66 @@ let d2click = 0
 d2.addEventListener('click', (e) => {
     d2click += 1
     playList[2] = 'd'
-    d2.style.opacity = 1
     clearNotes(2, 'd2')
     changeNoteType(2, d2click, d2)
+    if (d2Click == 4){
+        d2Click = 0
+    }
 })
 
 let e2click = 0
 e2.addEventListener('click', (e) => {
     e2click += 1
     playList[2] = 'e'
-    e2.style.opacity = 1
     clearNotes(2, 'e2')
     changeNoteType(2, e2click, e2)
+    if (e2Click == 4){
+        e2Click = 0
+    }
 })
 
 let f2click = 0
 f2.addEventListener('click', (e) => {
     f2click += 1
     playList[2] = 'f'
-    f2.style.opacity = 1
     clearNotes(2, 'f2')
     changeNoteType(2, f2click, f2)
+    if (f2Click == 4){
+        f2Click = 0
+    }
 })
 
 let g2click = 0
 g2.addEventListener('click', (e) => {
     g2click += 1
     playList[2] = 'g'
-    g2.style.opacity = 1
     clearNotes(2, 'g2')
     changeNoteType(2, g2click, g2)
+    if (g2Click == 4){
+        g2Click = 0
+    }
 })
 
 let a2click = 0
 a2.addEventListener('click', (e) => {
     a2click += 1
     playList[2] = 'a'
-    a2.style.opacity = 1
     clearNotes(2, 'a2')
     changeNoteType(2, a2click, a2)
+    if (a2Click == 4){
+        a2Click = 0
+    }
 })
 
 let b2click = 0
 b2.addEventListener('click', (e) => {
     b2click += 1
     playList[2] = 'b'
-    b2.style.opacity = 1
     clearNotes(2, 'b2')
     changeNoteType(2, b2click, b2)
+    if (b2Click == 4){
+        b2Click = 0
+    }
 })
 
 
@@ -159,152 +200,235 @@ let c3click = 0
 c3.addEventListener('click', (e) => {
     c3click += 1
     playList[3] = 'c'
-    c3.style.opacity = 1
     clearNotes(3, 'c3')
     changeNoteType(3, c3click, c3)
+    if (c3Click == 4){
+        c3Click = 0
+    }
 })
 
 let d3click = 0
 d3.addEventListener('click', (e) => {
     d3click += 1
     playList[3] = 'd'
-    d3.style.opacity = 1
     clearNotes(3, 'd3')
     changeNoteType(3, d3click, d3)
+    if (d3Click == 4){
+        d3Click = 0
+    }
 })
 
 let e3click = 0
 e3.addEventListener('click', (e) => {
     e3click += 1
     playList[3] = 'e'
-    e3.style.opacity = 1
     clearNotes(3, 'e3')
     changeNoteType(3, e3click, e3)
+    if (e3Click == 4){
+        e3Click = 0
+    }
 })
 
 let f3click = 0
 f3.addEventListener('click', (e) => {
     f3click += 1
     playList[3] = 'f'
-    f3.style.opacity = 1
     clearNotes(3, 'f3')
     changeNoteType(3, f3click, f3)
+    if (f3Click == 4){
+        f3Click = 0
+    }
 })
 
 let g3click = 0
 g3.addEventListener('click', (e) => {
     g3click += 1
     playList[3] = 'g'
-    g3.style.opacity = 1
     clearNotes(3, 'g3')
     changeNoteType(3, g3click, g3)
+    if (g3Click == 4){
+        g3Click = 0
+    }
 })
 
 let a3click = 0
 a3.addEventListener('click', (e) => {
     a3click += 1
     playList[3] = 'a'
-    a3.style.opacity = 1
     clearNotes(3, 'a3')
     changeNoteType(3, a3click, a3)
+    if (a3Click == 4){
+        a3Click = 0
+    }
 })
 
 let b3click = 0
 b3.addEventListener('click', (e) => {
     b3click += 1
     playList[3] = 'b'
-    b3.style.opacity = 1
     clearNotes(3, 'b3')
     changeNoteType(3, b3click, b3)
+    if (b3Click == 4){
+        b3Click = 0
+    }
 })
 
 
 // Column 4
+let c4click = 0
 c4.addEventListener('click', (e) => {
+    c4click += 1
     playList[4] = 'c'
-    c4.style.opacity = 1
     clearNotes(4, 'c4')
+    changeNoteType(4, c4click, c4)
+    if (c4Click == 4){
+        c4Click = 0
+    }
 })
 
+let d4click = 0
 d4.addEventListener('click', (e) => {
+    d4click += 1
     playList[4] = 'd'
-    d4.style.opacity = 1
     clearNotes(4, 'd4')
+    changeNoteType(4, d4click, d4)
+    if (d4Click == 4){
+        d4Click = 0
+    }
 })
 
+let e4click = 0
 e4.addEventListener('click', (e) => {
+    e4click += 1
     playList[4] = 'e'
-    e4.style.opacity = 1
     clearNotes(4, 'e4')
+    changeNoteType(4, e4click, e4)
+    if (e4Click == 4){
+        e4Click = 0
+    }
 })
 
+let f4click = 0
 f4.addEventListener('click', (e) => {
+    f4click += 1
     playList[4] = 'f'
-    f4.style.opacity = 1
     clearNotes(4, 'f4')
+    changeNoteType(4, f4click, f4)
+    if (f4Click == 4){
+        f4Click = 0
+    }
 })
 
+let g4click = 0
 g4.addEventListener('click', (e) => {
+    g4click += 1
     playList[4] = 'g'
-    g4.style.opacity = 1
     clearNotes(4, 'g4')
+    changeNoteType(4, g4click, g4)
+    if (g4Click == 4){
+        g4Click = 0
+    }
 })
 
+let a4click = 0
 a4.addEventListener('click', (e) => {
+    a4click += 1
     playList[4] = 'a'
-    a4.style.opacity = 1
     clearNotes(4, 'a4')
+    changeNoteType(4, a4click, a4)
+    if (a4Click == 4){
+        a4Click = 0
+    }
 })
 
-
+let b4click = 0
 b4.addEventListener('click', (e) => {
+    b4click += 1
     playList[4] = 'b'
-    b4.style.opacity = 1
     clearNotes(4, 'b4')
+    changeNoteType(4, b4click, b4)
+    if (b4Click == 4){
+        b4Click = 0
+    }
 })
 
 
 // Column 5
+let c5click = 0
 c5.addEventListener('click', (e) => {
-    playList[4] = 'c'
-    c5.style.opacity = 1
+    c5click += 1
+    playList[5] = 'c'
     clearNotes(5, 'c5')
+    changeNoteType(5, c5click, c5)
+    if (c5Click == 4){
+        c5Click = 0
+    }
 })
 
+let d5click = 0
 d5.addEventListener('click', (e) => {
-    playList[4] = 'd'
-    d5.style.opacity = 1
+    d5click += 1
+    playList[5] = 'd'
     clearNotes(5, 'd5')
+    changeNoteType(5, d5click, d5)
+    if (d5Click == 4){
+        d5Click = 0
+    }
 })
 
+let e5click = 0
 e5.addEventListener('click', (e) => {
-    playList[4] = 'e'
-    e5.style.opacity = 1
+    e5click += 1
+    playList[5] = 'e'
     clearNotes(5, 'e5')
+    changeNoteType(5, e5click, e5)
+    if (e5Click == 4){
+        e5Click = 0
+    }
 })
 
+let f5click = 0
 f5.addEventListener('click', (e) => {
-    playList[4] = 'f'
-    f5.style.opacity = 1
+    f5click = 1
+    playList[5] = 'f'
     clearNotes(5, 'f5')
+    changeNoteType(5, f5click, f5)
+    if (f5Click == 4){
+        f5Click = 0
+    }
 })
 
+let g5click = 0
 g5.addEventListener('click', (e) => {
-    playList[4] = 'g'
-    g5.style.opacity = 1
+    g5click += 1
+    playList[5] = 'g'
     clearNotes(5, 'g5')
+    changeNoteType(5, g5click, g5)
+    if (g5Click == 4){
+        g5Click = 0
+    }
 })
 
+let a5click = 0
 a5.addEventListener('click', (e) => {
-    playList[4] = 'a'
-    a5.style.opacity = 1
+    a5click += 1
+    playList[5] = 'a'
     clearNotes(5, 'a5')
+    changeNoteType(5, a5click, a5)
+    if (a5Click == 4){
+        a5Click = 0
+    }
 })
 
+let b5click = 0
 b5.addEventListener('click', (e) => {
-    playList[4] = 'b'
-    b5.style.opacity = 1
+    b5click += 1
+    playList[5] = 'b'
     clearNotes(5, 'b5')
+    changeNoteType(5, b5click, b5)
+    if (b5Click == 4){
+        b5Click = 0
+    }
 })
 
 function changeNoteType(column, counter, note) {
@@ -347,7 +471,7 @@ function clearNotes(column, cn) {
 }
 
 const playList = ['mute']
-const duration = [0, 1000, 1000, 1000, 1000]
+const duration = [0, 1000, 1000, 1000, 1000, 1000]
 
 const playSequence = document.getElementById('playSequence')
 playSequence.addEventListener('click', (e) => {
