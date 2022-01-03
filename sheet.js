@@ -64,7 +64,7 @@ d.addEventListener('click', (e) => {
 let eClick = 0
 e_.addEventListener('click', (e) => {
     eClick += 1
-    if (eClick == 2){ eClick = 4}
+    if (eClick == 3){ eClick = 5}
     playList[1] = 'e'
     clearNotes(1, 'e1')
     changeNoteType(1, eClick, e_)
@@ -109,7 +109,7 @@ a.addEventListener('click', (e) => {
 let bClick = 0
 b.addEventListener('click', (e) => {
     bClick += 1
-    if (bClick == 2){ bClick = 4}
+    if (bClick == 3){ bClick = 5}
     playList[1] = 'b'
     clearNotes(1, 'b1')
     changeNoteType(1, bClick, b)
@@ -125,7 +125,7 @@ c2.addEventListener('click', (e) => {
     playList[2] = 'c'
     clearNotes(2, 'c2')
     changeNoteType(2, cTwoClick, c2)
-    if (cTwoClick == 5){
+    if (cTwoClick == 6){
         cTwoClick = 0
 
     }
@@ -137,7 +137,7 @@ d2.addEventListener('click', (e) => {
     playList[2] = 'd'
     clearNotes(2, 'd2')
     changeNoteType(2, dTwoClick, d2)
-    if (dTwoClick == 5){
+    if (dTwoClick == 6){
         dTwoClick = 0
  
     }
@@ -146,11 +146,11 @@ d2.addEventListener('click', (e) => {
 let eTwoClick = 0
 e2.addEventListener('click', (e) => {
     eTwoClick += 1
-    if (eTwoClick == 2){ eTwoClick = 4}
+    if (eTwoClick == 3){ eTwoClick = 5}
     playList[2] = 'e'
     clearNotes(2, 'e2')
     changeNoteType(2, eTwoClick, e2)
-    if (eTwoClick == 5){
+    if (eTwoClick == 6){
         eTwoClick = 0
     }
 })
@@ -161,7 +161,7 @@ f2.addEventListener('click', (e) => {
     playList[2] = 'f'
     clearNotes(2, 'f2')
     changeNoteType(2, fTwoClick, f2)
-    if (fTwoClick == 5){
+    if (fTwoClick == 6){
         fTwoClick = 0
     }
 })
@@ -172,7 +172,7 @@ g2.addEventListener('click', (e) => {
     playList[2] = 'g'
     clearNotes(2, 'g2')
     changeNoteType(2, gTwoClick, g2)
-    if (gTwoClick == 5){
+    if (gTwoClick == 6){
         gTwoClick = 0
     }
 })
@@ -183,7 +183,7 @@ a2.addEventListener('click', (e) => {
     playList[2] = 'a'
     clearNotes(2, 'a2')
     changeNoteType(2, aTwoClick, a2)
-    if (aTwoClick == 5){
+    if (aTwoClick == 6){
         aTwoClick = 0
     }
 })
@@ -191,11 +191,11 @@ a2.addEventListener('click', (e) => {
 let bTwoClick = 0
 b2.addEventListener('click', (e) => {
     bTwoClick += 1
-    if (bTwoClick == 2){ bTwoClick = 4}
+    if (bTwoClick == 3){ bTwoClick = 5}
     playList[2] = 'b'
     clearNotes(2, 'b2')
     changeNoteType(2, bTwoClick, b2)
-    if (bTwoClick == 5){
+    if (bTwoClick == 6){
         bTwoClick = 0
     }
 })
@@ -208,7 +208,7 @@ c3.addEventListener('click', (e) => {
     playList[3] = 'c'
     clearNotes(3, 'c3')
     changeNoteType(3, cThreeClick, c3)
-    if (cThreeClick == 5){
+    if (cThreeClick == 6){
         cThreeClick = 0
     }
 })
@@ -219,7 +219,7 @@ d3.addEventListener('click', (e) => {
     playList[3] = 'd'
     clearNotes(3, 'd3')
     changeNoteType(3, dThreeClick, d3)
-    if (dThreeClick == 5){
+    if (dThreeClick == 6){
         dThreeClick = 0
     }
 })
@@ -227,11 +227,11 @@ d3.addEventListener('click', (e) => {
 let eThreeClick = 0
 e3.addEventListener('click', (e) => {
     eThreeClick += 1
-    if (eThreeClick == 2){ eThreeClick = 4}
+    if (eThreeClick == 3){ eThreeClick = 5}
     playList[3] = 'e'
     clearNotes(3, 'e3')
     changeNoteType(3, eThreeClick, e3)
-    if (eThreeClick == 5){
+    if (eThreeClick == 6){
         eThreeClick = 0
     }
 })
@@ -242,7 +242,7 @@ f3.addEventListener('click', (e) => {
     playList[3] = 'f'
     clearNotes(3, 'f3')
     changeNoteType(3, fThreeClick, f3)
-    if (fThreeClick == 5){
+    if (fThreeClick == 6){
         fThreeClick = 0
     }
 })
@@ -253,7 +253,7 @@ g3.addEventListener('click', (e) => {
     playList[3] = 'g'
     clearNotes(3, 'g3')
     changeNoteType(3, gThreeClick, g3)
-    if (gThreeClick == 5){
+    if (gThreeClick == 6){
         gThreeClick = 0
     }
 })
@@ -264,7 +264,7 @@ a3.addEventListener('click', (e) => {
     playList[3] = 'a'
     clearNotes(3, 'a3')
     changeNoteType(3, aThreeClick, a3)
-    if (aThreeClick == 5){
+    if (aThreeClick == 6){
         aThreeClick = 0
     }
 })
@@ -272,11 +272,11 @@ a3.addEventListener('click', (e) => {
 let bThreeClick = 0
 b3.addEventListener('click', (e) => {
     bThreeClick += 1
-    if (bThreeClick == 2){ bThreeClick = 4}
+    if (bThreeClick == 3){ bThreeClick = 5}
     playList[3] = 'b'
     clearNotes(3, 'b3')
     changeNoteType(3, bThreeClick, b3)
-    if (bThreeClick == 5){
+    if (bThreeClick == 6){
         bThreeClick = 0
     }
 })
@@ -289,7 +289,7 @@ c4.addEventListener('click', (e) => {
     playList[4] = 'c'
     clearNotes(4, 'c4')
     changeNoteType(4, cFourClick, c4)
-    if (cFourClick == 5){
+    if (cFourClick == 6){
         cFourClick = 0
     }
 })
@@ -300,7 +300,7 @@ d4.addEventListener('click', (e) => {
     playList[4] = 'd'
     clearNotes(4, 'd4')
     changeNoteType(4, dFourClick, d4)
-    if (dFourClick == 5){
+    if (dFourClick == 6){
         dFourClick = 0
     }
 })
@@ -308,11 +308,11 @@ d4.addEventListener('click', (e) => {
 let eFourClick = 0
 e4.addEventListener('click', (e) => {
     eFourClick += 1
-    if (eFourClick == 2){ eFourClick = 4}
+    if (eFourClick == 3){ eFourClick = 5}
     playList[4] = 'e'
     clearNotes(4, 'e4')
     changeNoteType(4, eFourClick, e4)
-    if (eFourClick == 5){
+    if (eFourClick == 6){
         eFourClick = 0
     }
 })
@@ -334,7 +334,7 @@ g4.addEventListener('click', (e) => {
     playList[4] = 'g'
     clearNotes(4, 'g4')
     changeNoteType(4, gFourClick, g4)
-    if (gFourClick == 5){
+    if (gFourClick == 6){
         gFourClick = 0
     }
 })
@@ -345,7 +345,7 @@ a4.addEventListener('click', (e) => {
     playList[4] = 'a'
     clearNotes(4, 'a4')
     changeNoteType(4, aFourClick, a4)
-    if (aFourClick == 5){
+    if (aFourClick == 6){
         aFourClick = 0
     }
 })
@@ -353,11 +353,11 @@ a4.addEventListener('click', (e) => {
 let bFourClick = 0
 b4.addEventListener('click', (e) => {
     bFourClick += 1
-    if (bFourClick == 2){ bFourClick = 4}
+    if (bFourClick == 3){ bFourClick = 5}
     playList[4] = 'b'
     clearNotes(4, 'b4')
     changeNoteType(4, bFourClick, b4)
-    if (bFourClick == 5){
+    if (bFourClick == 6){
         bFourClick = 0
     }
 })
@@ -370,7 +370,7 @@ c5.addEventListener('click', (e) => {
     playList[5] = 'c'
     clearNotes(5, 'c5')
     changeNoteType(5, cFiveClick, c5)
-    if (cFiveClick == 5){
+    if (cFiveClick == 6){
         cFiveClick = 0
     }
 })
@@ -381,7 +381,7 @@ d5.addEventListener('click', (e) => {
     playList[5] = 'd'
     clearNotes(5, 'd5')
     changeNoteType(5, dFiveClick, d5)
-    if (dFiveClick == 5){
+    if (dFiveClick == 6){
         dFiveClick = 0
     }
 })
@@ -389,11 +389,11 @@ d5.addEventListener('click', (e) => {
 let eFiveClick = 0
 e5.addEventListener('click', (e) => {
     eFiveClick += 1
-    if (eFiveClick == 2){ eFiveClick = 4}
+    if (eFiveClick == 3){ eFiveClick = 5}
     playList[5] = 'e'
     clearNotes(5, 'e5')
     changeNoteType(5, eFiveClick, e5)
-    if (eFiveClick == 5){
+    if (eFiveClick == 6){
         eFiveClick = 0
     }
 })
@@ -404,7 +404,7 @@ f5.addEventListener('click', (e) => {
     playList[5] = 'f'
     clearNotes(5, 'f5')
     changeNoteType(5, fFiveClick, f5)
-    if (fFiveClick == 5){
+    if (fFiveClick == 6){
         fFiveClick = 0
     }
 })
@@ -415,7 +415,7 @@ g5.addEventListener('click', (e) => {
     playList[5] = 'g'
     clearNotes(5, 'g5')
     changeNoteType(5, gFiveClick, g5)
-    if (gFiveClick == 5){
+    if (gFiveClick == 6){
         gFiveClick = 0
     }
 })
@@ -426,7 +426,7 @@ a5.addEventListener('click', (e) => {
     playList[5] = 'a'
     clearNotes(5, 'a5')
     changeNoteType(5, aFiveClick, a5)
-    if (aFiveClick == 5){
+    if (aFiveClick == 6){
         aFiveClick = 0
     }
 })
@@ -434,11 +434,11 @@ a5.addEventListener('click', (e) => {
 let bFiveClick = 0
 b5.addEventListener('click', (e) => {
     bFiveClick += 1
-    if (bFiveClick == 2){ bFiveClick = 4}
+    if (bFiveClick == 3){ bFiveClick = 5}
     playList[5] = 'b'
     clearNotes(5, 'b5')
     changeNoteType(5, bFiveClick, b5)
-    if (bFiveClick == 5){
+    if (bFiveClick == 6){
         bFiveClick = 0
     }
 })
@@ -450,7 +450,7 @@ c6.addEventListener('click', (e) => {
     playList[6] = 'c'
     clearNotes(6, 'c6')
     changeNoteType(6, cSixClick, c6)
-    if (cSixClick == 5){
+    if (cSixClick == 6){
         cSixClick = 0
     }
 })
@@ -461,7 +461,7 @@ d6.addEventListener('click', (e) => {
     playList[6] = 'd'
     clearNotes(6, 'd6')
     changeNoteType(6, dSixClick, d6)
-    if (dSixClick == 5){
+    if (dSixClick == 6){
         dSixClick = 0
     }
 })
@@ -469,11 +469,11 @@ d6.addEventListener('click', (e) => {
 let eSixClick = 0
 e6.addEventListener('click', (e) => {
     eSixClick += 1
-    if (eSixClick == 2){ eSixClick = 4}
+    if (eSixClick == 3){ eSixClick = 5}
     playList[6] = 'e'
     clearNotes(6, 'e6')
     changeNoteType(6, eSixClick, e6)
-    if (eSixClick == 5){
+    if (eSixClick == 6){
         eSixClick = 0
     }
 })
@@ -484,7 +484,7 @@ f6.addEventListener('click', (e) => {
     playList[6] = 'f'
     clearNotes(6, 'f6')
     changeNoteType(6, fSixClick, f6)
-    if (fSixClick == 5){
+    if (fSixClick == 6){
         fSixClick = 0
     }
 })
@@ -495,7 +495,7 @@ g6.addEventListener('click', (e) => {
     playList[6] = 'g'
     clearNotes(6, 'g6')
     changeNoteType(6, gSixClick, g6)
-    if (gSixClick == 5){
+    if (gSixClick == 6){
         gSixClick = 0
     }
 })
@@ -506,7 +506,7 @@ a6.addEventListener('click', (e) => {
     playList[6] = 'a'
     clearNotes(6, 'a6')
     changeNoteType(6, aSixClick, a6)
-    if (aSixClick == 5){
+    if (aSixClick == 6){
         aSixClick = 0
     }
 })
@@ -514,11 +514,11 @@ a6.addEventListener('click', (e) => {
 let bSixClick = 0
 b6.addEventListener('click', (e) => {
     bSixClick += 1
-    if (bSixClick == 2){ bSixClick = 4}
+    if (bSixClick == 3){ bSixClick = 5}
     playList[6] = 'b'
     clearNotes(6, 'b6')
     changeNoteType(6, bSixClick, b6)
-    if (bSixClick == 5){
+    if (bSixClick == 6){
         bSixClick = 0
     }
 })
@@ -531,17 +531,17 @@ function changeNoteType(column, counter, note) {
         duration[column +1] = 1000
     }
     else if (counter == 2){
+        duration[column +1] = 500
+        note.innerHTML = '<i class="far fa-circle"></i>'
+    }
+    else if (counter == 3){
         note.innerHTML = '#'
         playList[column] = `${playList[column]}Sharp`
     }
-    else if (counter == 3){
+    else if (counter == 4){
         note.innerHTML = '#.'
         duration[column +1] = 500
         playList[column] = `${playList[column]}Sharp`
-    }
-    else if (counter == 4){
-        duration[column +1] = 500
-        note.innerHTML = '<i class="far fa-circle"></i>'
     }
     else if (counter == 5){
         duration[column +1] = 1000
