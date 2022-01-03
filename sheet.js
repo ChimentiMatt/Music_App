@@ -438,13 +438,13 @@ b5.addEventListener('click', (e) => {
 function changeNoteType(column, counter, note) {
     if (counter == 1){
         note.style.color = 'black'
-        note.innerHTML = 'o'
+        // note.style.transform = "scale(0.5)"
+        note.innerHTML = '<i class="fas fa-circle"></i>'
         duration[column +1] = 1000
     }
     else if (counter == 2){
         duration[column +1] = 500
-        note.style.color = 'red'
-        note.innerHTML = 'o'
+        note.innerHTML = '<i class="far fa-circle"></i>'
     }
     else if (counter == 3){
         duration[column +1] = 1000
@@ -467,7 +467,7 @@ function clearNotes(column, cn) {
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
         let columnBtns = document.getElementById(idStr)
-        columnBtns.style.opacity = .2
+        columnBtns.style.opacity = .1
         // console.log(notes[1], column)
     }
     document.getElementById(cn).style.opacity = .9

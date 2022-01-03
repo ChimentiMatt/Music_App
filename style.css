@@ -28,6 +28,7 @@ ul .white{
   z-index: 1;
 }
 
+
 .sharp{
   position: relative;
   z-index: 2;
@@ -64,13 +65,14 @@ ul .white{
 
 #sheetBackground{
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   height: 10rem;
   width: 20rem;
 }
 
 #steetLine1, #steetLine2, #steetLine3, #steetLine4, #steetLine5{
   position: relative;
+  z-index: 15;
   border-bottom: 1px solid black;
   height: 1.5rem;
 }
@@ -83,45 +85,34 @@ ul .white{
   display: flex;
   flex-direction: column;
   margin-top: 3.19rem;
-
+  position: relative;
 }
 
-#column1 button{
+.note{
   width: 2rem;
-  opacity: .2;
+  opacity: .09;
   height: .75rem;
   border: none;
   background: none;
+  transform: scale(.8);
+  position: relative;
+  z-index: 2;
 } 
 
-#column2 button{
-  width: 2rem;
-  opacity: .2;
-  height: .75rem;
-  border: none;
-  background: none;
-} 
+/* .quater{
+  position: relative;
+  bottom: 3.3rem;
+  right: .4rem;
+  z-index: 1;
+  right: 1rem;
+}
 
-#column3 button{
-  width: 2rem;
-  opacity: .2;
-  height: .75rem;
-  border: none;
-  background: none;
-} 
+.quaterImg{
+  position: absolute;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+} */
 
-#column4 button{
-  width: 2rem;
-  opacity: .2;
-  height: .75rem;
-  border: none;
-  background: none;
-} 
-
-#column5 button{
-  width: 2rem;
-  opacity: .2;
-  height: .75rem;
-  border: none;
-  background: none;
-} 
