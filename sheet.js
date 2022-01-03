@@ -433,7 +433,83 @@ b5.addEventListener('click', (e) => {
     }
 })
 
+// Column 6
+let cSixClick = 0
+c6.addEventListener('click', (e) => {
+    cSixClick += 1
+    playList[6] = 'c'
+    clearNotes(6, 'c6')
+    changeNoteType(6, cSixClick, c6)
+    if (cSixClick == 4){
+        cSixClick = 0
+    }
+})
 
+let dSixClick = 0
+d6.addEventListener('click', (e) => {
+    dSixClick += 1
+    playList[6] = 'd'
+    clearNotes(6, 'd6')
+    changeNoteType(6, dSixClick, d6)
+    if (dSixClick == 4){
+        dSixClick = 0
+    }
+})
+
+let eSixClick = 0
+e6.addEventListener('click', (e) => {
+    eSixClick += 1
+    playList[6] = 'e'
+    clearNotes(6, 'e6')
+    changeNoteType(6, eSixClick, e6)
+    if (eSixClick == 4){
+        eSixClick = 0
+    }
+})
+
+let fSixClick = 0
+f6.addEventListener('click', (e) => {
+    fSixClick += 1
+    playList[6] = 'f'
+    clearNotes(6, 'f6')
+    changeNoteType(6, fSixClick, f6)
+    if (fSixClick == 4){
+        fSixClick = 0
+    }
+})
+
+let gSixClick = 0
+g6.addEventListener('click', (e) => {
+    gSixClick += 1
+    playList[6] = 'g'
+    clearNotes(6, 'g6')
+    changeNoteType(6, gSixClick, g6)
+    if (gSixClick == 4){
+        gSixClick = 0
+    }
+})
+
+let aSixClick = 0
+a6.addEventListener('click', (e) => {
+    aSixClick += 1
+    playList[6] = 'a'
+    clearNotes(6, 'a6')
+    changeNoteType(6, aSixClick, a6)
+    if (aSixClick == 4){
+        aSixClick = 0
+    }
+})
+
+let bSixClick = 0
+b6.addEventListener('click', (e) => {
+    bSixClick += 1
+    playList[6] = 'b'
+    clearNotes(6, 'b6')
+    changeNoteType(6, bSixClick, b6)
+    if (bSixClick == 4){
+        bSixClick = 0
+    }
+})
 
 function changeNoteType(column, counter, note) {
     if (counter == 1){
@@ -468,6 +544,7 @@ function clearNotes(column, cn) {
         let idStr = notes[i] + column.toString()
         let columnBtns = document.getElementById(idStr)
         columnBtns.style.opacity = .1
+        columnBtns.innerHTML = 'o'
         // console.log(notes[1], column)
     }
     document.getElementById(cn).style.opacity = .9
