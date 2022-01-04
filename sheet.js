@@ -35,6 +35,13 @@ const f3 = document.getElementById('f3')
 const g3 = document.getElementById('g3')
 const a3 = document.getElementById('a3')
 const b3 = document.getElementById('b3')
+const c3L = document.getElementById('c3L')
+const d3L = document.getElementById('d3L')
+const e3L = document.getElementById('e3L')
+const f3L = document.getElementById('f3L')
+const g3L = document.getElementById('g3L')
+const a3L = document.getElementById('a3L')
+const b3L = document.getElementById('b3L')
 
 const c4 = document.getElementById('c4')
 const d4 = document.getElementById('d4')
@@ -43,6 +50,13 @@ const f4 = document.getElementById('f4')
 const g4 = document.getElementById('g4')
 const a4 = document.getElementById('a4')
 const b4 = document.getElementById('b4')
+const c4L = document.getElementById('c4L')
+const d4L = document.getElementById('d4L')
+const e4L = document.getElementById('e4L')
+const f4L = document.getElementById('f4L')
+const g4L = document.getElementById('g4L')
+const a4L = document.getElementById('a4L')
+const b4L = document.getElementById('b4L')
 
 const c5 = document.getElementById('c5')
 const d5 = document.getElementById('d5')
@@ -463,6 +477,87 @@ b3.addEventListener('click', (e) => {
 })
 
 
+// Column 3 Low
+let cLThreeClick = 0
+c3L.addEventListener('click', (e) => {
+    cLThreeClick += 1
+    playList[3] = 'cL'
+    clearNotes(3, 'c3L')
+    changeNoteType(3, cLThreeClick, c3L)
+    if (cLThreeClick == 8){
+        cLThreeClick = 0
+    }
+})
+
+let dLThreeClick = 0
+d3L.addEventListener('click', (e) => {
+    dLThreeClick += 1
+    playList[3] = 'dL'
+    clearNotes(3, 'd3L')
+    changeNoteType(3, dLThreeClick, d3L)
+    if (dLThreeClick == 8){
+        dLThreeClick = 0
+    }
+})
+
+let eLThreeClick = 0
+e3L.addEventListener('click', (e) => {
+    eLThreeClick += 1
+    if (eLThreeClick == 4){ eLThreeClick = 7}
+    playList[3] = 'eL'
+    clearNotes(3, 'e3L')
+    changeNoteType(3, eLThreeClick, e3L)
+    if (eLThreeClick == 8){
+        eLThreeClick = 0
+    }
+})
+
+let fLThreeClick = 0
+f3L.addEventListener('click', (e) => {
+    fLThreeClick += 1
+    playList[3] = 'fL'
+    clearNotes(3, 'f3L')
+    changeNoteType(3, fLThreeClick, f3L)
+    if (fLThreeClick == 8){
+        fLThreeClick = 0
+    }
+})
+
+let gLThreeClick = 0
+g3L.addEventListener('click', (e) => {
+    gLThreeClick += 1
+    playList[3] = 'gL'
+    clearNotes(3, 'g3L')
+    changeNoteType(3, gLThreeClick, g3L)
+    if (gLThreeClick == 8){
+        gLThreeClick = 0
+    }
+})
+
+let aLThreeClick = 0
+a3L.addEventListener('click', (e) => {
+    aLThreeClick += 1
+    playList[3] = 'aL'
+    clearNotes(3, 'a3L')
+    changeNoteType(3, aLThreeClick, a3L)
+    if (aLThreeClick == 8){
+        aLThreeClick = 0
+    }
+})
+
+let bLThreeClick = 0
+b3L.addEventListener('click', (e) => {
+    bLThreeClick += 1
+    if (bLThreeClick == 4){ bLThreeClick = 7}
+    playList[3] = 'bL'
+    clearNotes(3, 'b3L')
+    changeNoteType(3, bLThreeClick, b3L)
+    if (bLThreeClick == 8){
+        bLThreeClick = 0
+    }
+})
+
+
 // Column 4
 let cFourClick = 0
 c4.addEventListener('click', (e) => {
@@ -542,6 +637,100 @@ b4.addEventListener('click', (e) => {
         bFourClick = 0
     }
 })
+
+
+
+
+// Column 4 Low
+let cLFourClick = 0
+c4L.addEventListener('click', (e) => {
+    cLFourClick += 1
+    playList[4] = 'cL'
+    clearNotes(4, 'c4L')
+    changeNoteType(4, cLFourClick, c4L)
+    if (cLFourClick == 8){
+        cLFourClick = 0
+    }
+})
+
+let dLFourClick = 0
+d4L.addEventListener('click', (e) => {
+    dLFourClick += 1
+    playList[4] = 'dL'
+    clearNotes(4, 'd4L')
+    changeNoteType(4, dLFourClick, d4L)
+    if (dLFourClick == 8){
+        dLFourClick = 0
+    }
+})
+
+let eLFourClick = 0
+e4L.addEventListener('click', (e) => {
+    eLFourClick += 1
+    if (eLFourClick == 4){ eLFourClick = 7}
+    playList[4] = 'eL'
+    clearNotes(4, 'e4L')
+    changeNoteType(4, eLFourClick, e4L)
+    if (eLFourClick == 8){
+        eLFourClick = 0
+    }
+})
+
+let fLFourClick = 0
+f4L.addEventListener('click', (e) => {
+    fLFourClick += 1
+    playList[4] = 'fL'
+    clearNotes(4, 'f4L')
+    changeNoteType(4, fLFourClick, f4L)
+    if (fLFourClick == 8){
+        fLFourClick = 0
+    }
+})
+
+let gLFourClick = 0
+g4L.addEventListener('click', (e) => {
+    gLFourClick += 1
+    playList[4] = 'gL'
+    clearNotes(4, 'g4L')
+    changeNoteType(4, gLFourClick, g4L)
+    if (gLFourClick == 8){
+        gLFourClick = 0
+    }
+})
+
+let aLFourClick = 0
+a4L.addEventListener('click', (e) => {
+    aLFourClick += 1
+    playList[4] = 'aL'
+    clearNotes(4, 'a4L')
+    changeNoteType(4, aLFourClick, a4L)
+    if (aLFourClick == 8){
+        aLFourClick = 0
+    }
+})
+
+let bLFourClick = 0
+b4L.addEventListener('click', (e) => {
+    bFourClick += 1
+    if (bLFourClick == 4){ bLFourClick = 7}
+    playList[4] = 'bL'
+    clearNotes(4, 'b4L')
+    changeNoteType(4, bLFourClick, b4L)
+    if (bLFourClick == 8){
+        bLFourClick = 0
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Column 5
