@@ -73,6 +73,21 @@ const g5L = document.getElementById('g5L')
 const a5L = document.getElementById('a5L')
 const b5L = document.getElementById('b5L')
 
+const c6 = document.getElementById('c6')
+const d6 = document.getElementById('d6')
+const e6 = document.getElementById('e6')
+const f6 = document.getElementById('f6')
+const g6 = document.getElementById('g6')
+const a6 = document.getElementById('a6')
+const b6 = document.getElementById('b6')
+const c6L = document.getElementById('c6L')
+const d6L = document.getElementById('d6L')
+const e6L = document.getElementById('e6L')
+const f6L = document.getElementById('f6L')
+const g6L = document.getElementById('g6L')
+const a6L = document.getElementById('a6L')
+const b6L = document.getElementById('b6L')
+
 // Column 1
 let cClick = 0
 c.addEventListener('click', (e) => {
@@ -891,24 +906,6 @@ b5L.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Column 6
 let cSixClick = 0
 c6.addEventListener('click', (e) => {
@@ -988,6 +985,93 @@ b6.addEventListener('click', (e) => {
         bSixClick = 0
     }
 })
+
+
+
+// Column 6 Low
+let cLSixClick = 0
+c6L.addEventListener('click', (e) => {
+    cLSixClick += 1
+    playList[6] = 'cL'
+    clearNotes(6, 'c6L')
+    changeNoteType(6, cLSixClick, c6L)
+    if (cLSixClick == 8){
+        cLSixClick = 0
+    }
+})
+
+let dLSixClick = 0
+d6L.addEventListener('click', (e) => {
+    dLSixClick += 1
+    playList[6] = 'dL'
+    clearNotes(6, 'd6L')
+    changeNoteType(6, dLSixClick, d6L)
+    if (dLSixClick == 8){
+        dLSixClick = 0
+    }
+})
+
+let eLSixClick = 0
+e6L.addEventListener('click', (e) => {
+    eLSixClick += 1
+    if (eLSixClick == 4){ eLSixClick = 7}
+    playList[6] = 'eL'
+    clearNotes(6, 'e6L')
+    changeNoteType(6, eLSixClick, e6L)
+    if (eLSixClick == 8){
+        eLSixClick = 0
+    }
+})
+
+let fLSixClick = 0
+f6L.addEventListener('click', (e) => {
+    fLSixClick += 1
+    playList[6] = 'fL'
+    clearNotes(6, 'f6L')
+    changeNoteType(6, fLSixClick, f6L)
+    if (fLSixClick == 8){
+        fLSixClick = 0
+    }
+})
+
+let gLSixClick = 0
+g6L.addEventListener('click', (e) => {
+    gLSixClick += 1
+    playList[6] = 'gL'
+    clearNotes(6, 'g6L')
+    changeNoteType(6, gLSixClick, g6L)
+    if (gLSixClick == 8){
+        gLSixClick = 0
+    }
+})
+
+let aLSixClick = 0
+a6L.addEventListener('click', (e) => {
+    aLSixClick += 1
+    playList[6] = 'aL'
+    clearNotes(6, 'a6L')
+    changeNoteType(6, aLSixClick, a6L)
+    if (aLSixClick == 8){
+        aLSixClick = 0
+    }
+})
+
+let bLSixClick = 0
+b6L.addEventListener('click', (e) => {
+    bLSixClick += 1
+    if (bLSixClick == 4){ bLSixClick = 7}
+    playList[6] = 'bL'
+    clearNotes(6, 'b6L')
+    changeNoteType(6, bLSixClick, b6L)
+    if (bLSixClick == 8){
+        bLSixClick = 0
+    }
+})
+
+
+
+
+
 
 function changeNoteType(column, counter, note) {
     if (counter == 1){
