@@ -65,6 +65,13 @@ const f5 = document.getElementById('f5')
 const g5 = document.getElementById('g5')
 const a5 = document.getElementById('a5')
 const b5 = document.getElementById('b5')
+const c5L = document.getElementById('c5L')
+const d5L = document.getElementById('d5L')
+const e5L = document.getElementById('e5L')
+const f5L = document.getElementById('f5L')
+const g5L = document.getElementById('g5L')
+const a5L = document.getElementById('a5L')
+const b5L = document.getElementById('b5L')
 
 // Column 1
 let cClick = 0
@@ -711,7 +718,7 @@ a4L.addEventListener('click', (e) => {
 
 let bLFourClick = 0
 b4L.addEventListener('click', (e) => {
-    bFourClick += 1
+    bLFourClick += 1
     if (bLFourClick == 4){ bLFourClick = 7}
     playList[4] = 'bL'
     clearNotes(4, 'b4L')
@@ -720,18 +727,6 @@ b4L.addEventListener('click', (e) => {
         bLFourClick = 0
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Column 5
 let cFiveClick = 0
@@ -812,6 +807,107 @@ b5.addEventListener('click', (e) => {
         bFiveClick = 0
     }
 })
+
+
+// Column 5 Low
+let cLFiveClick = 0
+c5L.addEventListener('click', (e) => {
+    cLFiveClick += 1
+    playList[5] = 'cL'
+    clearNotes(5, 'c5L')
+    changeNoteType(5, cLFiveClick, c5L)
+    if (cLFiveClick == 8){
+        cLFiveClick = 0
+    }
+})
+
+let dLFiveClick = 0
+d5L.addEventListener('click', (e) => {
+    dLFiveClick += 1
+    playList[5] = 'dL'
+    clearNotes(5, 'd5L')
+    changeNoteType(5, dLFiveClick, d5L)
+    if (dLFiveClick == 8){
+        dLFiveClick = 0
+    }
+})
+
+let eLFiveClick = 0
+e5L.addEventListener('click', (e) => {
+    eLFiveClick += 1
+    if (eLFiveClick == 4){ eLFiveClick = 7}
+    playList[5] = 'eL'
+    clearNotes(5, 'e5L')
+    changeNoteType(5, eLFiveClick, e5L)
+    if (eLFiveClick == 8){
+        eLFiveClick = 0
+    }
+})
+
+let fLFiveClick = 0
+f5L.addEventListener('click', (e) => {
+    fLFiveClick += 1
+    playList[5] = 'fL'
+    clearNotes(5, 'f5L')
+    changeNoteType(5, fLFiveClick, f5L)
+    if (fLFiveClick == 8){
+        fLFiveClick = 0
+    }
+})
+
+let gLFiveClick = 0
+g5L.addEventListener('click', (e) => {
+    gLFiveClick += 1
+    playList[5] = 'gL'
+    clearNotes(5, 'g5L')
+    changeNoteType(5, gLFiveClick, g5L)
+    if (gLFiveClick == 8){
+        gLFiveClick = 0
+    }
+})
+
+let aLFiveClick = 0
+a5L.addEventListener('click', (e) => {
+    aLFiveClick += 1
+    playList[5] = 'aL'
+    clearNotes(5, 'a5L')
+    changeNoteType(5, aLFiveClick, a5L)
+    if (aLFiveClick == 8){
+        aLFiveClick = 0
+    }
+})
+
+let bLFiveClick = 0
+b5L.addEventListener('click', (e) => {
+    bLFiveClick += 1
+    if (bLFiveClick == 4){ bLFiveClick = 7}
+    playList[5] = 'bL'
+    clearNotes(5, 'b5L')
+    changeNoteType(5, bLFiveClick, b5L)
+    if (bLFiveClick == 8){
+        bLFiveClick = 0
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Column 6
 let cSixClick = 0
@@ -939,7 +1035,7 @@ function changeNoteType(column, counter, note) {
     }
 }
 
-const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'a']
+const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 function clearNotes(column, cn) {
     for (let i = 0; i < notes.length; i++){
