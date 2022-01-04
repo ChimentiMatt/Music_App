@@ -5,6 +5,13 @@ const f = document.getElementById('f1')
 const g = document.getElementById('g1')
 const a = document.getElementById('a1')
 const b = document.getElementById('b1')
+const cH = document.getElementById('c1H')
+const dH = document.getElementById('d1H')
+const e_H = document.getElementById('e1H')
+const fH = document.getElementById('f1H')
+const gH = document.getElementById('g1H')
+const aH = document.getElementById('a1H')
+const bH = document.getElementById('b1H')
 
 const c2 = document.getElementById('c2')
 const d2 = document.getElementById('d2')
@@ -117,6 +124,101 @@ b.addEventListener('click', (e) => {
         bClick = 0
     }
 })
+
+
+
+
+
+
+
+
+
+let cHClick = 0
+cH.addEventListener('click', (e) => {
+    cHClick += 1
+    playList[1] = 'cH'
+    clearNotes(1, 'c1H')
+    changeNoteType(1, cHClick, c1H)
+    if (cHClick == 8){
+        cHClick = 0
+    }
+})
+
+let dHClick = 0
+dH.addEventListener('click', (e) => {
+    dHClick += 1
+    playList[1] = 'dH'
+    clearNotes(1, 'd1H')
+    changeNoteType(1, dHClick, d1H)
+    if (dHClick == 8){
+        dHClick = 0
+    }
+})
+
+let eHClick = 0
+e_H.addEventListener('click', (e) => {
+    eHClick += 1
+    if (eHClick == 4){ eHClick = 7}
+    playList[1] = 'eH'
+    clearNotes(1, 'e1H')
+    changeNoteType(1, eHClick, e1H)
+    if (eHClick == 8){
+        eHClick = 0
+    }
+})
+
+let fHClick = 0
+fH.addEventListener('click', (e) => {
+    fHClick += 1
+    playList[1] = 'fH'
+    clearNotes(1, 'f1H')
+    changeNoteType(1, fHClick, f1H)
+    if (fHClick == 8){
+        fHClick = 0
+    }
+})
+
+let gHClick = 0
+gH.addEventListener('click', (e) => {
+    gHClick += 1
+    playList[1] = 'gH'
+    clearNotes(1, 'g1H')
+    changeNoteType(1, gHClick, g1H)
+    if (gHClick == 8){
+        gHClick = 0
+    }
+})
+
+let aHClick = 0
+aH.addEventListener('click', (e) => {
+    aHClick += 1
+    playList[1] = 'aH'
+    clearNotes(1, 'a1H')
+    changeNoteType(1, aHClick, a1H)
+    if (aHClick == 8){
+        aHClick = 0
+    }
+})
+
+let bHClick = 0
+bH.addEventListener('click', (e) => {
+    bHClick += 1
+    if (bHClick == 4){ bHClick = 7}
+    playList[1] = 'bH'
+    clearNotes(1, 'b1H')
+    changeNoteType(1, bHClick, b1H)
+    if (bHClick == 8){
+        bHClick = 0
+    }
+})
+
+
+
+
+
+
+
+
 
 // Column 2
 let cTwoClick = 0
@@ -569,12 +671,13 @@ function changeNoteType(column, counter, note) {
     }
 }
 
-const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'a']
 
 function clearNotes(column, cn) {
-    // console.log(column)
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
+        if (i > 6) { idStr = idStr+'H'}
+        console.log(idStr)
         let columnBtns = document.getElementById(idStr)
         columnBtns.style.opacity = .1
         columnBtns.innerHTML = 'o'
