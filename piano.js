@@ -98,13 +98,12 @@ noteASharp.addEventListener('click', (e) => {
     new Audio('./sounds/aSharp.mp3').play()
 })
 
-
 noteB.addEventListener('click', (e) => {
     new Audio('./sounds/b.mp3').play()
 })
 
 noteCHigh.addEventListener('click', (e) => {
-    new Audio('./sounds/cHigh.mp3').play()
+    new Audio('./sounds/cH.mp3').play()
 })
 
 
