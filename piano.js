@@ -22,31 +22,31 @@ const noteCHigh = document.getElementById('noteCHigh')
 
 
 noteCLow.addEventListener('click', (e) => {
-    new Audio('./sounds/cLow.mp3').play()
+    new Audio('./sounds/cL.mp3').play()
 })
 
 noteDLow.addEventListener('click', (e) => {
-    new Audio('./sounds/dLow.mp3').play()
+    new Audio('./sounds/dL.mp3').play()
 })
 
 noteELow.addEventListener('click', (e) => {
-    new Audio('./sounds/eLow.mp3').play()
+    new Audio('./sounds/eL.mp3').play()
 })
 
 noteFLow.addEventListener('click', (e) => {
-    new Audio('./sounds/fLow.mp3').play()
+    new Audio('./sounds/fL.mp3').play()
 })
 
 noteGLow.addEventListener('click', (e) => {
-    new Audio('./sounds/gLow.mp3').play()
+    new Audio('./sounds/gL.mp3').play()
 })
 
 noteALow.addEventListener('click', (e) => {
-    new Audio('./sounds/aLow.mp3').play()
+    new Audio('./sounds/aL.mp3').play()
 })
 
 noteBLow.addEventListener('click', (e) => {
-    new Audio('./sounds/bLow.mp3').play()
+    new Audio('./sounds/bL.mp3').play()
 })
 
 

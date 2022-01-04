@@ -19,7 +19,14 @@ const e2 = document.getElementById('e2')
 const f2 = document.getElementById('f2')
 const g2 = document.getElementById('g2')
 const a2 = document.getElementById('a2')
-const b2 = document.getElementById('b2')
+const b2 = document.getElementById('b2L')
+const c2L = document.getElementById('c2L')
+const d2L = document.getElementById('d2L')
+const e2L = document.getElementById('e2L')
+const f2L = document.getElementById('f2L')
+const g2L = document.getElementById('g2L')
+const a2L = document.getElementById('a2L')
+const b2L = document.getElementById('b2L')
 
 const c3 = document.getElementById('c3')
 const d3 = document.getElementById('d3')
@@ -207,13 +214,6 @@ bL.addEventListener('click', (e) => {
 })
 
 
-
-
-
-
-
-
-
 // Column 2
 let cTwoClick = 0
 c2.addEventListener('click', (e) => {
@@ -295,6 +295,91 @@ b2.addEventListener('click', (e) => {
         bTwoClick = 0
     }
 })
+
+
+// Column 2 Low
+let cLTwoClick = 0
+c2L.addEventListener('click', (e) => {
+    cLTwoClick += 1
+    playList[2] = 'cL'
+    clearNotes(2, 'c2L')
+    changeNoteType(2, cLTwoClick, c2L)
+    if (cLTwoClick == 8){
+        cLTwoClick = 0
+
+    }
+})
+
+let dLTwoClick = 0
+d2L.addEventListener('click', (e) => {
+    dLTwoClick += 1
+    playList[2] = 'dL'
+    clearNotes(2, 'd2L')
+    changeNoteType(2, dLTwoClick, d2L)
+    if (dLTwoClick == 8){
+        dLTwoClick = 0
+ 
+    }
+})
+
+let eLTwoClick = 0
+e2L.addEventListener('click', (e) => {
+    eLTwoClick += 1
+    if (eLTwoClick == 4){ eLTwoClick = 7}
+    playList[2] = 'eL'
+    clearNotes(2, 'e2L')
+    changeNoteType(2, eLTwoClick, e2L)
+    if (eLTwoClick == 8){
+        eLTwoClick = 0
+    }
+})
+
+let fLTwoClick = 0
+f2L.addEventListener('click', (e) => {
+    fLTwoClick += 1
+    playList[2] = 'fL'
+    clearNotes(2, 'f2L')
+    changeNoteType(2, fLTwoClick, f2L)
+    if (fLTwoClick == 8){
+        fLTwoClick = 0
+    }
+})
+
+let gLTwoClick = 0
+g2L.addEventListener('click', (e) => {
+    gLTwoClick += 1
+    playList[2] = 'gL'
+    clearNotes(2, 'g2L')
+    changeNoteType(2, gLTwoClick, g2L)
+    if (gLTwoClick == 8){
+        gLTwoClick = 0
+    }
+})
+
+let aLTwoClick = 0
+a2L.addEventListener('click', (e) => {
+    aLTwoClick += 1
+    playList[2] = 'aL'
+    clearNotes(2, 'a2L')
+    changeNoteType(2, aLTwoClick, a2L)
+    if (aLTwoClick == 8){
+        aLTwoClick = 0
+    }
+})
+
+let bLTwoClick = 0
+b2L.addEventListener('click', (e) => {
+    bLTwoClick += 1
+    if (bLTwoClick == 4){ bLTwoClick = 7}
+    playList[2] = 'bL'
+    clearNotes(2, 'b2L')
+    changeNoteType(2, bLTwoClick, b2L)
+    if (bLTwoClick == 8){
+        bLTwoClick = 0
+    }
+})
+
+
 
 
 // Column 3
