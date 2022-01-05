@@ -208,6 +208,35 @@ const g14L = document.getElementById('g14L')
 const a14L = document.getElementById('a14L')
 const b14L = document.getElementById('b14L')
 
+const c15 = document.getElementById('c15')
+const d15 = document.getElementById('d15')
+const e15 = document.getElementById('e15')
+const f15 = document.getElementById('f15')
+const g15 = document.getElementById('g15')
+const a15 = document.getElementById('a15')
+const b15 = document.getElementById('b15')
+const c15L = document.getElementById('c15L')
+const d15L = document.getElementById('d15L')
+const e15L = document.getElementById('e15L')
+const f15L = document.getElementById('f15L')
+const g15L = document.getElementById('g15L')
+const a15L = document.getElementById('a15L')
+const b15L = document.getElementById('b15L')
+
+const c16 = document.getElementById('c16')
+const d16 = document.getElementById('d16')
+const e16 = document.getElementById('e16')
+const f16 = document.getElementById('f16')
+const g16 = document.getElementById('g16')
+const a16 = document.getElementById('a16')
+const b16 = document.getElementById('b16')
+const c16L = document.getElementById('c16L')
+const d16L = document.getElementById('d16L')
+const e16L = document.getElementById('e16L')
+const f16L = document.getElementById('f16L')
+const g16L = document.getElementById('g16L')
+const a16L = document.getElementById('a16L')
+const b16L = document.getElementById('b16L')
 
 // Column 1
 let cClick = 0
@@ -780,9 +809,6 @@ b4.addEventListener('click', (e) => {
     }
 })
 
-
-
-
 // Column 4 Low
 let cLFourClick = 0
 c4L.addEventListener('click', (e) => {
@@ -1024,8 +1050,6 @@ b5L.addEventListener('click', (e) => {
     }
 })
 
-
-
 // Column 6
 let cSixClick = 0
 c6.addEventListener('click', (e) => {
@@ -1105,8 +1129,6 @@ b6.addEventListener('click', (e) => {
         bSixClick = 0
     }
 })
-
-
 
 // Column 6 Low
 let cLSixClick = 0
@@ -2315,18 +2337,6 @@ b13L.addEventListener('click', (e) => {
     }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Column 14
 let cFourteenClick = 0
 c14.addEventListener('click', (e) => {
@@ -2486,6 +2496,344 @@ b14L.addEventListener('click', (e) => {
         bLFourteenClick = 0
     }
 })
+
+// Column 15
+let cFifteenClick = 0
+c15.addEventListener('click', (e) => {
+    cFifteenClick += 1
+    playList[15] = 'c'
+    clearNotes(15, 'c15')
+    changeNoteType(15, cFifteenClick, c15)
+    if (cFifteenClick == 8){
+        cFifteenClick = 0
+    }
+})
+
+let dFifteenClick = 0
+d15.addEventListener('click', (e) => {
+    dFifteenClick += 1
+    playList[15] = 'd'
+    clearNotes(15, 'd15')
+    changeNoteType(15, dFifteenClick, d15)
+    if (dFifteenClick == 8){
+        dFifteenClick = 0
+    }
+})
+
+let eFifteenClick = 0
+e15.addEventListener('click', (e) => {
+    eFifteenClick += 1
+    if (eFifteenClick == 4){ eFifteenClick = 7}
+    playList[15] = 'e'
+    clearNotes(15, 'e15')
+    changeNoteType(15, eFifteenClick, e15)
+    if (eFifteenClick == 8){
+        eFifteenClick = 0
+    }
+})
+
+let fFifteenClick = 0
+f15.addEventListener('click', (e) => {
+    fFifteenClick += 1
+    playList[15] = 'f'
+    clearNotes(15, 'f15')
+    changeNoteType(15, fFifteenClick, f15)
+    if (fFifteenClick == 8){
+        fFifteenClick = 0
+    }
+})
+
+let gFifteenClick = 0
+g15.addEventListener('click', (e) => {
+    gFifteenClick += 1
+    playList[15] = 'g'
+    clearNotes(15, 'g15')
+    changeNoteType(15, gFifteenClick, g15)
+    if (gFifteenClick == 8){
+        gFifteenClick = 0
+    }
+})
+
+let aFifteenClick = 0
+a15.addEventListener('click', (e) => {
+    aFifteenClick += 1
+    playList[15] = 'a'
+    clearNotes(15, 'a15')
+    changeNoteType(15, aFifteenClick, a15)
+    if (aFifteenClick == 8){
+        aFifteenClick = 0
+    }
+})
+
+let bFifteenClick = 0
+b15.addEventListener('click', (e) => {
+    bFifteenClick += 1
+    if (bFifteenClick == 4){ bFifteenClick = 7}
+    playList[15] = 'b'
+    clearNotes(15, 'b15')
+    changeNoteType(15, bFifteenClick, b15)
+    if (bFifteenClick == 8){
+        bFifteenClick = 0
+    }
+})
+
+// Column 15 Low
+let cLFifteenClick = 0
+c15L.addEventListener('click', (e) => {
+    cLFifteenClick += 1
+    playList[15] = 'cL'
+    clearNotes(15, 'c15L')
+    changeNoteType(15, cLFifteenClick, c15L)
+    if (cLFifteenClick == 8){
+        cLFifteenClick = 0
+    }
+})
+
+let dLFifteenClick = 0
+d15L.addEventListener('click', (e) => {
+    dLFifteenClick += 1
+    playList[15] = 'dL'
+    clearNotes(15, 'd15L')
+    changeNoteType(15, dLFifteenClick, d15L)
+    if (dLFifteenClick == 8){
+        dLFifteenClick = 0
+    }
+})
+
+let eLFifteenClick = 0
+e15L.addEventListener('click', (e) => {
+    eLFifteenClick += 1
+    if (eLFifteenClick == 4){ eLFifteenClick = 7}
+    playList[15] = 'eL'
+    clearNotes(15, 'e15L')
+    changeNoteType(15, eLFifteenClick, e15L)
+    if (eLFifteenClick == 8){
+        eLFifteenClick = 0
+    }
+})
+
+let fLFifteenClick = 0
+f15L.addEventListener('click', (e) => {
+    fLFifteenClick += 1
+    playList[15] = 'fL'
+    clearNotes(15, 'f15L')
+    changeNoteType(15, fLFifteenClick, f15L)
+    if (fLFifteenClick == 8){
+        fLFifteenClick = 0
+    }
+})
+
+let gLFifteenClick = 0
+g15L.addEventListener('click', (e) => {
+    gLFifteenClick += 1
+    playList[15] = 'gL'
+    clearNotes(15, 'g15L')
+    changeNoteType(15, gLFifteenClick, g15L)
+    if (gLFifteenClick == 8){
+        gLFifteenClick = 0
+    }
+})
+
+let aLFifteenClick = 0
+a15L.addEventListener('click', (e) => {
+    aLFifteenClick += 1
+    playList[15] = 'aL'
+    clearNotes(15, 'a15L')
+    changeNoteType(15, aLFifteenClick, a15L)
+    if (aLFifteenClick == 8){
+        aLFifteenClick = 0
+    }
+})
+
+let bLFifteenClick = 0
+b15L.addEventListener('click', (e) => {
+    bLFifteenClick += 1
+    if (bLFifteenClick == 4){ bLFifteenClick = 7}
+    playList[15] = 'bL'
+    clearNotes(15, 'b15L')
+    changeNoteType(15, bLFifteenClick, b15L)
+    if (bLFifteenClick == 8){
+        bLFifteenClick = 0
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Column 16
+let cSixteenClick = 0
+c16.addEventListener('click', (e) => {
+    cSixteenClick += 1
+    playList[16] = 'c'
+    clearNotes(16, 'c16')
+    changeNoteType(16, cSixteenClick, c16)
+    if (cSixteenClick == 8){
+        cSixteenClick = 0
+    }
+})
+
+let dSixteenClick = 0
+d16.addEventListener('click', (e) => {
+    dSixteenClick += 1
+    playList[16] = 'd'
+    clearNotes(16, 'd16')
+    changeNoteType(16, dSixteenClick, d16)
+    if (dSixteenClick == 8){
+        dSixteenClick = 0
+    }
+})
+
+let eSixteenClick = 0
+e16.addEventListener('click', (e) => {
+    eSixteenClick += 1
+    if (eSixteenClick == 4){ eSixteenClick = 7}
+    playList[16] = 'e'
+    clearNotes(16, 'e16')
+    changeNoteType(16, eSixteenClick, e16)
+    if (eSixteenClick == 8){
+        eSixteenClick = 0
+    }
+})
+
+let fSixteenClick = 0
+f16.addEventListener('click', (e) => {
+    fSixteenClick += 1
+    playList[16] = 'f'
+    clearNotes(16, 'f16')
+    changeNoteType(16, fSixteenClick, f16)
+    if (fSixteenClick == 8){
+        fSixteenClick = 0
+    }
+})
+
+let gSixteenClick = 0
+g16.addEventListener('click', (e) => {
+    gSixteenClick += 1
+    playList[16] = 'g'
+    clearNotes(16, 'g16')
+    changeNoteType(16, gSixteenClick, g16)
+    if (gSixteenClick == 8){
+        gSixteenClick = 0
+    }
+})
+
+let aSixteenClick = 0
+a16.addEventListener('click', (e) => {
+    aSixteenClick += 1
+    playList[16] = 'a'
+    clearNotes(16, 'a16')
+    changeNoteType(16, aSixteenClick, a16)
+    if (aSixteenClick == 8){
+        aSixteenClick = 0
+    }
+})
+
+let bSixteenClick = 0
+b16.addEventListener('click', (e) => {
+    bSixteenClick += 1
+    if (bSixteenClick == 4){ bSixteenClick = 7}
+    playList[16] = 'b'
+    clearNotes(16, 'b16')
+    changeNoteType(16, bSixteenClick, b16)
+    if (bSixteenClick == 8){
+        bSixteenClick = 0
+    }
+})
+
+// Column 16 Low
+let cLSixteenClick = 0
+c16L.addEventListener('click', (e) => {
+    cLSixteenClick += 1
+    playList[16] = 'cL'
+    clearNotes(16, 'c16L')
+    changeNoteType(16, cLSixteenClick, c16L)
+    if (cLSixteenClick == 8){
+        cLSixteenClick = 0
+    }
+})
+
+let dLSixteenClick = 0
+d16L.addEventListener('click', (e) => {
+    dLSixteenClick += 1
+    playList[16] = 'dL'
+    clearNotes(16, 'd16L')
+    changeNoteType(16, dLSixteenClick, d16L)
+    if (dLSixteenClick == 8){
+        dLSixteenClick = 0
+    }
+})
+
+let eLSixteenClick = 0
+e16L.addEventListener('click', (e) => {
+    eLSixteenClick += 1
+    if (eLSixteenClick == 4){ eLSixteenClick = 7}
+    playList[16] = 'eL'
+    clearNotes(16, 'e16L')
+    changeNoteType(16, eLSixteenClick, e16L)
+    if (eLSixteenClick == 8){
+        eLSixteenClick = 0
+    }
+})
+
+let fLSixteennClick = 0
+f16L.addEventListener('click', (e) => {
+    fLSixteennClick += 1
+    playList[16] = 'fL'
+    clearNotes(16, 'f16L')
+    changeNoteType(16, fLSixteennClick, f16L)
+    if (fLSixteennClick == 8){
+        fLSixteennClick = 0
+    }
+})
+
+let gLSixteenClick = 0
+g16L.addEventListener('click', (e) => {
+    gLSixteenClick += 1
+    playList[16] = 'gL'
+    clearNotes(16, 'g16L')
+    changeNoteType(16, gLSixteenClick, g16L)
+    if (gLSixteenClick == 8){
+        gLSixteenClick = 0
+    }
+})
+
+let aLSixteenClick = 0
+a16L.addEventListener('click', (e) => {
+    aLSixteenClick += 1
+    playList[16] = 'aL'
+    clearNotes(16, 'a16L')
+    changeNoteType(16, aLSixteenClick, a16L)
+    if (aLSixteenClick == 8){
+        aLSixteenClick = 0
+    }
+})
+
+let bLSixteenClick = 0
+b16L.addEventListener('click', (e) => {
+    bLSixteenClick += 1
+    if (bLSixteenClick == 4){ bLSixteenClick = 7}
+    playList[16] = 'bL'
+    clearNotes(16, 'b16L')
+    changeNoteType(16, bLSixteenClick, b16L)
+    if (bLSixteenClick == 8){
+        bLSixteenClick = 0
+    }
+})
+
+
+
+
 
 
 
