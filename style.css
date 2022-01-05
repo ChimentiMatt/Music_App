@@ -57,7 +57,7 @@ ul .white{
 #clef{
   height: 10rem;
   position: relative;
-  left: 7rem;
+  left: 5rem;
 }
 
 #sheet{
@@ -69,6 +69,7 @@ ul .white{
 
 #sheetBackground{
   position: absolute;
+
   z-index: 0;
   height: 10rem;
   width: 20rem;
@@ -82,10 +83,10 @@ ul .white{
 }
 
 #column1{
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
-#column1,#column2, #column3, #column4, #column5, #column6 {
+#column1,#column2, #column3, #column4, #column5, #column6, #column7, #column8, #column9, #column10 {
   display: flex;
   flex-direction: column;
   margin-top: 3.19rem;

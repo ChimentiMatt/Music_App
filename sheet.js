@@ -88,6 +88,67 @@ const g6L = document.getElementById('g6L')
 const a6L = document.getElementById('a6L')
 const b6L = document.getElementById('b6L')
 
+const c7 = document.getElementById('c7')
+const d7 = document.getElementById('d7')
+const e7 = document.getElementById('e7')
+const f7 = document.getElementById('f7')
+const g7 = document.getElementById('g7')
+const a7 = document.getElementById('a7')
+const b7 = document.getElementById('b7')
+const c7L = document.getElementById('c7L')
+const d7L = document.getElementById('d7L')
+const e7L = document.getElementById('e7L')
+const f7L = document.getElementById('f7L')
+const g7L = document.getElementById('g7L')
+const a7L = document.getElementById('a7L')
+const b7L = document.getElementById('b7L')
+
+const c8 = document.getElementById('c8')
+const d8 = document.getElementById('d8')
+const e8 = document.getElementById('e8')
+const f8 = document.getElementById('f8')
+const g8 = document.getElementById('g8')
+const a8 = document.getElementById('a8')
+const b8 = document.getElementById('b8')
+const c8L = document.getElementById('c8L')
+const d8L = document.getElementById('d8L')
+const e8L = document.getElementById('e8L')
+const f8L = document.getElementById('f8L')
+const g8L = document.getElementById('g8L')
+const a8L = document.getElementById('a8L')
+const b8L = document.getElementById('b8L')
+
+const c9 = document.getElementById('c9')
+const d9 = document.getElementById('d9')
+const e9 = document.getElementById('e9')
+const f9 = document.getElementById('f9')
+const g9 = document.getElementById('g9')
+const a9 = document.getElementById('a9')
+const b9 = document.getElementById('b9')
+const c9L = document.getElementById('c9L')
+const d9L = document.getElementById('d9L')
+const e9L = document.getElementById('e9L')
+const f9L = document.getElementById('f9L')
+const g9L = document.getElementById('g9L')
+const a9L = document.getElementById('a9L')
+const b9L = document.getElementById('b9L')
+
+const c10 = document.getElementById('c10')
+const d10 = document.getElementById('d10')
+const e10 = document.getElementById('e10')
+const f10 = document.getElementById('f10')
+const g10 = document.getElementById('g10')
+const a10 = document.getElementById('a10')
+const b10 = document.getElementById('b10')
+const c10L = document.getElementById('c10L')
+const d10L = document.getElementById('d10L')
+const e10L = document.getElementById('e10L')
+const f10L = document.getElementById('f10L')
+const g10L = document.getElementById('g10L')
+const a10L = document.getElementById('a10L')
+const b10L = document.getElementById('b10L')
+
+
 // Column 1
 let cClick = 0
 c.addEventListener('click', (e) => {
@@ -1069,9 +1130,661 @@ b6L.addEventListener('click', (e) => {
 })
 
 
+// Column 7
+let cSevenClick = 0
+c7.addEventListener('click', (e) => {
+    cSevenClick += 1
+    playList[7] = 'c'
+    clearNotes(7, 'c7')
+    changeNoteType(7, cSevenClick, c7)
+    if (cSevenClick == 8){
+        cSevenClick = 0
+    }
+})
+
+let dSevenClick = 0
+d7.addEventListener('click', (e) => {
+    dSevenClick += 1
+    playList[7] = 'd'
+    clearNotes(7, 'd7')
+    changeNoteType(7, dSevenClick, d7)
+    if (dSevenClick == 8){
+        dSevenClick = 0
+    }
+})
+
+let eSevenClick = 0
+e7.addEventListener('click', (e) => {
+    eSevenClick += 1
+    if (eSevenClick == 4){ eSevenClick = 7}
+    playList[7] = 'e'
+    clearNotes(7, 'e7')
+    changeNoteType(7, eSevenClick, e7)
+    if (eSevenClick == 8){
+        eSevenClick = 0
+    }
+})
+
+let fSevenClick = 0
+f7.addEventListener('click', (e) => {
+    fSevenClick += 1
+    playList[7] = 'f'
+    clearNotes(7, 'f7')
+    changeNoteType(7, fSevenClick, f7)
+    if (fSevenClick == 8){
+        fSevenClick = 0
+    }
+})
+
+let gSevenlick = 0
+g7.addEventListener('click', (e) => {
+    gSevenlick += 1
+    playList[7] = 'g'
+    clearNotes(7, 'g7')
+    changeNoteType(7, gSevenlick, g7)
+    if (gSevenlick == 8){
+        gSevenlick = 0
+    }
+})
+
+let aSevenClick = 0
+a7.addEventListener('click', (e) => {
+    aSevenClick += 1
+    playList[7] = 'a'
+    clearNotes(7, 'a7')
+    changeNoteType(7, aSevenClick, a7)
+    if (aSevenClick == 8){
+        aSevenClick = 0
+    }
+})
+
+let bSevenClick = 0
+b7.addEventListener('click', (e) => {
+    bSevenClick += 1
+    if (bSevenClick == 4){ bSevenClick = 7}
+    playList[7] = 'b'
+    clearNotes(7, 'b7')
+    changeNoteType(7, bSevenClick, b7)
+    if (bSevenClick == 8){
+        bSevenClick = 0
+    }
+})
+
+// Column 7 Low
+let cLSevenClick = 0
+c7L.addEventListener('click', (e) => {
+    cLSevenClick += 1
+    playList[7] = 'cL'
+    clearNotes(7, 'c7L')
+    changeNoteType(7, cLSevenClick, c7L)
+    if (cLSevenClick == 8){
+        cLSevenClick = 0
+    }
+})
+
+let dLSevenClick = 0
+d7L.addEventListener('click', (e) => {
+    dLSevenClick += 1
+    playList[7] = 'dL'
+    clearNotes(7, 'd7L')
+    changeNoteType(7, dLSevenClick, d7L)
+    if (dLSevenClick == 8){
+        dLSevenClick = 0
+    }
+})
+
+let eLSevenClick = 0
+e7L.addEventListener('click', (e) => {
+    eLSevenClick += 1
+    if (eLSevenClick == 4){ eLSevenClick = 7}
+    playList[7] = 'eL'
+    clearNotes(7, 'e7L')
+    changeNoteType(7, eLSevenClick, e7L)
+    if (eLSevenClick == 8){
+        eLSevenClick = 0
+    }
+})
+
+let fLSevenClick = 0
+f7L.addEventListener('click', (e) => {
+    fLSevenClick += 1
+    playList[7] = 'fL'
+    clearNotes(7, 'f7L')
+    changeNoteType(7, fLSevenClick, f7L)
+    if (fLSevenClick == 8){
+        fLSevenClick = 0
+    }
+})
+
+let gLSevenClick = 0
+g7L.addEventListener('click', (e) => {
+    gLSevenClick += 1
+    playList[7] = 'gL'
+    clearNotes(7, 'g7L')
+    changeNoteType(7, gLSevenClick, g7L)
+    if (gLSevenClick == 8){
+        gLSevenClick = 0
+    }
+})
+
+let aLSevenClick = 0
+a7L.addEventListener('click', (e) => {
+    aLSevenClick += 1
+    playList[7] = 'aL'
+    clearNotes(7, 'a7L')
+    changeNoteType(7, aLSevenClick, a7L)
+    if (aLSevenClick == 8){
+        aLSevenClick = 0
+    }
+})
+
+let bLSevenClick = 0
+b7L.addEventListener('click', (e) => {
+    bLSevenClick += 1
+    if (bLSevenClick == 4){ bLSevenClick = 7}
+    playList[7] = 'bL'
+    clearNotes(7, 'b7L')
+    changeNoteType(7, bLSevenClick, b7L)
+    if (bLSevenClick == 8){
+        bLSevenClick = 0
+    }
+})
+
+
+// Column 8
+let cEightClick = 0
+c8.addEventListener('click', (e) => {
+    cEightClick += 1
+    playList[8] = 'c'
+    clearNotes(8, 'c8')
+    changeNoteType(8, cEightClick, c8)
+    if (cEightClick == 8){
+        cEightClick = 0
+    }
+})
+
+let dEightClick = 0
+d8.addEventListener('click', (e) => {
+    dEightClick += 1
+    playList[8] = 'd'
+    clearNotes(8, 'd8')
+    changeNoteType(8, dEightClick, d8)
+    if (dEightClick == 8){
+        dEightClick = 0
+    }
+})
+
+let eEightClick = 0
+e8.addEventListener('click', (e) => {
+    eEightClick += 1
+    if (eEightClick == 4){ eEightClick = 7}
+    playList[8] = 'e'
+    clearNotes(8, 'e8')
+    changeNoteType(8, eEightClick, e8)
+    if (eEightClick == 8){
+        eEightClick = 0
+    }
+})
+
+let fEightClick = 0
+f8.addEventListener('click', (e) => {
+    fEightClick += 1
+    playList[8] = 'f'
+    clearNotes(8, 'f8')
+    changeNoteType(8, fEightClick, f8)
+    if (fEightClick == 8){
+        fEightClick = 0
+    }
+})
+
+let gEightlick = 0
+g8.addEventListener('click', (e) => {
+    gEightlick += 1
+    playList[8] = 'g'
+    clearNotes(8, 'g8')
+    changeNoteType(8, gEightlick, g8)
+    if (gEightlick == 8){
+        gEightlick = 0
+    }
+})
+
+let aEightClick = 0
+a8.addEventListener('click', (e) => {
+    aEightClick += 1
+    playList[8] = 'a'
+    clearNotes(8, 'a8')
+    changeNoteType(8, aEightClick, a8)
+    if (aEightClick == 8){
+        aEightClick = 0
+    }
+})
+
+let bEightClick = 0
+b8.addEventListener('click', (e) => {
+    bEightClick += 1
+    if (bEightClick == 4){ bEightClick = 7}
+    playList[8] = 'b'
+    clearNotes(8, 'b8')
+    changeNoteType(8, bEightClick, b8)
+    if (bEightClick == 8){
+        bEightClick = 0
+    }
+})
+
+// Column 8 Low
+let cLEightClick = 0
+c8L.addEventListener('click', (e) => {
+    cLEightClick += 1
+    playList[8] = 'cL'
+    clearNotes(8, 'c8L')
+    changeNoteType(8, cLEightClick, c8L)
+    if (cLEightClick == 8){
+        cLEightClick = 0
+    }
+})
+
+let dLEightClick = 0
+d8L.addEventListener('click', (e) => {
+    dLEightClick += 1
+    playList[8] = 'dL'
+    clearNotes(8, 'd8L')
+    changeNoteType(8, dLEightClick, d8L)
+    if (dLEightClick == 8){
+        dLEightClick = 0
+    }
+})
+
+let eLEightClick = 0
+e8L.addEventListener('click', (e) => {
+    eLEightClick += 1
+    if (eLEightClick == 4){ eLEightClick = 7}
+    playList[8] = 'eL'
+    clearNotes(8, 'e8L')
+    changeNoteType(8, eLEightClick, e8L)
+    if (eLEightClick == 8){
+        eLEightClick = 0
+    }
+})
+
+let fLEightClick = 0
+f8L.addEventListener('click', (e) => {
+    fLEightClick += 1
+    playList[8] = 'fL'
+    clearNotes(8, 'f8L')
+    changeNoteType(8, fLEightClick, f8L)
+    if (fLEightClick == 8){
+        fLEightClick = 0
+    }
+})
+
+let gLEightClick = 0
+g8L.addEventListener('click', (e) => {
+    gLEightClick += 1
+    playList[8] = 'gL'
+    clearNotes(8, 'g8L')
+    changeNoteType(8, gLEightClick, g8L)
+    if (gLEightClick == 8){
+        gLEightClick = 0
+    }
+})
+
+let aLEightClick = 0
+a8L.addEventListener('click', (e) => {
+    aLEightClick += 1
+    playList[8] = 'aL'
+    clearNotes(8, 'a8L')
+    changeNoteType(8, aLEightClick, a8L)
+    if (aLEightClick == 8){
+        aLEightClick = 0
+    }
+})
+
+let bLEightClick = 0
+b8L.addEventListener('click', (e) => {
+    bLEightClick += 1
+    if (bLEightClick == 4){ bLEightClick = 7}
+    playList[8] = 'bL'
+    clearNotes(8, 'b8L')
+    changeNoteType(8, bLEightClick, b8L)
+    if (bLEightClick == 8){
+        bLEightClick = 0
+    }
+})
+
+
+// Column 9
+let cNineClick = 0
+c9.addEventListener('click', (e) => {
+    cNineClick += 1
+    playList[9] = 'c'
+    clearNotes(9, 'c9')
+    changeNoteType(9, cNineClick, c9)
+    if (cNineClick == 8){
+        cNineClick = 0
+    }
+})
+
+let dNineClick = 0
+d9.addEventListener('click', (e) => {
+    dNineClick += 1
+    playList[9] = 'd'
+    clearNotes(9, 'd9')
+    changeNoteType(9, dNineClick, d9)
+    if (dNineClick == 8){
+        dNineClick = 0
+    }
+})
+
+let eNineClick = 0
+e9.addEventListener('click', (e) => {
+    eNineClick += 1
+    if (eNineClick == 4){ eNineClick = 7}
+    playList[9] = 'e'
+    clearNotes(9, 'e9')
+    changeNoteType(9, eNineClick, e9)
+    if (eNineClick == 8){
+        eNineClick = 0
+    }
+})
+
+let fNineClick = 0
+f9.addEventListener('click', (e) => {
+    fNineClick += 1
+    playList[9] = 'f'
+    clearNotes(9, 'f9')
+    changeNoteType(9, fNineClick, f9)
+    if (fNineClick == 8){
+        fNineClick = 0
+    }
+})
+
+let gNinelick = 0
+g9.addEventListener('click', (e) => {
+    gNinelick += 1
+    playList[9] = 'g'
+    clearNotes(9, 'g9')
+    changeNoteType(9, gNinelick, g9)
+    if (gNinelick == 9){
+        gNinelick = 0
+    }
+})
+
+let aNineClick = 0
+a9.addEventListener('click', (e) => {
+    aNineClick += 1
+    playList[9] = 'a'
+    clearNotes(9, 'a9')
+    changeNoteType(9, aNineClick, a9)
+    if (aNineClick == 8){
+        aNineClick = 0
+    }
+})
+
+let bNineClick = 0
+b9.addEventListener('click', (e) => {
+    bNineClick += 1
+    if (bNineClick == 4){ bNineClick = 7}
+    playList[9] = 'b'
+    clearNotes(9, 'b9')
+    changeNoteType(9, bNineClick, b9)
+    if (bNineClick == 8){
+        bNineClick = 0
+    }
+})
+
+// Column 9 Low
+let cLNineClick = 0
+c9L.addEventListener('click', (e) => {
+    cLNineClick += 1
+    playList[9] = 'cL'
+    clearNotes(9, 'c9L')
+    changeNoteType(9, cLNineClick, c9L)
+    if (cLNineClick == 8){
+        cLNineClick = 0
+    }
+})
+
+let dLNineClick = 0
+d9L.addEventListener('click', (e) => {
+    dLNineClick += 1
+    playList[9] = 'dL'
+    clearNotes(9, 'd9L')
+    changeNoteType(9, dLNineClick, d9L)
+    if (dLNineClick == 8){
+        dLNineClick = 0
+    }
+})
+
+let eLNineClick = 0
+e9L.addEventListener('click', (e) => {
+    eLNineClick += 1
+    if (eLNineClick == 4){ eLNineClick = 7}
+    playList[9] = 'eL'
+    clearNotes(9, 'e9L')
+    changeNoteType(9, eLNineClick, e9L)
+    if (eLNineClick == 8){
+        eLNineClick = 0
+    }
+})
+
+let fLNineClick = 0
+f9L.addEventListener('click', (e) => {
+    fLNineClick += 1
+    playList[9] = 'fL'
+    clearNotes(9, 'f9L')
+    changeNoteType(9, fLNineClick, f9L)
+    if (fLNineClick == 8){
+        fLNineClick = 0
+    }
+})
+
+let gLNineClick = 0
+g9L.addEventListener('click', (e) => {
+    gLNineClick += 1
+    playList[9] = 'gL'
+    clearNotes(9, 'g9L')
+    changeNoteType(9, gLNineClick, g9L)
+    if (gLNineClick == 8){
+        gLNineClick = 0
+    }
+})
+
+let aLNineClick = 0
+a9L.addEventListener('click', (e) => {
+    aLNineClick += 1
+    playList[9] = 'aL'
+    clearNotes(9, 'a9L')
+    changeNoteType(9, aLNineClick, a9L)
+    if (aLNineClick == 8){
+        aLNineClick = 0
+    }
+})
+
+let bLNineClick = 0
+b9L.addEventListener('click', (e) => {
+    bLNineClick += 1
+    if (bLNineClick == 4){ bLNineClick = 7}
+    playList[9] = 'bL'
+    clearNotes(9, 'b9L')
+    changeNoteType(9, bLNineClick, b9L)
+    if (bLNineClick == 8){
+        bLNineClick = 0
+    }
+})
 
 
 
+// Column 10
+let cTenClick = 0
+c10.addEventListener('click', (e) => {
+    cTenClick += 1
+    playList[10] = 'c'
+    clearNotes(10, 'c10')
+    changeNoteType(10, cTenClick, c10)
+    if (cTenClick == 8){
+        cTenClick = 0
+    }
+})
+
+let dTenClick = 0
+d10.addEventListener('click', (e) => {
+    dTenClick += 1
+    playList[10] = 'd'
+    clearNotes(10, 'd10')
+    changeNoteType(10, dTenClick, d10)
+    if (dTenClick == 8){
+        dTenClick = 0
+    }
+})
+
+let eTenClick = 0
+e10.addEventListener('click', (e) => {
+    eTenClick += 1
+    if (eNineClick == 4){ eTenClick = 7}
+    playList[10] = 'e'
+    clearNotes(10, 'e10')
+    changeNoteType(9, eTenClick, e10)
+    if (eTenClick == 8){
+        eTenClick = 0
+    }
+})
+
+let fTenClick = 0
+f10.addEventListener('click', (e) => {
+    fTenClick += 1
+    playList[10] = 'f'
+    clearNotes(10, 'f10')
+    changeNoteType(10, fTenClick, f10)
+    if (fTenClick == 8){
+        fTenClick = 0
+    }
+})
+
+let gTenlick = 0
+g10.addEventListener('click', (e) => {
+    gTenlick += 1
+    playList[10] = 'g'
+    clearNotes(10, 'g10')
+    changeNoteType(10, gTenlick, g10)
+    if (gTenlick == 9){
+        gTenlick = 0
+    }
+})
+
+let aTenClick = 0
+a10.addEventListener('click', (e) => {
+    aTenClick += 1
+    playList[10] = 'a'
+    clearNotes(10, 'a10')
+    changeNoteType(10, aTenClick, a10)
+    if (aTenClick == 8){
+        aTenClick = 0
+    }
+})
+
+let bTenClick = 0
+b10.addEventListener('click', (e) => {
+    bTenClick += 1
+    if (bTenClick == 4){ bTenClick = 7}
+    playList[10] = 'b'
+    clearNotes(10, 'b10')
+    changeNoteType(10, bTenClick, b10)
+    if (bTenClick == 8){
+        bTenClick = 0
+    }
+})
+
+// Column 10 Low
+let cLTenClick = 0
+c10L.addEventListener('click', (e) => {
+    cLTenClick += 1
+    playList[10] = 'cL'
+    clearNotes(10, 'c10L')
+    changeNoteType(9, cLTenClick, c10L)
+    if (cLTenClick == 8){
+        cLTenClick = 0
+    }
+})
+
+let dLTenClick = 0
+d10L.addEventListener('click', (e) => {
+    dLTenClick += 1
+    playList[10] = 'dL'
+    clearNotes(10, 'd10L')
+    changeNoteType(10, dLTenClick, d10L)
+    if (dLTenClick == 8){
+        dLTenClick = 0
+    }
+})
+
+let eLTenClick = 0
+e10L.addEventListener('click', (e) => {
+    eLTenClick += 1
+    if (eLTenClick == 4){ eLTenClick = 7}
+    playList[10] = 'eL'
+    clearNotes(10, 'e10L')
+    changeNoteType(10, eLTenClick, e10L)
+    if (eLTenClick == 8){
+        eLTenClick = 0
+    }
+})
+
+let fLTenClick = 0
+f10L.addEventListener('click', (e) => {
+    fLTenClick += 1
+    playList[10] = 'fL'
+    clearNotes(10, 'f10L')
+    changeNoteType(10, fLTenClick, f10L)
+    if (fLTenClick == 8){
+        fLTenClick = 0
+    }
+})
+
+let gLTenClick = 0
+g10L.addEventListener('click', (e) => {
+    gLTenClick += 1
+    playList[10] = 'gL'
+    clearNotes(10, 'g10L')
+    changeNoteType(10, gLTenClick, g10L)
+    if (gLTenClick == 8){
+        gLTenClick = 0
+    }
+})
+
+let aLTenClick = 0
+a10L.addEventListener('click', (e) => {
+    aLTenClick += 1
+    playList[10] = 'aL'
+    clearNotes(10, 'a10L')
+    changeNoteType(10, aLTenClick, a10L)
+    if (aLTenClick == 8){
+        aLTenClick = 0
+    }
+})
+
+let bLTenClick = 0
+b10L.addEventListener('click', (e) => {
+    bLTenClick += 1
+    if (bLTenClick == 4){ bLTenClick = 7}
+    playList[10] = 'bL'
+    clearNotes(10, 'b10L')
+    changeNoteType(10, bLTenClick, b10L)
+    if (bLTenClick == 8){
+        bLTenClick = 0
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+// Functions
 
 function changeNoteType(column, counter, note) {
     if (counter == 1){
