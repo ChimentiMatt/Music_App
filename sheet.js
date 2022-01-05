@@ -19,7 +19,7 @@ const e2 = document.getElementById('e2')
 const f2 = document.getElementById('f2')
 const g2 = document.getElementById('g2')
 const a2 = document.getElementById('a2')
-const b2 = document.getElementById('b2L')
+const b2 = document.getElementById('b2')
 const c2L = document.getElementById('c2L')
 const d2L = document.getElementById('d2L')
 const e2L = document.getElementById('e2L')
@@ -3583,10 +3583,10 @@ function clearNotes(column, cn) {
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
         if (i > 6) { idStr = idStr+'L'}
-        console.log(idStr)
+        // console.log(idStr)
         let columnBtns = document.getElementById(idStr)
         columnBtns.style.opacity = .1
-        columnBtns.innerHTML = 'o'
+        // columnBtns.innerHTML = 'o'
         // console.log(notes[1], column)
     }
     document.getElementById(cn).style.opacity = .9
