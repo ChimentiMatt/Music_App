@@ -3625,6 +3625,7 @@ function clearNotes(column, activeNote) {
         columnBtns.style.opacity = .1
         // columnBtns.innerHTML = 'o'
         // console.log(notes[1], column)
+        GsapTimeVar = 0
     }
     document.getElementById(activeNote).style.opacity = .9
 }
