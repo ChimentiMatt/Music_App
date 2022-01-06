@@ -299,7 +299,7 @@ const a20L = document.getElementById('a20L')
 const b20L = document.getElementById('b20L')
 
 
-const activeNotes = ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']
+const activeNotes = []
 
 // Column 1
 let cClick = 0
@@ -664,6 +664,7 @@ let cThreeClick = 0
 c3.addEventListener('click', (e) => {
     cThreeClick += 1
     playList[3] = 'c'
+    activeNotes.splice(2, 1, '#c3')
     clearNotes(3, 'c3')
     changeNoteType(3, cThreeClick, c3)
     if (cThreeClick == 8){
@@ -675,6 +676,7 @@ let dThreeClick = 0
 d3.addEventListener('click', (e) => {
     dThreeClick += 1
     playList[3] = 'd'
+    activeNotes.splice(2, 1, '#d3')
     clearNotes(3, 'd3')
     changeNoteType(3, dThreeClick, d3)
     if (dThreeClick == 8){
@@ -687,6 +689,7 @@ e3.addEventListener('click', (e) => {
     eThreeClick += 1
     if (eThreeClick == 4){ eThreeClick = 7}
     playList[3] = 'e'
+    activeNotes.splice(2, 1, '#e3')
     clearNotes(3, 'e3')
     changeNoteType(3, eThreeClick, e3)
     if (eThreeClick == 8){
@@ -698,6 +701,7 @@ let fThreeClick = 0
 f3.addEventListener('click', (e) => {
     fThreeClick += 1
     playList[3] = 'f'
+    activeNotes.splice(2, 1, '#f3')
     clearNotes(3, 'f3')
     changeNoteType(3, fThreeClick, f3)
     if (fThreeClick == 8){
@@ -709,6 +713,7 @@ let gThreeClick = 0
 g3.addEventListener('click', (e) => {
     gThreeClick += 1
     playList[3] = 'g'
+    activeNotes.splice(2, 1, '#g3')
     clearNotes(3, 'g3')
     changeNoteType(3, gThreeClick, g3)
     if (gThreeClick == 8){
@@ -720,6 +725,7 @@ let aThreeClick = 0
 a3.addEventListener('click', (e) => {
     aThreeClick += 1
     playList[3] = 'a'
+    activeNotes.splice(2, 1, '#a3')
     clearNotes(3, 'a3')
     changeNoteType(3, aThreeClick, a3)
     if (aThreeClick == 8){
@@ -732,6 +738,7 @@ b3.addEventListener('click', (e) => {
     bThreeClick += 1
     if (bThreeClick == 4){ bThreeClick = 7}
     playList[3] = 'b'
+    activeNotes.splice(2, 1, '#b3')
     clearNotes(3, 'b3')
     changeNoteType(3, bThreeClick, b3)
     if (bThreeClick == 8){
@@ -745,6 +752,7 @@ let cLThreeClick = 0
 c3L.addEventListener('click', (e) => {
     cLThreeClick += 1
     playList[3] = 'cL'
+    activeNotes.splice(2, 1, '#c3L')
     clearNotes(3, 'c3L')
     changeNoteType(3, cLThreeClick, c3L)
     if (cLThreeClick == 8){
@@ -756,6 +764,7 @@ let dLThreeClick = 0
 d3L.addEventListener('click', (e) => {
     dLThreeClick += 1
     playList[3] = 'dL'
+    activeNotes.splice(2, 1, '#d3L')
     clearNotes(3, 'd3L')
     changeNoteType(3, dLThreeClick, d3L)
     if (dLThreeClick == 8){
@@ -768,6 +777,7 @@ e3L.addEventListener('click', (e) => {
     eLThreeClick += 1
     if (eLThreeClick == 4){ eLThreeClick = 7}
     playList[3] = 'eL'
+    activeNotes.splice(2, 1, '#e3L')
     clearNotes(3, 'e3L')
     changeNoteType(3, eLThreeClick, e3L)
     if (eLThreeClick == 8){
@@ -779,6 +789,7 @@ let fLThreeClick = 0
 f3L.addEventListener('click', (e) => {
     fLThreeClick += 1
     playList[3] = 'fL'
+    activeNotes.splice(2, 1, '#f3L')
     clearNotes(3, 'f3L')
     changeNoteType(3, fLThreeClick, f3L)
     if (fLThreeClick == 8){
@@ -790,6 +801,7 @@ let gLThreeClick = 0
 g3L.addEventListener('click', (e) => {
     gLThreeClick += 1
     playList[3] = 'gL'
+    activeNotes.splice(2, 1, '#g3L')
     clearNotes(3, 'g3L')
     changeNoteType(3, gLThreeClick, g3L)
     if (gLThreeClick == 8){
@@ -801,6 +813,7 @@ let aLThreeClick = 0
 a3L.addEventListener('click', (e) => {
     aLThreeClick += 1
     playList[3] = 'aL'
+    activeNotes.splice(2, 1, '#a3L')
     clearNotes(3, 'a3L')
     changeNoteType(3, aLThreeClick, a3L)
     if (aLThreeClick == 8){
@@ -813,6 +826,7 @@ b3L.addEventListener('click', (e) => {
     bLThreeClick += 1
     if (bLThreeClick == 4){ bLThreeClick = 7}
     playList[3] = 'bL'
+    activeNotes.splice(2, 1, '#b3L')
     clearNotes(3, 'b3L')
     changeNoteType(3, bLThreeClick, b3L)
     if (bLThreeClick == 8){
@@ -825,6 +839,7 @@ let cFourClick = 0
 c4.addEventListener('click', (e) => {
     cFourClick += 1
     playList[4] = 'c'
+    activeNotes.splice(3, 1, '#c4')
     clearNotes(4, 'c4')
     changeNoteType(4, cFourClick, c4)
     if (cFourClick == 8){
@@ -836,6 +851,7 @@ let dFourClick = 0
 d4.addEventListener('click', (e) => {
     dFourClick += 1
     playList[4] = 'd'
+    activeNotes.splice(3, 1, '#d4')
     clearNotes(4, 'd4')
     changeNoteType(4, dFourClick, d4)
     if (dFourClick == 8){
@@ -848,6 +864,7 @@ e4.addEventListener('click', (e) => {
     eFourClick += 1
     if (eFourClick == 4){ eFourClick = 7}
     playList[4] = 'e'
+    activeNotes.splice(3, 1, '#e4')
     clearNotes(4, 'e4')
     changeNoteType(4, eFourClick, e4)
     if (eFourClick == 8){
@@ -859,6 +876,7 @@ let fFourClick = 0
 f4.addEventListener('click', (e) => {
     fFourClick += 1
     playList[4] = 'f'
+    activeNotes.splice(3, 1, '#f4')
     clearNotes(4, 'f4')
     changeNoteType(4, fFourClick, f4)
     if (fFourClick == 8){
@@ -870,6 +888,7 @@ let gFourClick = 0
 g4.addEventListener('click', (e) => {
     gFourClick += 1
     playList[4] = 'g'
+    activeNotes.splice(3, 1, '#g4')
     clearNotes(4, 'g4')
     changeNoteType(4, gFourClick, g4)
     if (gFourClick == 8){
@@ -881,6 +900,7 @@ let aFourClick = 0
 a4.addEventListener('click', (e) => {
     aFourClick += 1
     playList[4] = 'a'
+    activeNotes.splice(3, 1, '#a4')
     clearNotes(4, 'a4')
     changeNoteType(4, aFourClick, a4)
     if (aFourClick == 8){
@@ -893,6 +913,7 @@ b4.addEventListener('click', (e) => {
     bFourClick += 1
     if (bFourClick == 4){ bFourClick = 7}
     playList[4] = 'b'
+    activeNotes.splice(3, 1, '#b4')
     clearNotes(4, 'b4')
     changeNoteType(4, bFourClick, b4)
     if (bFourClick == 8){
@@ -905,6 +926,7 @@ let cLFourClick = 0
 c4L.addEventListener('click', (e) => {
     cLFourClick += 1
     playList[4] = 'cL'
+    activeNotes.splice(3, 1, '#c4L')
     clearNotes(4, 'c4L')
     changeNoteType(4, cLFourClick, c4L)
     if (cLFourClick == 8){
@@ -916,6 +938,7 @@ let dLFourClick = 0
 d4L.addEventListener('click', (e) => {
     dLFourClick += 1
     playList[4] = 'dL'
+    activeNotes.splice(3, 1, '#d4L')
     clearNotes(4, 'd4L')
     changeNoteType(4, dLFourClick, d4L)
     if (dLFourClick == 8){
@@ -928,6 +951,7 @@ e4L.addEventListener('click', (e) => {
     eLFourClick += 1
     if (eLFourClick == 4){ eLFourClick = 7}
     playList[4] = 'eL'
+    activeNotes.splice(3, 1, '#e4L')
     clearNotes(4, 'e4L')
     changeNoteType(4, eLFourClick, e4L)
     if (eLFourClick == 8){
@@ -939,6 +963,7 @@ let fLFourClick = 0
 f4L.addEventListener('click', (e) => {
     fLFourClick += 1
     playList[4] = 'fL'
+    activeNotes.splice(3, 1, '#f4L')
     clearNotes(4, 'f4L')
     changeNoteType(4, fLFourClick, f4L)
     if (fLFourClick == 8){
@@ -950,6 +975,7 @@ let gLFourClick = 0
 g4L.addEventListener('click', (e) => {
     gLFourClick += 1
     playList[4] = 'gL'
+    activeNotes.splice(3, 1, '#g4L')
     clearNotes(4, 'g4L')
     changeNoteType(4, gLFourClick, g4L)
     if (gLFourClick == 8){
@@ -961,6 +987,7 @@ let aLFourClick = 0
 a4L.addEventListener('click', (e) => {
     aLFourClick += 1
     playList[4] = 'aL'
+    activeNotes.splice(3, 1, '#a4L')
     clearNotes(4, 'a4L')
     changeNoteType(4, aLFourClick, a4L)
     if (aLFourClick == 8){
@@ -973,6 +1000,7 @@ b4L.addEventListener('click', (e) => {
     bLFourClick += 1
     if (bLFourClick == 4){ bLFourClick = 7}
     playList[4] = 'bL'
+    activeNotes.splice(3, 1, '#b4L')
     clearNotes(4, 'b4L')
     changeNoteType(4, bLFourClick, b4L)
     if (bLFourClick == 8){
@@ -985,6 +1013,7 @@ let cFiveClick = 0
 c5.addEventListener('click', (e) => {
     cFiveClick += 1
     playList[5] = 'c'
+    activeNotes.splice(4, 1, '#c5')
     clearNotes(5, 'c5')
     changeNoteType(5, cFiveClick, c5)
     if (cFiveClick == 8){
@@ -996,6 +1025,7 @@ let dFiveClick = 0
 d5.addEventListener('click', (e) => {
     dFiveClick += 1
     playList[5] = 'd'
+    activeNotes.splice(4, 1, '#d5')
     clearNotes(5, 'd5')
     changeNoteType(5, dFiveClick, d5)
     if (dFiveClick == 8){
@@ -1008,6 +1038,7 @@ e5.addEventListener('click', (e) => {
     eFiveClick += 1
     if (eFiveClick == 4){ eFiveClick = 7}
     playList[5] = 'e'
+    activeNotes.splice(4, 1, '#e5')
     clearNotes(5, 'e5')
     changeNoteType(5, eFiveClick, e5)
     if (eFiveClick == 8){
@@ -1019,6 +1050,7 @@ let fFiveClick = 0
 f5.addEventListener('click', (e) => {
     fFiveClick += 1
     playList[5] = 'f'
+    activeNotes.splice(4, 1, '#f5')
     clearNotes(5, 'f5')
     changeNoteType(5, fFiveClick, f5)
     if (fFiveClick == 8){
@@ -1030,6 +1062,7 @@ let gFiveClick = 0
 g5.addEventListener('click', (e) => {
     gFiveClick += 1
     playList[5] = 'g'
+    activeNotes.splice(4, 1, '#g5')
     clearNotes(5, 'g5')
     changeNoteType(5, gFiveClick, g5)
     if (gFiveClick == 8){
@@ -1041,6 +1074,7 @@ let aFiveClick = 0
 a5.addEventListener('click', (e) => {
     aFiveClick += 1
     playList[5] = 'a'
+    activeNotes.splice(4, 1, '#a5')
     clearNotes(5, 'a5')
     changeNoteType(5, aFiveClick, a5)
     if (aFiveClick == 8){
@@ -1053,6 +1087,7 @@ b5.addEventListener('click', (e) => {
     bFiveClick += 1
     if (bFiveClick == 4){ bFiveClick = 7}
     playList[5] = 'b'
+    activeNotes.splice(4, 1, '#b5')
     clearNotes(5, 'b5')
     changeNoteType(5, bFiveClick, b5)
     if (bFiveClick == 8){
@@ -1066,6 +1101,7 @@ let cLFiveClick = 0
 c5L.addEventListener('click', (e) => {
     cLFiveClick += 1
     playList[5] = 'cL'
+    activeNotes.splice(4, 1, '#c5L')
     clearNotes(5, 'c5L')
     changeNoteType(5, cLFiveClick, c5L)
     if (cLFiveClick == 8){
@@ -1077,6 +1113,7 @@ let dLFiveClick = 0
 d5L.addEventListener('click', (e) => {
     dLFiveClick += 1
     playList[5] = 'dL'
+    activeNotes.splice(4, 1, '#d5L')
     clearNotes(5, 'd5L')
     changeNoteType(5, dLFiveClick, d5L)
     if (dLFiveClick == 8){
@@ -1089,6 +1126,7 @@ e5L.addEventListener('click', (e) => {
     eLFiveClick += 1
     if (eLFiveClick == 4){ eLFiveClick = 7}
     playList[5] = 'eL'
+    activeNotes.splice(4, 1, '#e5L')
     clearNotes(5, 'e5L')
     changeNoteType(5, eLFiveClick, e5L)
     if (eLFiveClick == 8){
@@ -1100,6 +1138,7 @@ let fLFiveClick = 0
 f5L.addEventListener('click', (e) => {
     fLFiveClick += 1
     playList[5] = 'fL'
+    activeNotes.splice(4, 1, '#f5L')
     clearNotes(5, 'f5L')
     changeNoteType(5, fLFiveClick, f5L)
     if (fLFiveClick == 8){
@@ -1111,6 +1150,7 @@ let gLFiveClick = 0
 g5L.addEventListener('click', (e) => {
     gLFiveClick += 1
     playList[5] = 'gL'
+    activeNotes.splice(4, 1, '#g5L')
     clearNotes(5, 'g5L')
     changeNoteType(5, gLFiveClick, g5L)
     if (gLFiveClick == 8){
@@ -1122,6 +1162,7 @@ let aLFiveClick = 0
 a5L.addEventListener('click', (e) => {
     aLFiveClick += 1
     playList[5] = 'aL'
+    activeNotes.splice(4, 1, '#a5L')
     clearNotes(5, 'a5L')
     changeNoteType(5, aLFiveClick, a5L)
     if (aLFiveClick == 8){
@@ -1134,6 +1175,7 @@ b5L.addEventListener('click', (e) => {
     bLFiveClick += 1
     if (bLFiveClick == 4){ bLFiveClick = 7}
     playList[5] = 'bL'
+    activeNotes.splice(4, 1, '#b5L')
     clearNotes(5, 'b5L')
     changeNoteType(5, bLFiveClick, b5L)
     if (bLFiveClick == 8){
@@ -1146,6 +1188,7 @@ let cSixClick = 0
 c6.addEventListener('click', (e) => {
     cSixClick += 1
     playList[6] = 'c'
+    activeNotes.splice(5, 1, '#c6')
     clearNotes(6, 'c6')
     changeNoteType(6, cSixClick, c6)
     if (cSixClick == 8){
@@ -1157,6 +1200,7 @@ let dSixClick = 0
 d6.addEventListener('click', (e) => {
     dSixClick += 1
     playList[6] = 'd'
+    activeNotes.splice(5, 1, '#d6')
     clearNotes(6, 'd6')
     changeNoteType(6, dSixClick, d6)
     if (dSixClick == 8){
@@ -1169,6 +1213,7 @@ e6.addEventListener('click', (e) => {
     eSixClick += 1
     if (eSixClick == 4){ eSixClick = 7}
     playList[6] = 'e'
+    activeNotes.splice(5, 1, '#e6')
     clearNotes(6, 'e6')
     changeNoteType(6, eSixClick, e6)
     if (eSixClick == 8){
@@ -1180,6 +1225,7 @@ let fSixClick = 0
 f6.addEventListener('click', (e) => {
     fSixClick += 1
     playList[6] = 'f'
+    activeNotes.splice(5, 1, '#f6')
     clearNotes(6, 'f6')
     changeNoteType(6, fSixClick, f6)
     if (fSixClick == 8){
@@ -1191,6 +1237,7 @@ let gSixClick = 0
 g6.addEventListener('click', (e) => {
     gSixClick += 1
     playList[6] = 'g'
+    activeNotes.splice(5, 1, '#g6')
     clearNotes(6, 'g6')
     changeNoteType(6, gSixClick, g6)
     if (gSixClick == 8){
@@ -1202,6 +1249,7 @@ let aSixClick = 0
 a6.addEventListener('click', (e) => {
     aSixClick += 1
     playList[6] = 'a'
+    activeNotes.splice(5, 1, '#a6')
     clearNotes(6, 'a6')
     changeNoteType(6, aSixClick, a6)
     if (aSixClick == 8){
@@ -1214,6 +1262,7 @@ b6.addEventListener('click', (e) => {
     bSixClick += 1
     if (bSixClick == 4){ bSixClick = 7}
     playList[6] = 'b'
+    activeNotes.splice(5, 1, '#b6')
     clearNotes(6, 'b6')
     changeNoteType(6, bSixClick, b6)
     if (bSixClick == 8){
@@ -1226,6 +1275,7 @@ let cLSixClick = 0
 c6L.addEventListener('click', (e) => {
     cLSixClick += 1
     playList[6] = 'cL'
+    activeNotes.splice(5, 1, '#c6L')
     clearNotes(6, 'c6L')
     changeNoteType(6, cLSixClick, c6L)
     if (cLSixClick == 8){
@@ -1237,6 +1287,7 @@ let dLSixClick = 0
 d6L.addEventListener('click', (e) => {
     dLSixClick += 1
     playList[6] = 'dL'
+    activeNotes.splice(5, 1, '#d6L')
     clearNotes(6, 'd6L')
     changeNoteType(6, dLSixClick, d6L)
     if (dLSixClick == 8){
@@ -1249,6 +1300,7 @@ e6L.addEventListener('click', (e) => {
     eLSixClick += 1
     if (eLSixClick == 4){ eLSixClick = 7}
     playList[6] = 'eL'
+    activeNotes.splice(5, 1, '#e6L')
     clearNotes(6, 'e6L')
     changeNoteType(6, eLSixClick, e6L)
     if (eLSixClick == 8){
@@ -1260,6 +1312,7 @@ let fLSixClick = 0
 f6L.addEventListener('click', (e) => {
     fLSixClick += 1
     playList[6] = 'fL'
+    activeNotes.splice(5, 1, '#f6L')
     clearNotes(6, 'f6L')
     changeNoteType(6, fLSixClick, f6L)
     if (fLSixClick == 8){
@@ -1271,6 +1324,7 @@ let gLSixClick = 0
 g6L.addEventListener('click', (e) => {
     gLSixClick += 1
     playList[6] = 'gL'
+    activeNotes.splice(5, 1, '#g6L')
     clearNotes(6, 'g6L')
     changeNoteType(6, gLSixClick, g6L)
     if (gLSixClick == 8){
@@ -1282,6 +1336,7 @@ let aLSixClick = 0
 a6L.addEventListener('click', (e) => {
     aLSixClick += 1
     playList[6] = 'aL'
+    activeNotes.splice(5, 1, '#a6L')
     clearNotes(6, 'a6L')
     changeNoteType(6, aLSixClick, a6L)
     if (aLSixClick == 8){
@@ -1294,6 +1349,7 @@ b6L.addEventListener('click', (e) => {
     bLSixClick += 1
     if (bLSixClick == 4){ bLSixClick = 7}
     playList[6] = 'bL'
+    activeNotes.splice(5, 1, '#b6L')
     clearNotes(6, 'b6L')
     changeNoteType(6, bLSixClick, b6L)
     if (bLSixClick == 8){
@@ -3556,8 +3612,13 @@ b20L.addEventListener('click', (e) => {
     }
 })
 
-
-
+const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
+const playList = ['mute']
+const duration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const gsapDuration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const playSequence = document.getElementById('playSequence')
+let activeNote = ''
+let GsapTimeVar = 0
 
 // Functions
 
@@ -3580,11 +3641,11 @@ function changeNoteType(column, counter, note) {
         note.innerHTML = '<i class="fas fa-circle"></i>'
     }
     else if (counter == 4){
-        note.style.color = 'red'
-        note.innerHTML = '#'
         playList[column] = `${playList[column]}Sharp`
         duration[column +1] = 1000
         gsapDuration[column] = 1
+        note.style.color = 'red'
+        note.innerHTML = '#'
     }
     else if (counter == 5){
         note.innerHTML = '#'
@@ -3607,37 +3668,25 @@ function changeNoteType(column, counter, note) {
     }
     else if (counter == 8){
         duration[column +1] = 250
-        gsapDuration[column ] = .25
+        gsapDuration[column] = .25
         playList[column] = 'mute'
         note.style.color = 'black'
         note.innerHTML = 'r'
     }
 }
 
-const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
+
 
 function clearNotes(column, activeNote) {
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
         if (i > 6) { idStr = idStr+'L'}
-        // console.log(idStr)
         let columnBtns = document.getElementById(idStr)
         columnBtns.style.opacity = .1
-        // columnBtns.innerHTML = 'o'
-        // console.log(notes[1], column)
         GsapTimeVar = 0
     }
     document.getElementById(activeNote).style.opacity = .9
 }
-
-const playList = ['mute']
-const duration = [0, 0, 0, 0, 0, 0]
-const gsapDuration = [0, 0, 0, 0, 0, 0]
-
-const playSequence = document.getElementById('playSequence')
-
-let activeNote = ''
-let GsapTimeVar = 0
 
 playSequence.addEventListener('click', (e) => {
     let timeVar = 0
@@ -3650,6 +3699,6 @@ playSequence.addEventListener('click', (e) => {
         setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
     
-        gsap.to(activeNote, {delay: GsapTimeVar, scale: '1.5'})
+        gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
     }
 })
