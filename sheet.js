@@ -299,7 +299,7 @@ const a20L = document.getElementById('a20L')
 const b20L = document.getElementById('b20L')
 
 
-const activeNotes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const activeNotes = ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']
 
 // Column 1
 let cClick = 0
@@ -3563,18 +3563,20 @@ b20L.addEventListener('click', (e) => {
 
 function changeNoteType(column, counter, note) {
     if (counter == 1){
+        duration[column +1] = 1000
+        gsapDuration[column] = 1
         note.style.color = 'red'
         note.innerHTML = '<i class="far fa-circle"></i>'
-        duration[column +1] = 1000
     }
     else if (counter == 2){
-        note.style.color = 'black'
-        // note.style.transform = "scale(0.5)"
-        note.innerHTML = '<i class="far fa-circle"></i>'
         duration[column +1] = 500
+        gsapDuration[column] = .5
+        note.style.color = 'black'
+        note.innerHTML = '<i class="far fa-circle"></i>'
     }
     else if (counter == 3){
         duration[column +1] = 250
+        gsapDuration[column] = .25
         note.innerHTML = '<i class="fas fa-circle"></i>'
     }
     else if (counter == 4){
@@ -3582,25 +3584,30 @@ function changeNoteType(column, counter, note) {
         note.innerHTML = '#'
         playList[column] = `${playList[column]}Sharp`
         duration[column +1] = 1000
+        gsapDuration[column] = 1
     }
     else if (counter == 5){
         note.innerHTML = '#'
         playList[column] = `${playList[column]}Sharp`
         duration[column +1] = 500
+        gsapDuration[column] = .5
     }
     else if (counter == 6){
         note.innerHTML = '#.'
-        duration[column +1] = 250
         playList[column] = `${playList[column]}Sharp`
+        duration[column +1] = 250
+        gsapDuration[column] = .25
     }
     else if (counter == 7){
         duration[column +1] = 500
+        gsapDuration[column] = .5
         playList[column] = 'mute'
         note.style.color = 'black'
         note.innerHTML = 'R'
     }
     else if (counter == 8){
         duration[column +1] = 250
+        gsapDuration[column ] = .25
         playList[column] = 'mute'
         note.style.color = 'black'
         note.innerHTML = 'r'
@@ -3624,16 +3631,24 @@ function clearNotes(column, activeNote) {
 
 const playList = ['mute']
 const duration = [0, 0, 0, 0, 0, 0]
+const gsapDuration = [0, 0, 0, 0, 0, 0]
 
 const playSequence = document.getElementById('playSequence')
-playSequence.addEventListener('click', (e) => {
 
+let activeNote = ''
+let GsapTimeVar = 0
+
+playSequence.addEventListener('click', (e) => {
     let timeVar = 0
+
+    console.log(gsapDuration, 'di')
+
     for (let i = 0; i < playList.length; i ++){
         timeVar += duration[i]
+        GsapTimeVar += gsapDuration[i]
         setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
-        let activeNote = activeNotes[i]
-        console.log(activeNote)
-        gsap.to(activeNote, {scale: '1.5'})
+        activeNote = String(activeNotes[i])
+    
+        gsap.to(activeNote, {delay: GsapTimeVar, scale: '1.5'})
     }
 })
