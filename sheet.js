@@ -299,11 +299,14 @@ const a20L = document.getElementById('a20L')
 const b20L = document.getElementById('b20L')
 
 
+const activeNotes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 // Column 1
 let cClick = 0
 c.addEventListener('click', (e) => {
     cClick += 1
     playList[1] = 'c'
+    activeNotes.splice(0, 1, '#c1')
     clearNotes(1, 'c1')
     changeNoteType(1, cClick, c)
     if (cClick == 8){
@@ -315,6 +318,7 @@ let dClick = 0
 d.addEventListener('click', (e) => {
     dClick += 1
     playList[1] = 'd'
+    activeNotes.splice(0, 1, '#d1')
     clearNotes(1, 'd1')
     changeNoteType(1, dClick, d)
     if (dClick == 8){
@@ -327,6 +331,7 @@ e_.addEventListener('click', (e) => {
     eClick += 1
     if (eClick == 4){ eClick = 7}
     playList[1] = 'e'
+    activeNotes.splice(0, 1, '#e1')
     clearNotes(1, 'e1')
     changeNoteType(1, eClick, e_)
     if (eClick == 8){
@@ -338,6 +343,7 @@ let fClick = 0
 f.addEventListener('click', (e) => {
     fClick += 1
     playList[1] = 'f'
+    activeNotes.splice(0, 1, '#f1')
     clearNotes(1, 'f1')
     changeNoteType(1, fClick, f)
     if (fClick == 8){
@@ -349,6 +355,7 @@ let gClick = 0
 g.addEventListener('click', (e) => {
     gClick += 1
     playList[1] = 'g'
+    activeNotes.splice(0, 1, '#g1')
     clearNotes(1, 'g1')
     changeNoteType(1, gClick, g)
     if (gClick == 8){
@@ -360,6 +367,7 @@ let aClick = 0
 a.addEventListener('click', (e) => {
     aClick += 1
     playList[1] = 'a'
+    activeNotes.splice(0, 1, '#a1')
     clearNotes(1, 'a1')
     changeNoteType(1, aClick, a)
     if (aClick == 8){
@@ -372,6 +380,7 @@ b.addEventListener('click', (e) => {
     bClick += 1
     if (bClick == 4){ bClick = 7}
     playList[1] = 'b'
+    activeNotes.splice(0, 1, '#b1')
     clearNotes(1, 'b1')
     changeNoteType(1, bClick, b)
     if (bClick == 8){
@@ -385,6 +394,7 @@ let cLClick = 0
 cL.addEventListener('click', (e) => {
     cLClick += 1
     playList[1] = 'cL'
+    activeNotes.splice(0, 1, '#c1L')
     clearNotes(1, 'c1L')
     changeNoteType(1, cLClick, c1L)
     if (cLClick == 8){
@@ -396,6 +406,7 @@ let dLClick = 0
 dL.addEventListener('click', (e) => {
     dLClick += 1
     playList[1] = 'dL'
+    activeNotes.splice(0, 1, '#d1L')
     clearNotes(1, 'd1L')
     changeNoteType(1, dLClick, d1L)
     if (dLClick == 8){
@@ -408,6 +419,7 @@ e_L.addEventListener('click', (e) => {
     eLClick += 1
     if (eLClick == 4){ eLClick = 7}
     playList[1] = 'eL'
+    activeNotes.splice(0, 1, '#e1L')
     clearNotes(1, 'e1L')
     changeNoteType(1, eLClick, e1L)
     if (eLClick == 8){
@@ -419,6 +431,7 @@ let fLClick = 0
 fL.addEventListener('click', (e) => {
     fLClick += 1
     playList[1] = 'fL'
+    activeNotes.splice(0, 1, '#f1L')
     clearNotes(1, 'f1L')
     changeNoteType(1, fLClick, f1L)
     if (fLClick == 8){
@@ -430,6 +443,7 @@ let gLClick = 0
 gL.addEventListener('click', (e) => {
     gLClick += 1
     playList[1] = 'gL'
+    activeNotes.splice(0, 1, '#g1L')
     clearNotes(1, 'g1L')
     changeNoteType(1, gLClick, g1L)
     if (gLClick == 8){
@@ -441,6 +455,7 @@ let aLClick = 0
 aL.addEventListener('click', (e) => {
     aLClick += 1
     playList[1] = 'aL'
+    activeNotes.splice(0, 1, '#a1L')
     clearNotes(1, 'a1L')
     changeNoteType(1, aLClick, a1L)
     if (aLClick == 8){
@@ -452,6 +467,7 @@ let bLClick = 0
 bL.addEventListener('click', (e) => {
     bLClick += 1
     if (bLClick == 4){ bLClick = 7}
+    activeNotes.splice(0, 1, '#b1L')
     playList[1] = 'bL'
     clearNotes(1, 'b1L')
     changeNoteType(1, bLClick, b1L)
@@ -466,6 +482,7 @@ let cTwoClick = 0
 c2.addEventListener('click', (e) => {
     cTwoClick += 1
     playList[2] = 'c'
+    activeNotes.splice(1, 1, '#c2')
     clearNotes(2, 'c2')
     changeNoteType(2, cTwoClick, c2)
     if (cTwoClick == 8){
@@ -478,6 +495,7 @@ let dTwoClick = 0
 d2.addEventListener('click', (e) => {
     dTwoClick += 1
     playList[2] = 'd'
+    activeNotes.splice(1, 1, '#d2')
     clearNotes(2, 'd2')
     changeNoteType(2, dTwoClick, d2)
     if (dTwoClick == 8){
@@ -490,6 +508,7 @@ let eTwoClick = 0
 e2.addEventListener('click', (e) => {
     eTwoClick += 1
     if (eTwoClick == 4){ eTwoClick = 7}
+    activeNotes.splice(1, 1, '#e2')
     playList[2] = 'e'
     clearNotes(2, 'e2')
     changeNoteType(2, eTwoClick, e2)
@@ -502,6 +521,7 @@ let fTwoClick = 0
 f2.addEventListener('click', (e) => {
     fTwoClick += 1
     playList[2] = 'f'
+    activeNotes.splice(1, 1, '#f2')
     clearNotes(2, 'f2')
     changeNoteType(2, fTwoClick, f2)
     if (fTwoClick == 8){
@@ -513,6 +533,7 @@ let gTwoClick = 0
 g2.addEventListener('click', (e) => {
     gTwoClick += 1
     playList[2] = 'g'
+    activeNotes.splice(1, 1, '#g2')
     clearNotes(2, 'g2')
     changeNoteType(2, gTwoClick, g2)
     if (gTwoClick == 8){
@@ -524,6 +545,7 @@ let aTwoClick = 0
 a2.addEventListener('click', (e) => {
     aTwoClick += 1
     playList[2] = 'a'
+    activeNotes.splice(1, 1, '#a2')
     clearNotes(2, 'a2')
     changeNoteType(2, aTwoClick, a2)
     if (aTwoClick == 8){
@@ -536,6 +558,7 @@ b2.addEventListener('click', (e) => {
     bTwoClick += 1
     if (bTwoClick == 4){ bTwoClick = 7}
     playList[2] = 'b'
+    activeNotes.splice(1, 1, '#b2')
     clearNotes(2, 'b2')
     changeNoteType(2, bTwoClick, b2)
     if (bTwoClick == 8){
@@ -548,6 +571,7 @@ b2.addEventListener('click', (e) => {
 let cLTwoClick = 0
 c2L.addEventListener('click', (e) => {
     cLTwoClick += 1
+    activeNotes.splice(1, 1, '#c2L')
     playList[2] = 'cL'
     clearNotes(2, 'c2L')
     changeNoteType(2, cLTwoClick, c2L)
@@ -561,6 +585,7 @@ let dLTwoClick = 0
 d2L.addEventListener('click', (e) => {
     dLTwoClick += 1
     playList[2] = 'dL'
+    activeNotes.splice(1, 1, '#d2L')
     clearNotes(2, 'd2L')
     changeNoteType(2, dLTwoClick, d2L)
     if (dLTwoClick == 8){
@@ -574,6 +599,7 @@ e2L.addEventListener('click', (e) => {
     eLTwoClick += 1
     if (eLTwoClick == 4){ eLTwoClick = 7}
     playList[2] = 'eL'
+    activeNotes.splice(1, 1, '#e2L')
     clearNotes(2, 'e2L')
     changeNoteType(2, eLTwoClick, e2L)
     if (eLTwoClick == 8){
@@ -585,6 +611,7 @@ let fLTwoClick = 0
 f2L.addEventListener('click', (e) => {
     fLTwoClick += 1
     playList[2] = 'fL'
+    activeNotes.splice(1, 1, '#f2L')
     clearNotes(2, 'f2L')
     changeNoteType(2, fLTwoClick, f2L)
     if (fLTwoClick == 8){
@@ -596,6 +623,7 @@ let gLTwoClick = 0
 g2L.addEventListener('click', (e) => {
     gLTwoClick += 1
     playList[2] = 'gL'
+    activeNotes.splice(1, 1, '#g2L')
     clearNotes(2, 'g2L')
     changeNoteType(2, gLTwoClick, g2L)
     if (gLTwoClick == 8){
@@ -607,6 +635,7 @@ let aLTwoClick = 0
 a2L.addEventListener('click', (e) => {
     aLTwoClick += 1
     playList[2] = 'aL'
+    activeNotes.splice(1, 1, '#a2L')
     clearNotes(2, 'a2L')
     changeNoteType(2, aLTwoClick, a2L)
     if (aLTwoClick == 8){
@@ -619,6 +648,7 @@ b2L.addEventListener('click', (e) => {
     bLTwoClick += 1
     if (bLTwoClick == 4){ bLTwoClick = 7}
     playList[2] = 'bL'
+    activeNotes.splice(1, 1, '#b2L')
     clearNotes(2, 'b2L')
     changeNoteType(2, bLTwoClick, b2L)
     if (bLTwoClick == 8){
@@ -3579,7 +3609,7 @@ function changeNoteType(column, counter, note) {
 
 const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
 
-function clearNotes(column, cn) {
+function clearNotes(column, activeNote) {
     for (let i = 0; i < notes.length; i++){
         let idStr = notes[i] + column.toString()
         if (i > 6) { idStr = idStr+'L'}
@@ -3589,7 +3619,7 @@ function clearNotes(column, cn) {
         // columnBtns.innerHTML = 'o'
         // console.log(notes[1], column)
     }
-    document.getElementById(cn).style.opacity = .9
+    document.getElementById(activeNote).style.opacity = .9
 }
 
 const playList = ['mute']
@@ -3602,5 +3632,8 @@ playSequence.addEventListener('click', (e) => {
     for (let i = 0; i < playList.length; i ++){
         timeVar += duration[i]
         setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
+        let activeNote = activeNotes[i]
+        console.log(activeNote)
+        gsap.to(activeNote, {scale: '1.5'})
     }
 })
