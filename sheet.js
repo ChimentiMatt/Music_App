@@ -1,3 +1,5 @@
+let erase = document.getElementById('erase')
+
 const c = document.getElementById('c1')
 const d = document.getElementById('d1')
 const e_ = document.getElementById('e1')
@@ -301,97 +303,170 @@ const b20L = document.getElementById('b20L')
 
 const activeNotes = []
 
+let eraseToggle = false
+let eraseCoutner = 0
+erase.addEventListener('click', (e) => {
+    eraseCoutner += 1
+    if (eraseCoutner % 2 == 1){
+        eraseToggle = true
+        alert("true")
+    }
+    else{
+        eraseToggle = false
+        alert("false")
+    }
+})
+
+
+
 // Column 1
 let cClick = 0
 c.addEventListener('click', (e) => {
-    cClick += 1
-    playList[1] = 'c'
-    activeNotes.splice(0, 1, '#c1')
-    enableNextColumn(1)
-    clearNotes(1, 'c1')
-    changeNoteType(1, cClick, c)
-    if (cClick == 8){
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, c)
         cClick = 0
+        //stops gsap time bug by resetting counter
+        GsapTimeVar = 0
+    }
+    else{
+        cClick += 1
+        playList[1] = 'c'
+        activeNotes.splice(0, 1, '#c1')
+        enableNextColumn(1)
+        clearNotes(1, 'c1')
+        changeNoteType(1, cClick, c)
+        if (cClick == 8){
+            cClick = 0
+        }
     }
 })
 
 let dClick = 0
 d.addEventListener('click', (e) => {
-    dClick += 1
-    playList[1] = 'd'
-    activeNotes.splice(0, 1, '#d1')
-    enableNextColumn(1)
-    clearNotes(1, 'd1')
-    changeNoteType(1, dClick, d)
-    if (dClick == 8){
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, d)
         dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        dClick += 1
+        playList[1] = 'd'
+        activeNotes.splice(0, 1, '#d1')
+        enableNextColumn(1)
+        clearNotes(1, 'd1')
+        changeNoteType(1, dClick, d)
+        if (dClick == 8){
+            dClick = 0
+        }
     }
 })
 
 let eClick = 0
 e_.addEventListener('click', (e) => {
-    eClick += 1
-    if (eClick == 4){ eClick = 7}
-    playList[1] = 'e'
-    activeNotes.splice(0, 1, '#e1')
-    enableNextColumn(1)
-    clearNotes(1, 'e1')
-    changeNoteType(1, eClick, e_)
-    if (eClick == 8){
-        eClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, e_)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        eClick += 1
+        if (eClick == 4){ eClick = 7}
+        playList[1] = 'e'
+        activeNotes.splice(0, 1, '#e1')
+        enableNextColumn(1)
+        clearNotes(1, 'e1')
+        changeNoteType(1, eClick, e_)
+        if (eClick == 8){
+            eClick = 0
+        }
     }
 })
 
 let fClick = 0
 f.addEventListener('click', (e) => {
-    fClick += 1
-    playList[1] = 'f'
-    activeNotes.splice(0, 1, '#f1')
-    enableNextColumn(1)
-    clearNotes(1, 'f1')
-    changeNoteType(1, fClick, f)
-    if (fClick == 8){
-        fClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, f)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        fClick += 1
+        playList[1] = 'f'
+        activeNotes.splice(0, 1, '#f1')
+        enableNextColumn(1)
+        clearNotes(1, 'f1')
+        changeNoteType(1, fClick, f)
+        if (fClick == 8){
+            fClick = 0
+        }
     }
 })
 
 let gClick = 0
 g.addEventListener('click', (e) => {
-    gClick += 1
-    playList[1] = 'g'
-    activeNotes.splice(0, 1, '#g1')
-    enableNextColumn(1)
-    clearNotes(1, 'g1')
-    changeNoteType(1, gClick, g)
-    if (gClick == 8){
-        gClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, g)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        gClick += 1
+        playList[1] = 'g'
+        activeNotes.splice(0, 1, '#g1')
+        enableNextColumn(1)
+        clearNotes(1, 'g1')
+        changeNoteType(1, gClick, g)
+        if (gClick == 8){
+            gClick = 0
+        }
     }
 })
 
 let aClick = 0
 a.addEventListener('click', (e) => {
-    aClick += 1
-    playList[1] = 'a'
-    activeNotes.splice(0, 1, '#a1')
-    enableNextColumn(1)
-    clearNotes(1, 'a1')
-    changeNoteType(1, aClick, a)
-    if (aClick == 8){
-        aClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, a)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        aClick += 1
+        playList[1] = 'a'
+        activeNotes.splice(0, 1, '#a1')
+        enableNextColumn(1)
+        clearNotes(1, 'a1')
+        changeNoteType(1, aClick, a)
+        if (aClick == 8){
+            aClick = 0
+        }
     }
 })
 
 let bClick = 0
 b.addEventListener('click', (e) => {
-    bClick += 1
-    if (bClick == 4){ bClick = 7}
-    playList[1] = 'b'
-    activeNotes.splice(0, 1, '#b1')
-    enableNextColumn(1)
-    clearNotes(1, 'b1')
-    changeNoteType(1, bClick, b)
-    if (bClick == 8){
-        bClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, b)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        bClick += 1
+        if (bClick == 4){ bClick = 7}
+        playList[1] = 'b'
+        activeNotes.splice(0, 1, '#b1')
+        enableNextColumn(1)
+        clearNotes(1, 'b1')
+        changeNoteType(1, bClick, b)
+        if (bClick == 8){
+            bClick = 0
+        }
     }
 })
 
@@ -399,94 +474,150 @@ b.addEventListener('click', (e) => {
 
 let cLClick = 0
 cL.addEventListener('click', (e) => {
-    cLClick += 1
-    playList[1] = 'cL'
-    activeNotes.splice(0, 1, '#c1L')
-    enableNextColumn(1)
-    clearNotes(1, 'c1L')
-    changeNoteType(1, cLClick, c1L)
-    if (cLClick == 8){
-        cLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, cL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        cLClick += 1
+        playList[1] = 'cL'
+        activeNotes.splice(0, 1, '#c1L')
+        enableNextColumn(1)
+        clearNotes(1, 'c1L')
+        changeNoteType(1, cLClick, c1L)
+        if (cLClick == 8){
+            cLClick = 0
+        }
     }
 })
 
 let dLClick = 0
 dL.addEventListener('click', (e) => {
-    dLClick += 1
-    playList[1] = 'dL'
-    activeNotes.splice(0, 1, '#d1L')
-    enableNextColumn(1)
-    clearNotes(1, 'd1L')
-    changeNoteType(1, dLClick, d1L)
-    if (dLClick == 8){
-        dLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, dL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        dLClick += 1
+        playList[1] = 'dL'
+        activeNotes.splice(0, 1, '#d1L')
+        enableNextColumn(1)
+        clearNotes(1, 'd1L')
+        changeNoteType(1, dLClick, d1L)
+        if (dLClick == 8){
+            dLClick = 0
+        }
     }
 })
 
 let eLClick = 0
 e_L.addEventListener('click', (e) => {
-    eLClick += 1
-    if (eLClick == 4){ eLClick = 7}
-    playList[1] = 'eL'
-    activeNotes.splice(0, 1, '#e1L')
-    enableNextColumn(1)
-    clearNotes(1, 'e1L')
-    changeNoteType(1, eLClick, e1L)
-    if (eLClick == 8){
-        eLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, e_L)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        eLClick += 1
+        if (eLClick == 4){ eLClick = 7}
+        playList[1] = 'eL'
+        activeNotes.splice(0, 1, '#e1L')
+        enableNextColumn(1)
+        clearNotes(1, 'e1L')
+        changeNoteType(1, eLClick, e1L)
+        if (eLClick == 8){
+            eLClick = 0
+        }
     }
 })
 
 let fLClick = 0
 fL.addEventListener('click', (e) => {
-    fLClick += 1
-    playList[1] = 'fL'
-    activeNotes.splice(0, 1, '#f1L')
-    enableNextColumn(1)
-    clearNotes(1, 'f1L')
-    changeNoteType(1, fLClick, f1L)
-    if (fLClick == 8){
-        fLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, fL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        fLClick += 1
+        playList[1] = 'fL'
+        activeNotes.splice(0, 1, '#f1L')
+        enableNextColumn(1)
+        clearNotes(1, 'f1L')
+        changeNoteType(1, fLClick, f1L)
+        if (fLClick == 8){
+            fLClick = 0
+        }
     }
 })
 
 let gLClick = 0
 gL.addEventListener('click', (e) => {
-    gLClick += 1
-    playList[1] = 'gL'
-    activeNotes.splice(0, 1, '#g1L')
-    enableNextColumn(1)
-    clearNotes(1, 'g1L')
-    changeNoteType(1, gLClick, g1L)
-    if (gLClick == 8){
-        gLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, gL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        gLClick += 1
+        playList[1] = 'gL'
+        activeNotes.splice(0, 1, '#g1L')
+        enableNextColumn(1)
+        clearNotes(1, 'g1L')
+        changeNoteType(1, gLClick, g1L)
+        if (gLClick == 8){
+            gLClick = 0
+        }
     }
 })
 
 let aLClick = 0
 aL.addEventListener('click', (e) => {
-    aLClick += 1
-    playList[1] = 'aL'
-    activeNotes.splice(0, 1, '#a1L')
-    enableNextColumn(1)
-    clearNotes(1, 'a1L')
-    changeNoteType(1, aLClick, a1L)
-    if (aLClick == 8){
-        aLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, aL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        aLClick += 1
+        playList[1] = 'aL'
+        activeNotes.splice(0, 1, '#a1L')
+        enableNextColumn(1)
+        clearNotes(1, 'a1L')
+        changeNoteType(1, aLClick, a1L)
+        if (aLClick == 8){
+            aLClick = 0
+        }
     }
 })
 
 let bLClick = 0
 bL.addEventListener('click', (e) => {
-    bLClick += 1
-    if (bLClick == 4){ bLClick = 7}
-    activeNotes.splice(0, 1, '#b1L')
-    playList[1] = 'bL'
-    enableNextColumn(1)
-    clearNotes(1, 'b1L')
-    changeNoteType(1, bLClick, b1L)
-    if (bLClick == 8){
-        bLClick = 0
+    if (eraseToggle){
+        playList[1] = 'mute'
+        changeNoteType(1, 7, bL)
+        dClick = 0
+        GsapTimeVar = 0
+    }
+    else{
+        bLClick += 1
+        if (bLClick == 4){ bLClick = 7}
+        activeNotes.splice(0, 1, '#b1L')
+        playList[1] = 'bL'
+        enableNextColumn(1)
+        clearNotes(1, 'b1L')
+        changeNoteType(1, bLClick, b1L)
+        if (bLClick == 8){
+            bLClick = 0
+        }
     }
 })
 
@@ -1874,6 +2005,7 @@ let gNinelick = 0
 g9.addEventListener('click', (e) => {
     gNinelick += 1
     playList[9] = 'g'
+    activeNotes.splice(8, 1, '#g9')
     enableNextColumn(9)
     clearNotes(9, 'g9')
     changeNoteType(9, gNinelick, g9)
@@ -4063,8 +4195,10 @@ b20L.addEventListener('click', (e) => {
     }
 })
 
-const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
 const playList = ['mute']
+const playList2 = ['mute']
+
+const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
 const duration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 const gsapDuration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 const playSequence = document.getElementById('playSequence')
@@ -4106,7 +4240,7 @@ function changeNoteType(column, counter, note) {
         note.innerHTML = '#'
     }
     else if (counter == 5){
-        note.innerHTML = '#'
+        note.innerHTML = '#/'
         playList[column] = `${playList[column]}Sharp`
         duration[column +1] = 500
         gsapDuration[column] = .5
@@ -4141,6 +4275,8 @@ function clearNotes(column, activeNote) {
         if (i > 6) { idStr = idStr+'L'}
         let columnBtns = document.getElementById(idStr)
         columnBtns.style.opacity = .1
+        
+        //stops gsap bugs
         GsapTimeVar = 0
     }
     document.getElementById(activeNote).style.opacity = .9
@@ -4157,6 +4293,7 @@ playSequence.addEventListener('click', (e) => {
         GsapTimeVar += gsapDuration[i] 
         GsapAnimationOff = GsapTimeVar +.5
         setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
+        // setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
         console.log(i, activeNote, 'AN')
         // stops errors when there isnt the max amount of notes
