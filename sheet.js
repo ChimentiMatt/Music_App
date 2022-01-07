@@ -307,6 +307,7 @@ c.addEventListener('click', (e) => {
     cClick += 1
     playList[1] = 'c'
     activeNotes.splice(0, 1, '#c1')
+    enableNextColumn(1)
     clearNotes(1, 'c1')
     changeNoteType(1, cClick, c)
     if (cClick == 8){
@@ -319,6 +320,7 @@ d.addEventListener('click', (e) => {
     dClick += 1
     playList[1] = 'd'
     activeNotes.splice(0, 1, '#d1')
+    enableNextColumn(1)
     clearNotes(1, 'd1')
     changeNoteType(1, dClick, d)
     if (dClick == 8){
@@ -332,6 +334,7 @@ e_.addEventListener('click', (e) => {
     if (eClick == 4){ eClick = 7}
     playList[1] = 'e'
     activeNotes.splice(0, 1, '#e1')
+    enableNextColumn(1)
     clearNotes(1, 'e1')
     changeNoteType(1, eClick, e_)
     if (eClick == 8){
@@ -344,6 +347,7 @@ f.addEventListener('click', (e) => {
     fClick += 1
     playList[1] = 'f'
     activeNotes.splice(0, 1, '#f1')
+    enableNextColumn(1)
     clearNotes(1, 'f1')
     changeNoteType(1, fClick, f)
     if (fClick == 8){
@@ -356,6 +360,7 @@ g.addEventListener('click', (e) => {
     gClick += 1
     playList[1] = 'g'
     activeNotes.splice(0, 1, '#g1')
+    enableNextColumn(1)
     clearNotes(1, 'g1')
     changeNoteType(1, gClick, g)
     if (gClick == 8){
@@ -368,6 +373,7 @@ a.addEventListener('click', (e) => {
     aClick += 1
     playList[1] = 'a'
     activeNotes.splice(0, 1, '#a1')
+    enableNextColumn(1)
     clearNotes(1, 'a1')
     changeNoteType(1, aClick, a)
     if (aClick == 8){
@@ -381,6 +387,7 @@ b.addEventListener('click', (e) => {
     if (bClick == 4){ bClick = 7}
     playList[1] = 'b'
     activeNotes.splice(0, 1, '#b1')
+    enableNextColumn(1)
     clearNotes(1, 'b1')
     changeNoteType(1, bClick, b)
     if (bClick == 8){
@@ -395,6 +402,7 @@ cL.addEventListener('click', (e) => {
     cLClick += 1
     playList[1] = 'cL'
     activeNotes.splice(0, 1, '#c1L')
+    enableNextColumn(1)
     clearNotes(1, 'c1L')
     changeNoteType(1, cLClick, c1L)
     if (cLClick == 8){
@@ -407,6 +415,7 @@ dL.addEventListener('click', (e) => {
     dLClick += 1
     playList[1] = 'dL'
     activeNotes.splice(0, 1, '#d1L')
+    enableNextColumn(1)
     clearNotes(1, 'd1L')
     changeNoteType(1, dLClick, d1L)
     if (dLClick == 8){
@@ -420,6 +429,7 @@ e_L.addEventListener('click', (e) => {
     if (eLClick == 4){ eLClick = 7}
     playList[1] = 'eL'
     activeNotes.splice(0, 1, '#e1L')
+    enableNextColumn(1)
     clearNotes(1, 'e1L')
     changeNoteType(1, eLClick, e1L)
     if (eLClick == 8){
@@ -432,6 +442,7 @@ fL.addEventListener('click', (e) => {
     fLClick += 1
     playList[1] = 'fL'
     activeNotes.splice(0, 1, '#f1L')
+    enableNextColumn(1)
     clearNotes(1, 'f1L')
     changeNoteType(1, fLClick, f1L)
     if (fLClick == 8){
@@ -444,6 +455,7 @@ gL.addEventListener('click', (e) => {
     gLClick += 1
     playList[1] = 'gL'
     activeNotes.splice(0, 1, '#g1L')
+    enableNextColumn(1)
     clearNotes(1, 'g1L')
     changeNoteType(1, gLClick, g1L)
     if (gLClick == 8){
@@ -456,6 +468,7 @@ aL.addEventListener('click', (e) => {
     aLClick += 1
     playList[1] = 'aL'
     activeNotes.splice(0, 1, '#a1L')
+    enableNextColumn(1)
     clearNotes(1, 'a1L')
     changeNoteType(1, aLClick, a1L)
     if (aLClick == 8){
@@ -469,6 +482,7 @@ bL.addEventListener('click', (e) => {
     if (bLClick == 4){ bLClick = 7}
     activeNotes.splice(0, 1, '#b1L')
     playList[1] = 'bL'
+    enableNextColumn(1)
     clearNotes(1, 'b1L')
     changeNoteType(1, bLClick, b1L)
     if (bLClick == 8){
@@ -483,6 +497,7 @@ c2.addEventListener('click', (e) => {
     cTwoClick += 1
     playList[2] = 'c'
     activeNotes.splice(1, 1, '#c2')
+    enableNextColumn(2)
     clearNotes(2, 'c2')
     changeNoteType(2, cTwoClick, c2)
     if (cTwoClick == 8){
@@ -496,6 +511,7 @@ d2.addEventListener('click', (e) => {
     dTwoClick += 1
     playList[2] = 'd'
     activeNotes.splice(1, 1, '#d2')
+    enableNextColumn(2)
     clearNotes(2, 'd2')
     changeNoteType(2, dTwoClick, d2)
     if (dTwoClick == 8){
@@ -510,6 +526,7 @@ e2.addEventListener('click', (e) => {
     if (eTwoClick == 4){ eTwoClick = 7}
     activeNotes.splice(1, 1, '#e2')
     playList[2] = 'e'
+    enableNextColumn(2)
     clearNotes(2, 'e2')
     changeNoteType(2, eTwoClick, e2)
     if (eTwoClick == 8){
@@ -522,6 +539,7 @@ f2.addEventListener('click', (e) => {
     fTwoClick += 1
     playList[2] = 'f'
     activeNotes.splice(1, 1, '#f2')
+    enableNextColumn(2)
     clearNotes(2, 'f2')
     changeNoteType(2, fTwoClick, f2)
     if (fTwoClick == 8){
@@ -534,6 +552,7 @@ g2.addEventListener('click', (e) => {
     gTwoClick += 1
     playList[2] = 'g'
     activeNotes.splice(1, 1, '#g2')
+    enableNextColumn(2)
     clearNotes(2, 'g2')
     changeNoteType(2, gTwoClick, g2)
     if (gTwoClick == 8){
@@ -546,6 +565,7 @@ a2.addEventListener('click', (e) => {
     aTwoClick += 1
     playList[2] = 'a'
     activeNotes.splice(1, 1, '#a2')
+    enableNextColumn(2)
     clearNotes(2, 'a2')
     changeNoteType(2, aTwoClick, a2)
     if (aTwoClick == 8){
@@ -559,6 +579,7 @@ b2.addEventListener('click', (e) => {
     if (bTwoClick == 4){ bTwoClick = 7}
     playList[2] = 'b'
     activeNotes.splice(1, 1, '#b2')
+    enableNextColumn(2)
     clearNotes(2, 'b2')
     changeNoteType(2, bTwoClick, b2)
     if (bTwoClick == 8){
@@ -573,6 +594,7 @@ c2L.addEventListener('click', (e) => {
     cLTwoClick += 1
     activeNotes.splice(1, 1, '#c2L')
     playList[2] = 'cL'
+    enableNextColumn(2)
     clearNotes(2, 'c2L')
     changeNoteType(2, cLTwoClick, c2L)
     if (cLTwoClick == 8){
@@ -586,6 +608,7 @@ d2L.addEventListener('click', (e) => {
     dLTwoClick += 1
     playList[2] = 'dL'
     activeNotes.splice(1, 1, '#d2L')
+    enableNextColumn(2)
     clearNotes(2, 'd2L')
     changeNoteType(2, dLTwoClick, d2L)
     if (dLTwoClick == 8){
@@ -600,6 +623,7 @@ e2L.addEventListener('click', (e) => {
     if (eLTwoClick == 4){ eLTwoClick = 7}
     playList[2] = 'eL'
     activeNotes.splice(1, 1, '#e2L')
+    enableNextColumn(2)
     clearNotes(2, 'e2L')
     changeNoteType(2, eLTwoClick, e2L)
     if (eLTwoClick == 8){
@@ -612,6 +636,7 @@ f2L.addEventListener('click', (e) => {
     fLTwoClick += 1
     playList[2] = 'fL'
     activeNotes.splice(1, 1, '#f2L')
+    enableNextColumn(2)
     clearNotes(2, 'f2L')
     changeNoteType(2, fLTwoClick, f2L)
     if (fLTwoClick == 8){
@@ -624,6 +649,7 @@ g2L.addEventListener('click', (e) => {
     gLTwoClick += 1
     playList[2] = 'gL'
     activeNotes.splice(1, 1, '#g2L')
+    enableNextColumn(2)
     clearNotes(2, 'g2L')
     changeNoteType(2, gLTwoClick, g2L)
     if (gLTwoClick == 8){
@@ -636,6 +662,7 @@ a2L.addEventListener('click', (e) => {
     aLTwoClick += 1
     playList[2] = 'aL'
     activeNotes.splice(1, 1, '#a2L')
+    enableNextColumn(2)
     clearNotes(2, 'a2L')
     changeNoteType(2, aLTwoClick, a2L)
     if (aLTwoClick == 8){
@@ -649,6 +676,7 @@ b2L.addEventListener('click', (e) => {
     if (bLTwoClick == 4){ bLTwoClick = 7}
     playList[2] = 'bL'
     activeNotes.splice(1, 1, '#b2L')
+    enableNextColumn(2)
     clearNotes(2, 'b2L')
     changeNoteType(2, bLTwoClick, b2L)
     if (bLTwoClick == 8){
@@ -656,15 +684,13 @@ b2L.addEventListener('click', (e) => {
     }
 })
 
-
-
-
 // Column 3
 let cThreeClick = 0
 c3.addEventListener('click', (e) => {
     cThreeClick += 1
     playList[3] = 'c'
     activeNotes.splice(2, 1, '#c3')
+    enableNextColumn(3)
     clearNotes(3, 'c3')
     changeNoteType(3, cThreeClick, c3)
     if (cThreeClick == 8){
@@ -677,6 +703,7 @@ d3.addEventListener('click', (e) => {
     dThreeClick += 1
     playList[3] = 'd'
     activeNotes.splice(2, 1, '#d3')
+    enableNextColumn(3)
     clearNotes(3, 'd3')
     changeNoteType(3, dThreeClick, d3)
     if (dThreeClick == 8){
@@ -690,6 +717,7 @@ e3.addEventListener('click', (e) => {
     if (eThreeClick == 4){ eThreeClick = 7}
     playList[3] = 'e'
     activeNotes.splice(2, 1, '#e3')
+    enableNextColumn(3)
     clearNotes(3, 'e3')
     changeNoteType(3, eThreeClick, e3)
     if (eThreeClick == 8){
@@ -702,6 +730,7 @@ f3.addEventListener('click', (e) => {
     fThreeClick += 1
     playList[3] = 'f'
     activeNotes.splice(2, 1, '#f3')
+    enableNextColumn(3)
     clearNotes(3, 'f3')
     changeNoteType(3, fThreeClick, f3)
     if (fThreeClick == 8){
@@ -714,6 +743,7 @@ g3.addEventListener('click', (e) => {
     gThreeClick += 1
     playList[3] = 'g'
     activeNotes.splice(2, 1, '#g3')
+    enableNextColumn(3)
     clearNotes(3, 'g3')
     changeNoteType(3, gThreeClick, g3)
     if (gThreeClick == 8){
@@ -726,6 +756,7 @@ a3.addEventListener('click', (e) => {
     aThreeClick += 1
     playList[3] = 'a'
     activeNotes.splice(2, 1, '#a3')
+    enableNextColumn(3)
     clearNotes(3, 'a3')
     changeNoteType(3, aThreeClick, a3)
     if (aThreeClick == 8){
@@ -739,6 +770,7 @@ b3.addEventListener('click', (e) => {
     if (bThreeClick == 4){ bThreeClick = 7}
     playList[3] = 'b'
     activeNotes.splice(2, 1, '#b3')
+    enableNextColumn(3)
     clearNotes(3, 'b3')
     changeNoteType(3, bThreeClick, b3)
     if (bThreeClick == 8){
@@ -753,6 +785,7 @@ c3L.addEventListener('click', (e) => {
     cLThreeClick += 1
     playList[3] = 'cL'
     activeNotes.splice(2, 1, '#c3L')
+    enableNextColumn(3)
     clearNotes(3, 'c3L')
     changeNoteType(3, cLThreeClick, c3L)
     if (cLThreeClick == 8){
@@ -765,6 +798,7 @@ d3L.addEventListener('click', (e) => {
     dLThreeClick += 1
     playList[3] = 'dL'
     activeNotes.splice(2, 1, '#d3L')
+    enableNextColumn(3)
     clearNotes(3, 'd3L')
     changeNoteType(3, dLThreeClick, d3L)
     if (dLThreeClick == 8){
@@ -778,6 +812,7 @@ e3L.addEventListener('click', (e) => {
     if (eLThreeClick == 4){ eLThreeClick = 7}
     playList[3] = 'eL'
     activeNotes.splice(2, 1, '#e3L')
+    enableNextColumn(3)
     clearNotes(3, 'e3L')
     changeNoteType(3, eLThreeClick, e3L)
     if (eLThreeClick == 8){
@@ -790,6 +825,7 @@ f3L.addEventListener('click', (e) => {
     fLThreeClick += 1
     playList[3] = 'fL'
     activeNotes.splice(2, 1, '#f3L')
+    enableNextColumn(3)
     clearNotes(3, 'f3L')
     changeNoteType(3, fLThreeClick, f3L)
     if (fLThreeClick == 8){
@@ -802,6 +838,7 @@ g3L.addEventListener('click', (e) => {
     gLThreeClick += 1
     playList[3] = 'gL'
     activeNotes.splice(2, 1, '#g3L')
+    enableNextColumn(3)
     clearNotes(3, 'g3L')
     changeNoteType(3, gLThreeClick, g3L)
     if (gLThreeClick == 8){
@@ -814,6 +851,7 @@ a3L.addEventListener('click', (e) => {
     aLThreeClick += 1
     playList[3] = 'aL'
     activeNotes.splice(2, 1, '#a3L')
+    enableNextColumn(3)
     clearNotes(3, 'a3L')
     changeNoteType(3, aLThreeClick, a3L)
     if (aLThreeClick == 8){
@@ -827,6 +865,7 @@ b3L.addEventListener('click', (e) => {
     if (bLThreeClick == 4){ bLThreeClick = 7}
     playList[3] = 'bL'
     activeNotes.splice(2, 1, '#b3L')
+    enableNextColumn(3)
     clearNotes(3, 'b3L')
     changeNoteType(3, bLThreeClick, b3L)
     if (bLThreeClick == 8){
@@ -840,6 +879,7 @@ c4.addEventListener('click', (e) => {
     cFourClick += 1
     playList[4] = 'c'
     activeNotes.splice(3, 1, '#c4')
+    enableNextColumn(4)
     clearNotes(4, 'c4')
     changeNoteType(4, cFourClick, c4)
     if (cFourClick == 8){
@@ -852,6 +892,7 @@ d4.addEventListener('click', (e) => {
     dFourClick += 1
     playList[4] = 'd'
     activeNotes.splice(3, 1, '#d4')
+    enableNextColumn(4)
     clearNotes(4, 'd4')
     changeNoteType(4, dFourClick, d4)
     if (dFourClick == 8){
@@ -865,6 +906,7 @@ e4.addEventListener('click', (e) => {
     if (eFourClick == 4){ eFourClick = 7}
     playList[4] = 'e'
     activeNotes.splice(3, 1, '#e4')
+    enableNextColumn(4)
     clearNotes(4, 'e4')
     changeNoteType(4, eFourClick, e4)
     if (eFourClick == 8){
@@ -877,6 +919,7 @@ f4.addEventListener('click', (e) => {
     fFourClick += 1
     playList[4] = 'f'
     activeNotes.splice(3, 1, '#f4')
+    enableNextColumn(4)
     clearNotes(4, 'f4')
     changeNoteType(4, fFourClick, f4)
     if (fFourClick == 8){
@@ -889,6 +932,7 @@ g4.addEventListener('click', (e) => {
     gFourClick += 1
     playList[4] = 'g'
     activeNotes.splice(3, 1, '#g4')
+    enableNextColumn(4)
     clearNotes(4, 'g4')
     changeNoteType(4, gFourClick, g4)
     if (gFourClick == 8){
@@ -901,6 +945,7 @@ a4.addEventListener('click', (e) => {
     aFourClick += 1
     playList[4] = 'a'
     activeNotes.splice(3, 1, '#a4')
+    enableNextColumn(4)
     clearNotes(4, 'a4')
     changeNoteType(4, aFourClick, a4)
     if (aFourClick == 8){
@@ -914,6 +959,7 @@ b4.addEventListener('click', (e) => {
     if (bFourClick == 4){ bFourClick = 7}
     playList[4] = 'b'
     activeNotes.splice(3, 1, '#b4')
+    enableNextColumn(4)
     clearNotes(4, 'b4')
     changeNoteType(4, bFourClick, b4)
     if (bFourClick == 8){
@@ -927,6 +973,7 @@ c4L.addEventListener('click', (e) => {
     cLFourClick += 1
     playList[4] = 'cL'
     activeNotes.splice(3, 1, '#c4L')
+    enableNextColumn(4)
     clearNotes(4, 'c4L')
     changeNoteType(4, cLFourClick, c4L)
     if (cLFourClick == 8){
@@ -939,6 +986,7 @@ d4L.addEventListener('click', (e) => {
     dLFourClick += 1
     playList[4] = 'dL'
     activeNotes.splice(3, 1, '#d4L')
+    enableNextColumn(4)
     clearNotes(4, 'd4L')
     changeNoteType(4, dLFourClick, d4L)
     if (dLFourClick == 8){
@@ -952,6 +1000,7 @@ e4L.addEventListener('click', (e) => {
     if (eLFourClick == 4){ eLFourClick = 7}
     playList[4] = 'eL'
     activeNotes.splice(3, 1, '#e4L')
+    enableNextColumn(4)
     clearNotes(4, 'e4L')
     changeNoteType(4, eLFourClick, e4L)
     if (eLFourClick == 8){
@@ -964,6 +1013,7 @@ f4L.addEventListener('click', (e) => {
     fLFourClick += 1
     playList[4] = 'fL'
     activeNotes.splice(3, 1, '#f4L')
+    enableNextColumn(4)
     clearNotes(4, 'f4L')
     changeNoteType(4, fLFourClick, f4L)
     if (fLFourClick == 8){
@@ -976,6 +1026,7 @@ g4L.addEventListener('click', (e) => {
     gLFourClick += 1
     playList[4] = 'gL'
     activeNotes.splice(3, 1, '#g4L')
+    enableNextColumn(4)
     clearNotes(4, 'g4L')
     changeNoteType(4, gLFourClick, g4L)
     if (gLFourClick == 8){
@@ -988,6 +1039,7 @@ a4L.addEventListener('click', (e) => {
     aLFourClick += 1
     playList[4] = 'aL'
     activeNotes.splice(3, 1, '#a4L')
+    enableNextColumn(4)
     clearNotes(4, 'a4L')
     changeNoteType(4, aLFourClick, a4L)
     if (aLFourClick == 8){
@@ -1001,6 +1053,7 @@ b4L.addEventListener('click', (e) => {
     if (bLFourClick == 4){ bLFourClick = 7}
     playList[4] = 'bL'
     activeNotes.splice(3, 1, '#b4L')
+    enableNextColumn(4)
     clearNotes(4, 'b4L')
     changeNoteType(4, bLFourClick, b4L)
     if (bLFourClick == 8){
@@ -1014,6 +1067,7 @@ c5.addEventListener('click', (e) => {
     cFiveClick += 1
     playList[5] = 'c'
     activeNotes.splice(4, 1, '#c5')
+    enableNextColumn(5)
     clearNotes(5, 'c5')
     changeNoteType(5, cFiveClick, c5)
     if (cFiveClick == 8){
@@ -1026,6 +1080,7 @@ d5.addEventListener('click', (e) => {
     dFiveClick += 1
     playList[5] = 'd'
     activeNotes.splice(4, 1, '#d5')
+    enableNextColumn(5)
     clearNotes(5, 'd5')
     changeNoteType(5, dFiveClick, d5)
     if (dFiveClick == 8){
@@ -1039,6 +1094,7 @@ e5.addEventListener('click', (e) => {
     if (eFiveClick == 4){ eFiveClick = 7}
     playList[5] = 'e'
     activeNotes.splice(4, 1, '#e5')
+    enableNextColumn(5)
     clearNotes(5, 'e5')
     changeNoteType(5, eFiveClick, e5)
     if (eFiveClick == 8){
@@ -1051,6 +1107,7 @@ f5.addEventListener('click', (e) => {
     fFiveClick += 1
     playList[5] = 'f'
     activeNotes.splice(4, 1, '#f5')
+    enableNextColumn(5)
     clearNotes(5, 'f5')
     changeNoteType(5, fFiveClick, f5)
     if (fFiveClick == 8){
@@ -1063,6 +1120,7 @@ g5.addEventListener('click', (e) => {
     gFiveClick += 1
     playList[5] = 'g'
     activeNotes.splice(4, 1, '#g5')
+    enableNextColumn(5)
     clearNotes(5, 'g5')
     changeNoteType(5, gFiveClick, g5)
     if (gFiveClick == 8){
@@ -1075,6 +1133,7 @@ a5.addEventListener('click', (e) => {
     aFiveClick += 1
     playList[5] = 'a'
     activeNotes.splice(4, 1, '#a5')
+    enableNextColumn(5)
     clearNotes(5, 'a5')
     changeNoteType(5, aFiveClick, a5)
     if (aFiveClick == 8){
@@ -1088,6 +1147,7 @@ b5.addEventListener('click', (e) => {
     if (bFiveClick == 4){ bFiveClick = 7}
     playList[5] = 'b'
     activeNotes.splice(4, 1, '#b5')
+    enableNextColumn(5)
     clearNotes(5, 'b5')
     changeNoteType(5, bFiveClick, b5)
     if (bFiveClick == 8){
@@ -1102,6 +1162,7 @@ c5L.addEventListener('click', (e) => {
     cLFiveClick += 1
     playList[5] = 'cL'
     activeNotes.splice(4, 1, '#c5L')
+    enableNextColumn(5)
     clearNotes(5, 'c5L')
     changeNoteType(5, cLFiveClick, c5L)
     if (cLFiveClick == 8){
@@ -1114,6 +1175,7 @@ d5L.addEventListener('click', (e) => {
     dLFiveClick += 1
     playList[5] = 'dL'
     activeNotes.splice(4, 1, '#d5L')
+    enableNextColumn(5)
     clearNotes(5, 'd5L')
     changeNoteType(5, dLFiveClick, d5L)
     if (dLFiveClick == 8){
@@ -1127,6 +1189,7 @@ e5L.addEventListener('click', (e) => {
     if (eLFiveClick == 4){ eLFiveClick = 7}
     playList[5] = 'eL'
     activeNotes.splice(4, 1, '#e5L')
+    enableNextColumn(5)
     clearNotes(5, 'e5L')
     changeNoteType(5, eLFiveClick, e5L)
     if (eLFiveClick == 8){
@@ -1139,6 +1202,7 @@ f5L.addEventListener('click', (e) => {
     fLFiveClick += 1
     playList[5] = 'fL'
     activeNotes.splice(4, 1, '#f5L')
+    enableNextColumn(5)
     clearNotes(5, 'f5L')
     changeNoteType(5, fLFiveClick, f5L)
     if (fLFiveClick == 8){
@@ -1151,6 +1215,7 @@ g5L.addEventListener('click', (e) => {
     gLFiveClick += 1
     playList[5] = 'gL'
     activeNotes.splice(4, 1, '#g5L')
+    enableNextColumn(5)
     clearNotes(5, 'g5L')
     changeNoteType(5, gLFiveClick, g5L)
     if (gLFiveClick == 8){
@@ -1163,6 +1228,7 @@ a5L.addEventListener('click', (e) => {
     aLFiveClick += 1
     playList[5] = 'aL'
     activeNotes.splice(4, 1, '#a5L')
+    enableNextColumn(5)
     clearNotes(5, 'a5L')
     changeNoteType(5, aLFiveClick, a5L)
     if (aLFiveClick == 8){
@@ -1176,6 +1242,7 @@ b5L.addEventListener('click', (e) => {
     if (bLFiveClick == 4){ bLFiveClick = 7}
     playList[5] = 'bL'
     activeNotes.splice(4, 1, '#b5L')
+    enableNextColumn(5)
     clearNotes(5, 'b5L')
     changeNoteType(5, bLFiveClick, b5L)
     if (bLFiveClick == 8){
@@ -1189,6 +1256,7 @@ c6.addEventListener('click', (e) => {
     cSixClick += 1
     playList[6] = 'c'
     activeNotes.splice(5, 1, '#c6')
+    enableNextColumn(6)
     clearNotes(6, 'c6')
     changeNoteType(6, cSixClick, c6)
     if (cSixClick == 8){
@@ -1201,6 +1269,7 @@ d6.addEventListener('click', (e) => {
     dSixClick += 1
     playList[6] = 'd'
     activeNotes.splice(5, 1, '#d6')
+    enableNextColumn(6)
     clearNotes(6, 'd6')
     changeNoteType(6, dSixClick, d6)
     if (dSixClick == 8){
@@ -1214,6 +1283,7 @@ e6.addEventListener('click', (e) => {
     if (eSixClick == 4){ eSixClick = 7}
     playList[6] = 'e'
     activeNotes.splice(5, 1, '#e6')
+    enableNextColumn(6)
     clearNotes(6, 'e6')
     changeNoteType(6, eSixClick, e6)
     if (eSixClick == 8){
@@ -1226,6 +1296,7 @@ f6.addEventListener('click', (e) => {
     fSixClick += 1
     playList[6] = 'f'
     activeNotes.splice(5, 1, '#f6')
+    enableNextColumn(6)
     clearNotes(6, 'f6')
     changeNoteType(6, fSixClick, f6)
     if (fSixClick == 8){
@@ -1238,6 +1309,7 @@ g6.addEventListener('click', (e) => {
     gSixClick += 1
     playList[6] = 'g'
     activeNotes.splice(5, 1, '#g6')
+    enableNextColumn(6)
     clearNotes(6, 'g6')
     changeNoteType(6, gSixClick, g6)
     if (gSixClick == 8){
@@ -1250,6 +1322,7 @@ a6.addEventListener('click', (e) => {
     aSixClick += 1
     playList[6] = 'a'
     activeNotes.splice(5, 1, '#a6')
+    enableNextColumn(6)
     clearNotes(6, 'a6')
     changeNoteType(6, aSixClick, a6)
     if (aSixClick == 8){
@@ -1263,6 +1336,7 @@ b6.addEventListener('click', (e) => {
     if (bSixClick == 4){ bSixClick = 7}
     playList[6] = 'b'
     activeNotes.splice(5, 1, '#b6')
+    enableNextColumn(6)
     clearNotes(6, 'b6')
     changeNoteType(6, bSixClick, b6)
     if (bSixClick == 8){
@@ -1276,6 +1350,7 @@ c6L.addEventListener('click', (e) => {
     cLSixClick += 1
     playList[6] = 'cL'
     activeNotes.splice(5, 1, '#c6L')
+    enableNextColumn(6)
     clearNotes(6, 'c6L')
     changeNoteType(6, cLSixClick, c6L)
     if (cLSixClick == 8){
@@ -1288,6 +1363,7 @@ d6L.addEventListener('click', (e) => {
     dLSixClick += 1
     playList[6] = 'dL'
     activeNotes.splice(5, 1, '#d6L')
+    enableNextColumn(6)
     clearNotes(6, 'd6L')
     changeNoteType(6, dLSixClick, d6L)
     if (dLSixClick == 8){
@@ -1301,6 +1377,7 @@ e6L.addEventListener('click', (e) => {
     if (eLSixClick == 4){ eLSixClick = 7}
     playList[6] = 'eL'
     activeNotes.splice(5, 1, '#e6L')
+    enableNextColumn(6)
     clearNotes(6, 'e6L')
     changeNoteType(6, eLSixClick, e6L)
     if (eLSixClick == 8){
@@ -1313,6 +1390,7 @@ f6L.addEventListener('click', (e) => {
     fLSixClick += 1
     playList[6] = 'fL'
     activeNotes.splice(5, 1, '#f6L')
+    enableNextColumn(6)
     clearNotes(6, 'f6L')
     changeNoteType(6, fLSixClick, f6L)
     if (fLSixClick == 8){
@@ -1325,6 +1403,7 @@ g6L.addEventListener('click', (e) => {
     gLSixClick += 1
     playList[6] = 'gL'
     activeNotes.splice(5, 1, '#g6L')
+    enableNextColumn(6)
     clearNotes(6, 'g6L')
     changeNoteType(6, gLSixClick, g6L)
     if (gLSixClick == 8){
@@ -1337,6 +1416,7 @@ a6L.addEventListener('click', (e) => {
     aLSixClick += 1
     playList[6] = 'aL'
     activeNotes.splice(5, 1, '#a6L')
+    enableNextColumn(6)
     clearNotes(6, 'a6L')
     changeNoteType(6, aLSixClick, a6L)
     if (aLSixClick == 8){
@@ -1350,6 +1430,7 @@ b6L.addEventListener('click', (e) => {
     if (bLSixClick == 4){ bLSixClick = 7}
     playList[6] = 'bL'
     activeNotes.splice(5, 1, '#b6L')
+    enableNextColumn(6)
     clearNotes(6, 'b6L')
     changeNoteType(6, bLSixClick, b6L)
     if (bLSixClick == 8){
@@ -1364,6 +1445,7 @@ c7.addEventListener('click', (e) => {
     cSevenClick += 1
     playList[7] = 'c'
     activeNotes.splice(6, 1, '#c7')
+    enableNextColumn(7)
     clearNotes(7, 'c7')
     changeNoteType(7, cSevenClick, c7)
     if (cSevenClick == 8){
@@ -1376,6 +1458,7 @@ d7.addEventListener('click', (e) => {
     dSevenClick += 1
     playList[7] = 'd'
     activeNotes.splice(6, 1, '#d7')
+    enableNextColumn(7)
     clearNotes(7, 'd7')
     changeNoteType(7, dSevenClick, d7)
     if (dSevenClick == 8){
@@ -1389,6 +1472,7 @@ e7.addEventListener('click', (e) => {
     if (eSevenClick == 4){ eSevenClick = 7}
     playList[7] = 'e'
     activeNotes.splice(6, 1, '#e7')
+    enableNextColumn(7)
     clearNotes(7, 'e7')
     changeNoteType(7, eSevenClick, e7)
     if (eSevenClick == 8){
@@ -1401,6 +1485,7 @@ f7.addEventListener('click', (e) => {
     fSevenClick += 1
     playList[7] = 'f'
     activeNotes.splice(6, 1, '#f7')
+    enableNextColumn(7)
     clearNotes(7, 'f7')
     changeNoteType(7, fSevenClick, f7)
     if (fSevenClick == 8){
@@ -1413,6 +1498,7 @@ g7.addEventListener('click', (e) => {
     gSevenlick += 1
     playList[7] = 'g'
     activeNotes.splice(6, 1, '#g7')
+    enableNextColumn(7)
     clearNotes(7, 'g7')
     changeNoteType(7, gSevenlick, g7)
     if (gSevenlick == 8){
@@ -1425,6 +1511,7 @@ a7.addEventListener('click', (e) => {
     aSevenClick += 1
     playList[7] = 'a'
     activeNotes.splice(6, 1, '#a7')
+    enableNextColumn(7)
     clearNotes(7, 'a7')
     changeNoteType(7, aSevenClick, a7)
     if (aSevenClick == 8){
@@ -1438,6 +1525,7 @@ b7.addEventListener('click', (e) => {
     if (bSevenClick == 4){ bSevenClick = 7}
     playList[7] = 'b'
     activeNotes.splice(6, 1, '#b7')
+    enableNextColumn(7)
     clearNotes(7, 'b7')
     changeNoteType(7, bSevenClick, b7)
     if (bSevenClick == 8){
@@ -1451,6 +1539,7 @@ c7L.addEventListener('click', (e) => {
     cLSevenClick += 1
     playList[7] = 'cL'
     activeNotes.splice(6, 1, '#c7L')
+    enableNextColumn(7)
     clearNotes(7, 'c7L')
     changeNoteType(7, cLSevenClick, c7L)
     if (cLSevenClick == 8){
@@ -1463,6 +1552,7 @@ d7L.addEventListener('click', (e) => {
     dLSevenClick += 1
     playList[7] = 'dL'
     activeNotes.splice(6, 1, '#d7L')
+    enableNextColumn(7)
     clearNotes(7, 'd7L')
     changeNoteType(7, dLSevenClick, d7L)
     if (dLSevenClick == 8){
@@ -1476,6 +1566,7 @@ e7L.addEventListener('click', (e) => {
     if (eLSevenClick == 4){ eLSevenClick = 7}
     playList[7] = 'eL'
     activeNotes.splice(6, 1, '#e7L')
+    enableNextColumn(7)
     clearNotes(7, 'e7L')
     changeNoteType(7, eLSevenClick, e7L)
     if (eLSevenClick == 8){
@@ -1488,6 +1579,7 @@ f7L.addEventListener('click', (e) => {
     fLSevenClick += 1
     playList[7] = 'fL'
     activeNotes.splice(6, 1, '#f7L')
+    enableNextColumn(7)
     clearNotes(7, 'f7L')
     changeNoteType(7, fLSevenClick, f7L)
     if (fLSevenClick == 8){
@@ -1500,6 +1592,7 @@ g7L.addEventListener('click', (e) => {
     gLSevenClick += 1
     playList[7] = 'gL'
     activeNotes.splice(6, 1, '#g7L')
+    enableNextColumn(7)
     clearNotes(7, 'g7L')
     changeNoteType(7, gLSevenClick, g7L)
     if (gLSevenClick == 8){
@@ -1512,6 +1605,7 @@ a7L.addEventListener('click', (e) => {
     aLSevenClick += 1
     playList[7] = 'aL'
     activeNotes.splice(6, 1, '#a7L')
+    enableNextColumn(7)
     clearNotes(7, 'a7L')
     changeNoteType(7, aLSevenClick, a7L)
     if (aLSevenClick == 8){
@@ -1525,6 +1619,7 @@ b7L.addEventListener('click', (e) => {
     if (bLSevenClick == 4){ bLSevenClick = 7}
     playList[7] = 'bL'
     activeNotes.splice(6, 1, '#b7L')
+    enableNextColumn(7)
     clearNotes(7, 'b7L')
     changeNoteType(7, bLSevenClick, b7L)
     if (bLSevenClick == 8){
@@ -1538,8 +1633,9 @@ let cEightClick = 0
 c8.addEventListener('click', (e) => {
     cEightClick += 1
     playList[8] = 'c'
-    clearNotes(8, 'c8')
     activeNotes.splice(7, 1, '#c8')
+    enableNextColumn(8)
+    clearNotes(8, 'c8')
     changeNoteType(8, cEightClick, c8)
     if (cEightClick == 8){
         cEightClick = 0
@@ -1551,6 +1647,7 @@ d8.addEventListener('click', (e) => {
     dEightClick += 1
     playList[8] = 'd'
     activeNotes.splice(7, 1, '#d8')
+    enableNextColumn(8)
     clearNotes(8, 'd8')
     changeNoteType(8, dEightClick, d8)
     if (dEightClick == 8){
@@ -1564,6 +1661,7 @@ e8.addEventListener('click', (e) => {
     if (eEightClick == 4){ eEightClick = 7}
     playList[8] = 'e'
     activeNotes.splice(7, 1, '#e8')
+    enableNextColumn(8)
     clearNotes(8, 'e8')
     changeNoteType(8, eEightClick, e8)
     if (eEightClick == 8){
@@ -1576,6 +1674,7 @@ f8.addEventListener('click', (e) => {
     fEightClick += 1
     playList[8] = 'f'
     activeNotes.splice(7, 1, '#f8')
+    enableNextColumn(8)
     clearNotes(8, 'f8')
     changeNoteType(8, fEightClick, f8)
     if (fEightClick == 8){
@@ -1588,6 +1687,7 @@ g8.addEventListener('click', (e) => {
     gEightlick += 1
     playList[8] = 'g'
     activeNotes.splice(7, 1, '#g8')
+    enableNextColumn(8)
     clearNotes(8, 'g8')
     changeNoteType(8, gEightlick, g8)
     if (gEightlick == 8){
@@ -1600,6 +1700,7 @@ a8.addEventListener('click', (e) => {
     aEightClick += 1
     playList[8] = 'a'
     activeNotes.splice(7, 1, '#a8')
+    enableNextColumn(8)
     clearNotes(8, 'a8')
     changeNoteType(8, aEightClick, a8)
     if (aEightClick == 8){
@@ -1613,6 +1714,7 @@ b8.addEventListener('click', (e) => {
     if (bEightClick == 4){ bEightClick = 7}
     playList[8] = 'b'
     activeNotes.splice(7, 1, '#b8')
+    enableNextColumn(8)
     clearNotes(8, 'b8')
     changeNoteType(8, bEightClick, b8)
     if (bEightClick == 8){
@@ -1626,6 +1728,7 @@ c8L.addEventListener('click', (e) => {
     cLEightClick += 1
     playList[8] = 'cL'
     activeNotes.splice(7, 1, '#c8L')
+    enableNextColumn(8)
     clearNotes(8, 'c8L')
     changeNoteType(8, cLEightClick, c8L)
     if (cLEightClick == 8){
@@ -1638,6 +1741,7 @@ d8L.addEventListener('click', (e) => {
     dLEightClick += 1
     playList[8] = 'dL'
     activeNotes.splice(7, 1, '#d8L')
+    enableNextColumn(8)
     clearNotes(8, 'd8L')
     changeNoteType(8, dLEightClick, d8L)
     if (dLEightClick == 8){
@@ -1651,6 +1755,7 @@ e8L.addEventListener('click', (e) => {
     if (eLEightClick == 4){ eLEightClick = 7}
     playList[8] = 'eL'
     activeNotes.splice(7, 1, '#e8L')
+    enableNextColumn(8)
     clearNotes(8, 'e8L')
     changeNoteType(8, eLEightClick, e8L)
     if (eLEightClick == 8){
@@ -1663,6 +1768,7 @@ f8L.addEventListener('click', (e) => {
     fLEightClick += 1
     playList[8] = 'fL'
     activeNotes.splice(7, 1, '#f8L')
+    enableNextColumn(8)
     clearNotes(8, 'f8L')
     changeNoteType(8, fLEightClick, f8L)
     if (fLEightClick == 8){
@@ -1675,6 +1781,7 @@ g8L.addEventListener('click', (e) => {
     gLEightClick += 1
     playList[8] = 'gL'
     activeNotes.splice(7, 1, '#g8L')
+    enableNextColumn(8)
     clearNotes(8, 'g8L')
     changeNoteType(8, gLEightClick, g8L)
     if (gLEightClick == 8){
@@ -1687,6 +1794,7 @@ a8L.addEventListener('click', (e) => {
     aLEightClick += 1
     playList[8] = 'aL'
     activeNotes.splice(7, 1, '#a8L')
+    enableNextColumn(8)
     clearNotes(8, 'a8L')
     changeNoteType(8, aLEightClick, a8L)
     if (aLEightClick == 8){
@@ -1700,6 +1808,7 @@ b8L.addEventListener('click', (e) => {
     if (bLEightClick == 4){ bLEightClick = 7}
     playList[8] = 'bL'
     activeNotes.splice(7, 1, '#b8L')
+    enableNextColumn(8)
     clearNotes(8, 'b8L')
     changeNoteType(8, bLEightClick, b8L)
     if (bLEightClick == 8){
@@ -1714,6 +1823,7 @@ c9.addEventListener('click', (e) => {
     cNineClick += 1
     playList[9] = 'c'
     activeNotes.splice(8, 1, '#c9')
+    enableNextColumn(9)
     clearNotes(9, 'c9')
     changeNoteType(9, cNineClick, c9)
     if (cNineClick == 8){
@@ -1739,6 +1849,7 @@ e9.addEventListener('click', (e) => {
     if (eNineClick == 4){ eNineClick = 7}
     playList[9] = 'e'
     activeNotes.splice(8, 1, '#e9')
+    enableNextColumn(9)
     clearNotes(9, 'e9')
     changeNoteType(9, eNineClick, e9)
     if (eNineClick == 8){
@@ -1751,6 +1862,7 @@ f9.addEventListener('click', (e) => {
     fNineClick += 1
     playList[9] = 'f'
     activeNotes.splice(8, 1, '#f9')
+    enableNextColumn(9)
     clearNotes(9, 'f9')
     changeNoteType(9, fNineClick, f9)
     if (fNineClick == 8){
@@ -1762,6 +1874,7 @@ let gNinelick = 0
 g9.addEventListener('click', (e) => {
     gNinelick += 1
     playList[9] = 'g'
+    enableNextColumn(9)
     clearNotes(9, 'g9')
     changeNoteType(9, gNinelick, g9)
     if (gNinelick == 8){
@@ -1774,6 +1887,7 @@ a9.addEventListener('click', (e) => {
     aNineClick += 1
     playList[9] = 'a'
     activeNotes.splice(8, 1, '#a9')
+    enableNextColumn(9)
     clearNotes(9, 'a9')
     changeNoteType(9, aNineClick, a9)
     if (aNineClick == 8){
@@ -1787,6 +1901,7 @@ b9.addEventListener('click', (e) => {
     if (bNineClick == 4){ bNineClick = 7}
     playList[9] = 'b'
     activeNotes.splice(8, 1, '#b9')
+    enableNextColumn(9)
     clearNotes(9, 'b9')
     changeNoteType(9, bNineClick, b9)
     if (bNineClick == 8){
@@ -1800,6 +1915,7 @@ c9L.addEventListener('click', (e) => {
     cLNineClick += 1
     playList[9] = 'cL'
     activeNotes.splice(8, 1, '#c9L')
+    enableNextColumn(9)
     clearNotes(9, 'c9L')
     changeNoteType(9, cLNineClick, c9L)
     if (cLNineClick == 8){
@@ -1812,6 +1928,7 @@ d9L.addEventListener('click', (e) => {
     dLNineClick += 1
     playList[9] = 'dL'
     activeNotes.splice(8, 1, '#d9L')
+    enableNextColumn(9)
     clearNotes(9, 'd9L')
     changeNoteType(9, dLNineClick, d9L)
     if (dLNineClick == 8){
@@ -1825,6 +1942,7 @@ e9L.addEventListener('click', (e) => {
     if (eLNineClick == 4){ eLNineClick = 7}
     playList[9] = 'eL'
     activeNotes.splice(8, 1, '#e9L')
+    enableNextColumn(9)
     clearNotes(9, 'e9L')
     changeNoteType(9, eLNineClick, e9L)
     if (eLNineClick == 8){
@@ -1837,6 +1955,7 @@ f9L.addEventListener('click', (e) => {
     fLNineClick += 1
     playList[9] = 'fL'
     activeNotes.splice(8, 1, '#f9L')
+    enableNextColumn(9)
     clearNotes(9, 'f9L')
     changeNoteType(9, fLNineClick, f9L)
     if (fLNineClick == 8){
@@ -1849,6 +1968,7 @@ g9L.addEventListener('click', (e) => {
     gLNineClick += 1
     playList[9] = 'gL'
     activeNotes.splice(8, 1, '#g9L')
+    enableNextColumn(9)
     clearNotes(9, 'g9L')
     changeNoteType(9, gLNineClick, g9L)
     if (gLNineClick == 8){
@@ -1861,6 +1981,7 @@ a9L.addEventListener('click', (e) => {
     aLNineClick += 1
     playList[9] = 'aL'
     activeNotes.splice(8, 1, '#a9L')
+    enableNextColumn(9)
     clearNotes(9, 'a9L')
     changeNoteType(9, aLNineClick, a9L)
     if (aLNineClick == 8){
@@ -1874,6 +1995,7 @@ b9L.addEventListener('click', (e) => {
     if (bLNineClick == 4){ bLNineClick = 7}
     playList[9] = 'bL'
     activeNotes.splice(8, 1, '#b9L')
+    enableNextColumn(9)
     clearNotes(9, 'b9L')
     changeNoteType(9, bLNineClick, b9L)
     if (bLNineClick == 8){
@@ -1889,6 +2011,7 @@ c10.addEventListener('click', (e) => {
     cTenClick += 1
     playList[10] = 'c'
     activeNotes.splice(9, 1, '#c10')
+    enableNextColumn(10)
     clearNotes(10, 'c10')
     changeNoteType(10, cTenClick, c10)
     if (cTenClick == 8){
@@ -1901,6 +2024,7 @@ d10.addEventListener('click', (e) => {
     dTenClick += 1
     playList[10] = 'd'
     activeNotes.splice(9, 1, '#d10')
+    enableNextColumn(10)
     clearNotes(10, 'd10')
     changeNoteType(10, dTenClick, d10)
     if (dTenClick == 8){
@@ -1914,6 +2038,7 @@ e10.addEventListener('click', (e) => {
     if (eNineClick == 4){ eTenClick = 7}
     playList[10] = 'e'
     activeNotes.splice(9, 1, '#e10')
+    enableNextColumn(10)
     clearNotes(10, 'e10')
     changeNoteType(10, eTenClick, e10)
     if (eTenClick == 8){
@@ -1926,6 +2051,7 @@ f10.addEventListener('click', (e) => {
     fTenClick += 1
     playList[10] = 'f'
     activeNotes.splice(9, 1, '#f10')
+    enableNextColumn(10)
     clearNotes(10, 'f10')
     changeNoteType(10, fTenClick, f10)
     if (fTenClick == 8){
@@ -1938,6 +2064,7 @@ g10.addEventListener('click', (e) => {
     gTenlick += 1
     playList[10] = 'g'
     activeNotes.splice(9, 1, '#g10')
+    enableNextColumn(10)
     clearNotes(10, 'g10')
     changeNoteType(10, gTenlick, g10)
     if (gTenlick == 8){
@@ -1950,6 +2077,7 @@ a10.addEventListener('click', (e) => {
     aTenClick += 1
     playList[10] = 'a'
     activeNotes.splice(9, 1, '#a10')
+    enableNextColumn(10)
     clearNotes(10, 'a10')
     changeNoteType(10, aTenClick, a10)
     if (aTenClick == 8){
@@ -1963,6 +2091,7 @@ b10.addEventListener('click', (e) => {
     if (bTenClick == 4){ bTenClick = 7}
     playList[10] = 'b'
     activeNotes.splice(9, 1, '#b10')
+    enableNextColumn(10)
     clearNotes(10, 'b10')
     changeNoteType(10, bTenClick, b10)
     if (bTenClick == 8){
@@ -1976,6 +2105,7 @@ c10L.addEventListener('click', (e) => {
     cLTenClick += 1
     playList[10] = 'cL'
     activeNotes.splice(9, 1, '#c10L')
+    enableNextColumn(10)
     clearNotes(10, 'c10L')
     changeNoteType(10, cLTenClick, c10L)
     if (cLTenClick == 8){
@@ -1988,6 +2118,7 @@ d10L.addEventListener('click', (e) => {
     dLTenClick += 1
     playList[10] = 'dL'
     activeNotes.splice(9, 1, '#d10L')
+    enableNextColumn(10)
     clearNotes(10, 'd10L')
     changeNoteType(10, dLTenClick, d10L)
     if (dLTenClick == 8){
@@ -2001,6 +2132,7 @@ e10L.addEventListener('click', (e) => {
     if (eLTenClick == 4){ eLTenClick = 7}
     playList[10] = 'eL'
     activeNotes.splice(9, 1, '#e10L')
+    enableNextColumn(10)
     clearNotes(10, 'e10L')
     changeNoteType(10, eLTenClick, e10L)
     if (eLTenClick == 8){
@@ -2013,6 +2145,7 @@ f10L.addEventListener('click', (e) => {
     fLTenClick += 1
     playList[10] = 'fL'
     activeNotes.splice(9, 1, '#f10L')
+    enableNextColumn(10)
     clearNotes(10, 'f10L')
     changeNoteType(10, fLTenClick, f10L)
     if (fLTenClick == 8){
@@ -2025,6 +2158,7 @@ g10L.addEventListener('click', (e) => {
     gLTenClick += 1
     playList[10] = 'gL'
     activeNotes.splice(9, 1, '#g10L')
+    enableNextColumn(10)
     clearNotes(10, 'g10L')
     changeNoteType(10, gLTenClick, g10L)
     if (gLTenClick == 8){
@@ -2037,6 +2171,7 @@ a10L.addEventListener('click', (e) => {
     aLTenClick += 1
     playList[10] = 'aL'
     activeNotes.splice(9, 1, '#a10L')
+    enableNextColumn(10)
     clearNotes(10, 'a10L')
     changeNoteType(10, aLTenClick, a10L)
     if (aLTenClick == 8){
@@ -2050,6 +2185,7 @@ b10L.addEventListener('click', (e) => {
     if (bLTenClick == 4){ bLTenClick = 7}
     playList[10] = 'bL'
     activeNotes.splice(9, 1, '#b10L')
+    enableNextColumn(10)
     clearNotes(10, 'b10L')
     changeNoteType(10, bLTenClick, b10L)
     if (bLTenClick == 8){
@@ -3813,6 +3949,12 @@ let GsapAnimationOff = 0
 
 // Functions
 
+function enableNextColumn(num){
+    num += 1
+    let column = 'column' + num 
+    document.getElementById(column).style.pointerEvents = "auto";
+}
+
 function changeNoteType(column, counter, note) {
     if (counter == 1){
         duration[column +1] = 1000
@@ -3891,8 +4033,13 @@ playSequence.addEventListener('click', (e) => {
         GsapAnimationOff = GsapTimeVar +.5
         setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
-    
-        gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
-        gsap.to(`${activeNote}`, {delay: GsapAnimationOff, scale: '1'})
+        console.log(i, activeNote, 'AN')
+        // stops errors when there isnt the max amount of notes
+        if (activeNote == 'undefined'){
+        }   
+        else{
+            gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
+            gsap.to(`${activeNote}`, {delay: GsapAnimationOff, scale: '1'})
+        }
     }
 })
