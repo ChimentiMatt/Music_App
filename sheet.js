@@ -379,6 +379,17 @@ function changeNoteType(column, counter, note) {
 }
 
 
+function addMultipleNotes(note){
+    if (!playList[1]){
+        playList[1] = note
+        // alert('1')
+    }
+    else if (!playList2[1]){
+        playList2[1] = note
+        // alert('2')
+    }
+}
+
 // when clicking off in already used column, hides old notes
 function clearNotes(column, activeNote) {
     for (let i = 0; i < notes.length; i++){
@@ -393,7 +404,8 @@ function clearNotes(column, activeNote) {
     document.getElementById(activeNote).style.opacity = .9
 }
 
-
+// Trigger section --------------------------------------------------------------------------------------------------
+// Play Button
 playSequence.addEventListener('click', (e) => {
     let timeVar = 0
 
@@ -404,7 +416,7 @@ playSequence.addEventListener('click', (e) => {
         GsapTimeVar += gsapDuration[i] 
         GsapAnimationOff = GsapTimeVar +.5
         setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
-        // setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
+        setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
         console.log(i, activeNote, 'AN')
         // stops errors when there isnt the max amount of notes
@@ -417,7 +429,6 @@ playSequence.addEventListener('click', (e) => {
     }
 })
 
-// Trigger section --------------------------------------------------------------------------------------------------
 // Trigger for Eraser
 erase.addEventListener('click', (e) => {
     eraseCoutner += 1
@@ -437,6 +448,7 @@ let cClick = 0
 c.addEventListener('click', (e) => {
     if (eraseToggle){
         playList[1] = 'mute'
+        playList[2] = 'mute'
         changeNoteType(1, 7, c)
         cClick = 0
         //stops gsap time bug by resetting counter
@@ -444,7 +456,8 @@ c.addEventListener('click', (e) => {
     }
     else{
         cClick += 1
-        playList[1] = 'c'
+        // playList[1] = 'c'
+        addMultipleNotes('c')
         activeNotes.splice(0, 1, '#c1')
         enableNextColumn(1)
         clearNotes(1, 'c1')
@@ -459,13 +472,15 @@ let dClick = 0
 d.addEventListener('click', (e) => {
     if (eraseToggle){
         playList[1] = 'mute'
+        playList[2] = 'mute'
         changeNoteType(1, 7, d)
         dClick = 0
         GsapTimeVar = 0
     }
     else{
         dClick += 1
-        playList[1] = 'd'
+        // playList[1] = 'd'
+        addMultipleNotes('d')
         activeNotes.splice(0, 1, '#d1')
         enableNextColumn(1)
         clearNotes(1, 'd1')
