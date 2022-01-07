@@ -302,9 +302,123 @@ const b20L = document.getElementById('b20L')
 
 
 const activeNotes = []
-
 let eraseToggle = false
 let eraseCoutner = 0
+
+const playList = ['mute']
+const playList2 = ['mute']
+
+const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
+const duration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const gsapDuration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const playSequence = document.getElementById('playSequence')
+let activeNote = ''
+let GsapTimeVar = 0
+let GsapAnimationOff = 0
+
+
+// Functions Section ---------------------------------------------------------------------------------------------------
+function enableNextColumn(num){
+    num += 1
+    let column = 'column' + num 
+    document.getElementById(column).style.pointerEvents = "auto";
+}
+
+// on click change note type: duration and or sharp
+function changeNoteType(column, counter, note) {
+    if (counter == 1){
+        duration[column +1] = 1000
+        gsapDuration[column] = 1
+        note.style.color = 'red'
+        note.innerHTML = '<i class="far fa-circle"></i>'
+    }
+    else if (counter == 2){
+        duration[column +1] = 500
+        gsapDuration[column] = .5
+        note.style.color = 'black'
+        note.innerHTML = '<i class="far fa-circle"></i>'
+    }
+    else if (counter == 3){
+        duration[column +1] = 250
+        gsapDuration[column] = .25
+        note.innerHTML = '<i class="fas fa-circle"></i>'
+    }
+    else if (counter == 4){
+        playList[column] = `${playList[column]}Sharp`
+        duration[column +1] = 1000
+        gsapDuration[column] = 1
+        note.style.color = 'red'
+        note.innerHTML = '#'
+    }
+    else if (counter == 5){
+        note.innerHTML = '#/'
+        playList[column] = `${playList[column]}Sharp`
+        duration[column +1] = 500
+        gsapDuration[column] = .5
+    }
+    else if (counter == 6){
+        note.innerHTML = '#.'
+        playList[column] = `${playList[column]}Sharp`
+        duration[column +1] = 250
+        gsapDuration[column] = .25
+    }
+    else if (counter == 7){
+        duration[column +1] = 500
+        gsapDuration[column] = .5
+        playList[column] = 'mute'
+        note.style.color = 'black'
+        note.innerHTML = 'R'
+    }
+    else if (counter == 8){
+        duration[column +1] = 250
+        gsapDuration[column] = .25
+        playList[column] = 'mute'
+        note.style.color = 'black'
+        note.innerHTML = 'r'
+    }
+}
+
+
+// when clicking off in already used column, hides old notes
+function clearNotes(column, activeNote) {
+    for (let i = 0; i < notes.length; i++){
+        let idStr = notes[i] + column.toString()
+        if (i > 6) { idStr = idStr+'L'}
+        let columnBtns = document.getElementById(idStr)
+        columnBtns.style.opacity = .1
+        
+        //stops gsap bugs
+        GsapTimeVar = 0
+    }
+    document.getElementById(activeNote).style.opacity = .9
+}
+
+
+playSequence.addEventListener('click', (e) => {
+    let timeVar = 0
+
+    console.log(gsapDuration, 'di')
+
+    for (let i = 0; i < playList.length; i ++){
+        timeVar += duration[i]
+        GsapTimeVar += gsapDuration[i] 
+        GsapAnimationOff = GsapTimeVar +.5
+        setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
+        // setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
+        activeNote = String(activeNotes[i])
+        console.log(i, activeNote, 'AN')
+        // stops errors when there isnt the max amount of notes
+        if (activeNote == 'undefined'){
+        }   
+        else{
+            gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
+            gsap.to(`${activeNote}`, {delay: GsapAnimationOff, scale: '1'})
+        }
+    }
+})
+
+// Trigger section --------------------------------------------------------------------------------------------------
+// Trigger for Eraser
 erase.addEventListener('click', (e) => {
     eraseCoutner += 1
     if (eraseCoutner % 2 == 1){
@@ -317,8 +431,7 @@ erase.addEventListener('click', (e) => {
     }
 })
 
-
-
+// Column Section ---------------------------------------------------------------------------------------------------
 // Column 1
 let cClick = 0
 c.addEventListener('click', (e) => {
@@ -4192,116 +4305,5 @@ b20L.addEventListener('click', (e) => {
     changeNoteType(20, bLNineteenClick, b20L)
     if (bLNineteenClick == 8){
         bLNineteenClick = 0
-    }
-})
-
-const playList = ['mute']
-const playList2 = ['mute']
-
-const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
-const duration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-const gsapDuration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-const playSequence = document.getElementById('playSequence')
-let activeNote = ''
-let GsapTimeVar = 0
-let GsapAnimationOff = 0
-
-// Functions
-
-function enableNextColumn(num){
-    num += 1
-    let column = 'column' + num 
-    document.getElementById(column).style.pointerEvents = "auto";
-}
-
-function changeNoteType(column, counter, note) {
-    if (counter == 1){
-        duration[column +1] = 1000
-        gsapDuration[column] = 1
-        note.style.color = 'red'
-        note.innerHTML = '<i class="far fa-circle"></i>'
-    }
-    else if (counter == 2){
-        duration[column +1] = 500
-        gsapDuration[column] = .5
-        note.style.color = 'black'
-        note.innerHTML = '<i class="far fa-circle"></i>'
-    }
-    else if (counter == 3){
-        duration[column +1] = 250
-        gsapDuration[column] = .25
-        note.innerHTML = '<i class="fas fa-circle"></i>'
-    }
-    else if (counter == 4){
-        playList[column] = `${playList[column]}Sharp`
-        duration[column +1] = 1000
-        gsapDuration[column] = 1
-        note.style.color = 'red'
-        note.innerHTML = '#'
-    }
-    else if (counter == 5){
-        note.innerHTML = '#/'
-        playList[column] = `${playList[column]}Sharp`
-        duration[column +1] = 500
-        gsapDuration[column] = .5
-    }
-    else if (counter == 6){
-        note.innerHTML = '#.'
-        playList[column] = `${playList[column]}Sharp`
-        duration[column +1] = 250
-        gsapDuration[column] = .25
-    }
-    else if (counter == 7){
-        duration[column +1] = 500
-        gsapDuration[column] = .5
-        playList[column] = 'mute'
-        note.style.color = 'black'
-        note.innerHTML = 'R'
-    }
-    else if (counter == 8){
-        duration[column +1] = 250
-        gsapDuration[column] = .25
-        playList[column] = 'mute'
-        note.style.color = 'black'
-        note.innerHTML = 'r'
-    }
-}
-
-
-
-function clearNotes(column, activeNote) {
-    for (let i = 0; i < notes.length; i++){
-        let idStr = notes[i] + column.toString()
-        if (i > 6) { idStr = idStr+'L'}
-        let columnBtns = document.getElementById(idStr)
-        columnBtns.style.opacity = .1
-        
-        //stops gsap bugs
-        GsapTimeVar = 0
-    }
-    document.getElementById(activeNote).style.opacity = .9
-}
-
-
-playSequence.addEventListener('click', (e) => {
-    let timeVar = 0
-
-    console.log(gsapDuration, 'di')
-
-    for (let i = 0; i < playList.length; i ++){
-        timeVar += duration[i]
-        GsapTimeVar += gsapDuration[i] 
-        GsapAnimationOff = GsapTimeVar +.5
-        setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
-        // setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
-        activeNote = String(activeNotes[i])
-        console.log(i, activeNote, 'AN')
-        // stops errors when there isnt the max amount of notes
-        if (activeNote == 'undefined'){
-        }   
-        else{
-            gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
-            gsap.to(`${activeNote}`, {delay: GsapAnimationOff, scale: '1'})
-        }
     }
 })
