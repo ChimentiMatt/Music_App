@@ -3619,6 +3619,7 @@ const gsapDuration = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 const playSequence = document.getElementById('playSequence')
 let activeNote = ''
 let GsapTimeVar = 0
+let GsapAnimationOff = 0
 
 // Functions
 
@@ -3688,6 +3689,7 @@ function clearNotes(column, activeNote) {
     document.getElementById(activeNote).style.opacity = .9
 }
 
+
 playSequence.addEventListener('click', (e) => {
     let timeVar = 0
 
@@ -3695,10 +3697,12 @@ playSequence.addEventListener('click', (e) => {
 
     for (let i = 0; i < playList.length; i ++){
         timeVar += duration[i]
-        GsapTimeVar += gsapDuration[i]
+        GsapTimeVar += gsapDuration[i] 
+        GsapAnimationOff = GsapTimeVar +.5
         setTimeout(() =>{new Audio(`./sounds/${playList[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
     
         gsap.to(`${activeNote}`, {delay: GsapTimeVar, scale: '1.5'})
+        gsap.to(`${activeNote}`, {delay: GsapAnimationOff, scale: '1'})
     }
 })
