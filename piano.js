@@ -22,31 +22,31 @@ const noteCHigh = document.getElementById('noteCHigh')
 
 
 noteCLow.addEventListener('click', (e) => {
-    new Audio('./sounds/cL.mp3').play()
+    new Audio('./sounds/piano/cL.mp3').play()
 })
 
 noteDLow.addEventListener('click', (e) => {
-    new Audio('./sounds/dL.mp3').play()
+    new Audio('./sounds/piano/dL.mp3').play()
 })
 
 noteELow.addEventListener('click', (e) => {
-    new Audio('./sounds/eL.mp3').play()
+    new Audio('./sounds/piano/eL.mp3').play()
 })
 
 noteFLow.addEventListener('click', (e) => {
-    new Audio('./sounds/fL.mp3').play()
+    new Audio('./sounds/piano/fL.mp3').play()
 })
 
 noteGLow.addEventListener('click', (e) => {
-    new Audio('./sounds/gL.mp3').play()
+    new Audio('./sounds/piano/gL.mp3').play()
 })
 
 noteALow.addEventListener('click', (e) => {
-    new Audio('./sounds/aL.mp3').play()
+    new Audio('./sounds/piano/aL.mp3').play()
 })
 
 noteBLow.addEventListener('click', (e) => {
-    new Audio('./sounds/bL.mp3').play()
+    new Audio('./sounds/piano/bL.mp3').play()
 })
 
 
@@ -55,55 +55,55 @@ noteBLow.addEventListener('click', (e) => {
 
 
 noteC.addEventListener('click', (e) => {
-    new Audio('./sounds/c.mp3').play()
+    new Audio('./sounds/piano/c.mp3').play()
 })
 
 noteCSharp.addEventListener('click', (e) => {
-    new Audio('./sounds/cSharp.mp3').play()
+    new Audio('./sounds/piano/cSharp.mp3').play()
 })
 
 noteD.addEventListener('click', (e) => {
-    new Audio('./sounds/d.mp3').play()
+    new Audio('./sounds/piano/d.mp3').play()
 })
 
 noteDSharp.addEventListener('click', (e) => {
-    new Audio('./sounds/dSharp.mp3').play()
+    new Audio('./sounds/piano/dSharp.mp3').play()
 })
 
 noteE.addEventListener('click', (e) => {
-    new Audio('./sounds/e.mp3').play()
+    new Audio('./sounds/piano/e.mp3').play()
 })
 
 noteF.addEventListener('click', (e) => {
-    new Audio('./sounds/f.mp3').play()
+    new Audio('./sounds/piano/f.mp3').play()
 })
 
 noteFSharp.addEventListener('click', (e) => {
-    new Audio('./sounds/fSharp.mp3').play()
+    new Audio('./sounds/piano/fSharp.mp3').play()
 })
 
 noteG.addEventListener('click', (e) => {
-    new Audio('./sounds/g.mp3').play()
+    new Audio('./sounds/piano/g.mp3').play()
 })
 
 noteGSharp.addEventListener('click', (e) => {
-    new Audio('./sounds/gSharp.mp3').play()
+    new Audio('./sounds/piano/gSharp.mp3').play()
 })
 
 noteA.addEventListener('click', (e) => {
-    new Audio('./sounds/a.mp3').play()
+    new Audio('./sounds/piano/a.mp3').play()
 })
 
 noteASharp.addEventListener('click', (e) => {
-    new Audio('./sounds/aSharp.mp3').play()
+    new Audio('./sounds/piano/aSharp.mp3').play()
 })
 
 noteB.addEventListener('click', (e) => {
-    new Audio('./sounds/b.mp3').play()
+    new Audio('./sounds/piano/b.mp3').play()
 })
 
 noteCHigh.addEventListener('click', (e) => {
-    new Audio('./sounds/cH.mp3').play()
+    new Audio('./sounds/piano/cH.mp3').play()
 })
 
 
