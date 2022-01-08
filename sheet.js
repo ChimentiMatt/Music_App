@@ -380,13 +380,14 @@ function changeNoteType(column, counter, note) {
 
 
 function addMultipleNotes(note){
+    console.log(playList[1])
+    console.log(playList2[1])
     if (!playList[1]){
         playList[1] = note
-        // alert('1')
     }
     else if (!playList2[1]){
         playList2[1] = note
-        // alert('2')
+
     }
 }
 
@@ -409,16 +410,16 @@ function clearNotes(column, activeNote) {
 playSequence.addEventListener('click', (e) => {
     let timeVar = 0
 
-    console.log(gsapDuration, 'di')
+    // console.log(gsapDuration, 'di')
 
     for (let i = 0; i < playList.length; i ++){
         timeVar += duration[i]
         GsapTimeVar += gsapDuration[i] 
         GsapAnimationOff = GsapTimeVar +.5
         setTimeout(() =>{new Audio(`./sounds/piano/${playList[i]}.mp3`).play()}, timeVar)
-        setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
+        // setTimeout(() =>{new Audio(`./sounds/piano/${playList2[i]}.mp3`).play()}, timeVar)
         activeNote = String(activeNotes[i])
-        console.log(i, activeNote, 'AN')
+        // console.log(i, activeNote, 'AN')
         // stops errors when there isnt the max amount of notes
         if (activeNote == 'undefined'){
         }   
@@ -448,7 +449,7 @@ let cClick = 0
 c.addEventListener('click', (e) => {
     if (eraseToggle){
         playList[1] = 'mute'
-        playList[2] = 'mute'
+        playList2[1] = 'mute'
         changeNoteType(1, 7, c)
         cClick = 0
         //stops gsap time bug by resetting counter
@@ -456,8 +457,8 @@ c.addEventListener('click', (e) => {
     }
     else{
         cClick += 1
-        // playList[1] = 'c'
-        addMultipleNotes('c')
+        playList[1] = 'c'
+        // addMultipleNotes('c')
         activeNotes.splice(0, 1, '#c1')
         enableNextColumn(1)
         clearNotes(1, 'c1')
@@ -472,15 +473,15 @@ let dClick = 0
 d.addEventListener('click', (e) => {
     if (eraseToggle){
         playList[1] = 'mute'
-        playList[2] = 'mute'
+        playList2[1] = 'mute'
         changeNoteType(1, 7, d)
         dClick = 0
         GsapTimeVar = 0
     }
     else{
         dClick += 1
-        // playList[1] = 'd'
-        addMultipleNotes('d')
+        playList[1] = 'd'
+        // addMultipleNotes('d')
         activeNotes.splice(0, 1, '#d1')
         enableNextColumn(1)
         clearNotes(1, 'd1')
